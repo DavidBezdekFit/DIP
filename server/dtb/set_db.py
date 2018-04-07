@@ -16,11 +16,11 @@ import sqlite3
 class Database(object):
     
     def __init__(self):
-        self.dtbName = 'dht_crawling.db'
+        self.dtbName = 'dtb/dht_crawling.db'
         self.conn = sqlite3.connect(self.dtbName)
         pass
 
-if __name__ == '__main__':
+def createDtb():
 
     dtb = Database()
     
