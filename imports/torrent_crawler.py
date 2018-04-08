@@ -23,7 +23,7 @@ class TorrentCrawler(object):
     def __init__(self):
         self.tree = ''
         self.filesPool = []
-        self.param = { 'r' : None, 'i' : None, 'c': None, 'e': None }
+        self.param = { 'r' : None, 'i' : None, 'c': None, 's': None }
         self.xmlFile = 'rss_feed.xml'
         self.newRSS = False
         
@@ -105,12 +105,12 @@ class TorrentCrawler(object):
     -r [--rss] URL -- URL of RSS feed
     -i [--input-announcement] filename -- already downloaded RSS feed
     -c [--set-limit] -- choose number of files ( negative number mean files from the end )
-    -e [--regex] -- regex for choosing files
+    -s [--substr] -- substring for choosing files - case sensitive!
     """
     def _getParams(self, argv):
         
         try:
-            opts, args = getopt.getopt(argv,"hr:i:c:e:",["rss=", "input-announcement=", "set-limit=", "regex=", "help"])
+            opts, args = getopt.getopt(argv,"hr:i:c:s:",["rss=", "input-announcement=", "set-limit=", "substr=", "help"])
         except getopt.GetoptError:
             sys.stderr.write('Unexpected parameters\n') 
             self._printHelp()
@@ -122,8 +122,8 @@ class TorrentCrawler(object):
                 self.param["i"] = arg
             elif opt == '--set-limit' or opt == '-c':
                 self.param["c"] = int(arg)
-            elif opt == '--regex' or opt == '-e':
-                self.param["e"] = arg
+            elif opt == '--substr' or opt == '-s':
+                self.param["s"] = arg
             elif opt == '--help' or opt == '-h':
                 self._printHelp()
                 sys.exit(0)
@@ -139,7 +139,7 @@ class TorrentCrawler(object):
         helper += "   -r [--rss] URL -- URL of RSS feed\n"
         helper += "   -i [--input-announcement] filename -- already downloaded RSS feed\n"
         helper += "   -c [--set-limit] -- choose number of files ( negative number mean files from the end )\n"
-        helper += "   -e [--regex] -- regex for choosing files"
+        helper += "   -s [--substr] -- substring for choosing files - case sensitive!"
         print helper 
         pass
     
@@ -160,9 +160,9 @@ class TorrentCrawler(object):
     
     def chooseFiles(self):
         filesPoolPom = []
-        if self.param['e'] != None:
+        if self.param['s'] != None:
             for torr in self.filesPool:
-                if torr[0].find(self.param['e']) != -1:
+                if torr[0].find(self.param['s']) != -1:
                    filesPoolPom.append(torr)
             self.filesPool = filesPoolPom
             filesPoolPom = []
@@ -204,7 +204,7 @@ class TorrentCrawler(object):
                 
         self.getFiles()
         
-        if self.param['c'] != None or self.param['e'] != None:
+        if self.param['c'] != None or self.param['s'] != None:
             self.chooseFiles()
         
         if self.newRSS:
