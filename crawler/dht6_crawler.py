@@ -318,7 +318,7 @@ if __name__ == '__main__':
         try:
             crawler.findNode("router.silotis.us", 6881, crawler.id) 
         except:
-            print "Central routers did not reply"
+            print "Can not connect to central routers"
         pass
     # collect some nodes for start
     crawler.start_crawl(False) 
