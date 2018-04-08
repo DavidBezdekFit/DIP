@@ -6,12 +6,12 @@ import time
 import threading
 import json
 import abc
-import errno
 import os, sys
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
 
+#from struct import pack, unpack
 from khash import *
 from bencode import bencode, bdecode
 from common import *
@@ -22,14 +22,13 @@ from torrent_crawler import TorrentCrawler
 
 CTTIME = 3
 PACKET_LEN = 1024
-
-IPv6 = 6
+IPv4 = 4
 
 class DhtCrawler(AbstractCrawler):
     def __init__(self, id = None):
         self.noisy = True                                       # Output extra info or not
         self.id = id if id else newID()                         # Injector's ID
-        #self.ip = '2001:67c:1220:c1b1:4582:871a:2b8c:8088'
+        #self.ip = get_ip_address('eth0')
         self.port = get_port(30000, 31000)                      # my listening port
         self.nodePool = {}                                      # Dict of the nodes collected
         self.nodePool_lock = threading.Lock()
@@ -41,7 +40,7 @@ class DhtCrawler(AbstractCrawler):
         self.total = 1                                          # Total number of returned nodes
         self.respondent = 0                                     # Number of respondent
         
-        self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
+        self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.isock.bind( ("",self.port) )
         self.isock_lock = threading.Lock()
         
@@ -87,9 +86,8 @@ class DhtCrawler(AbstractCrawler):
             obj[infohash] = { "name" : self.peerPool[infohash]["name"], \
                               "nodes" : nodes, \
                               "peers" : peers }
-               
         print "Saving peers"
-        filename= "ipv6peers.%s.%s.json" % (timestamp, str(intify(self.id)))
+        filename= "ipv4peers.%s.%s.json" % (timestamp, str(intify(self.id)))
         with open(filename, "w") as f:
             f.write(json.dumps(obj, ensure_ascii=False))
         f.close()               
@@ -120,20 +118,13 @@ class DhtCrawler(AbstractCrawler):
                 #    self.findNode(node["host"], node["port"], node["id"])
                 
             except Exception, err:
-                if err.errno == errno.EADDRNOTAVAIL:
-                    # errno.EADDRNOTAVAIL => 125
-                    #[Errno 125] Cannot assign requested address => 'host': '::ffff:195.178.202.132' = IPv4-mapped IPv6 address
-                    # maybe send request over IPv4 with "want" : ["n6"]
-                    pass
-                elif err.errno == errno.ENETUNREACH:
+                if err.errno == errno.ENETUNREACH:
                     # [Errno 114] Network is unreachable
                     self.noENETUNREACH += 1
                     pass
                 else:
                     print "Exception:Crawler.start_sender()", err
         pass
-    
-    
 
     def info(self):
         print "[NodeSet]:%i\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%" % \
@@ -163,7 +154,7 @@ class DhtCrawler(AbstractCrawler):
 
     def start_searching(self):
         self.counter = CTTIME
-        t1 = threading.Thread(target=self.start_listener, args=("values",False,))
+        t1 = threading.Thread(target=self.start_listener, args=("values", True,))
         t1.daemon = True
         t1.start()
         
@@ -221,7 +212,7 @@ class DhtCrawler(AbstractCrawler):
             merge = []
             nodeID = []
             for peer in self.peerPool[info]:
-                merge = list(set(merge + peer["peers"] ))
+                merge = list(set(merge + peer["peers"] )) 
                 nodeID.append( { "nodeID" : peer["nodeID"], "nodeAddr" :  peer["nodeAddr"] } )
             self.peerPool[info] = {}
             self.peerPool[info] = { "name" : self.getFileName(info), "peers" : merge, "nodes" : nodeID}
@@ -237,7 +228,7 @@ class DhtCrawler(AbstractCrawler):
                     self.noFiltered += 1
                     self.peerPool[info]["peers"].remove(peer)
         pass    
-            
+    
     def ping_peers(self):
         self.counter = 5
         t1 = threading.Thread(target=self.ping_listener, args=())
@@ -267,15 +258,14 @@ class DhtCrawler(AbstractCrawler):
                 decMsg = bdecode(msg)
                 #print addr
                 if decMsg['y'] == 'r':
-                    addr2 = (addr[0], addr[1] )
-                    self.peerReplied.append(addr2)
-                    self.addrPool[addr2] = {"timestamp":time.time()}
+                    self.peerReplied.append(addr)
+                    self.addrPool[addr] = {"timestamp":time.time()}
                     self.respondent += 1
             except Exception, err:
                 print "Exception:Crawler.ping_listener():", err
                 
+        print "Koncim listener"
         pass
-        
     
 if __name__ == '__main__':
     
@@ -283,24 +273,19 @@ if __name__ == '__main__':
     
     torrent = TorrentCrawler()
     torrent.start_crawl(sys.argv[1:])
+    #print 'delka:', len(torrent.filesPool)
     
-    crawler = DhtCrawler()
+    crawler = DhtCrawler()   
     crawler.filesPool = torrent.filesPool
-    if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
-        crawler.noSearchingFiles = 10
+    
+    try:
+        crawler.findNode("router.bittorrent.com", 6881, crawler.id)
+    except:
+        print "Can not connect to central router router.bittorrent.com"
+        sys.exit(0)
 
-    try:
-        crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
-    except:
-        print "Can not connect to central dht.transmissionbt.com"
-        pass
-    try:
-        crawler.findNode("router.silotis.us", 6881, crawler.id) 
-    except:
-        print "Can not connect to central router router.silotis.us"
-        pass
     # collect some nodes for start
-    crawler.start_crawl(False) 
+    crawler.start_crawl(True) 
     # search with querying the closest nodes
     
     if not crawler.nodePool:
@@ -340,7 +325,7 @@ if __name__ == '__main__':
         noPingedPeers += len(crawler.peerPool[info]["peers"])
         
     crawler.info()
-    crawler.saveNodes(timestamp, IPv6)
+    crawler.saveNodes(timestamp, IPv4)
     
     
     
@@ -352,5 +337,4 @@ if __name__ == '__main__':
     print ("Number of Filtered peers -------------: %i" % crawler.noFiltered  )
     print ("Number of peers after filter----------: %i" % (noReportedPeers - crawler.noFiltered ) )
     print ("Number of peers after ping -----------: %i" % noPingedPeers  )
-
     pass

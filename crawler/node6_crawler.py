@@ -8,9 +8,11 @@ import json
 import fnmatch, re
 import codecs
 import io 
-import sys
+import os, sys
 
-#from struct import pack, unpack
+imports_path = os.getcwd() + "/../imports/"
+sys.path.append(imports_path) 
+
 from khash import *
 from bencode import bencode, bdecode
 from common import *
@@ -18,7 +20,7 @@ from db_utils import *
     
 from abstract_crawler import AbstractCrawler
 
-CTTIME = 2
+CTTIME = 10
 PACKET_LEN = 1024
 
 """ pro IPv6
@@ -32,7 +34,7 @@ class NodeCrawler(AbstractCrawler):
     def __init__(self, id = None):
         self.noisy = True                                       # Output extra info or not
         self.id = id if id else newID()                         # Injector's ID
-        self.ip = '2001:67c:1220:c1b1:4582:871a:2b8c:8088'
+        #self.ip = '2001:67c:1220:c1b1:4582:871a:2b8c:8088'
         self.port = get_port(30000, 31000)                      # my listening port
         self.nodePool = {}                                      # Dict of the nodes collected
         self.addrPool = {}                                      # Dict uses <ip,port> as its key
@@ -46,16 +48,11 @@ class NodeCrawler(AbstractCrawler):
         self.tnold = 0
         self.tntold = 0
         self.tnspeed = 0
-        
-        """self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.isock.bind( ("",self.port) )
-        self.isock_lock = threading.Lock()"""
-        
+
         self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
         self.isock.bind( ("",self.port) )
         self.isock_lock = threading.Lock()
-        
-        self.nodes6Pool = {}
+
         pass
     
     def findNode6(self, host, port, target):
@@ -74,13 +71,9 @@ class NodeCrawler(AbstractCrawler):
                 if addr in self.addrPool:
                     v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
                 obj[k] = obj.get(k, []) + [v]
+        timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
 
-        timestamp = time.strftime("%Y%m%d%H%M%S")
-        #f = open("nodes.%s.%s" % (timestamp, str(intify(self.id))), "w")
-        #pickle.Pickler(f).dump(obj)
-        #f.close()
-
-        
+        #store nodePool
         obj3 = {}
         for infohash in obj:
             for dict in obj[infohash]:
@@ -89,28 +82,11 @@ class NodeCrawler(AbstractCrawler):
                 host = dict['host']
                 port = dict['port']
                 obj3[pomid] = { "host" : host, "port" : port, "timestamp" : lv_timestamp } 
-            
-        filename= "ipv6.%s.%s.json" % (timestamp, str(intify(self.id)))
+        print "Saving Nodes"    
+        filename= "ipv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
         with open(filename, "w") as f:
             f.write(json.dumps(obj3, ensure_ascii=False))
-        f.close()    
-        
-        #check of json consistency
-        f = open(filename, 'r')
-        text = f.read()
-        #print text, "\n\n\n\n"
-        
-        bla = json.loads(text)
-        
-        count = 0
-        for key in bla:
-            print key
-            #print stringify(int(key))
-            #print obj[stringify(int(key))]
-            if count > 10:
-                break
-            count += 1
-        print len(bla)
+        f.close()  
         pass
     
     def processNodes(self, nodes):
@@ -202,20 +178,25 @@ if __name__=="__main__":
     id = stringify(int(sys.argv[1])) if len(sys.argv)>1 else newID()
     crawler = NodeCrawler(id)
     # Try to load local node cache
-    crawler.readNodes()
+    #crawler.readNodes()
       
-    """crawler.info()
+    crawler.info()
     # Try to get bootstrap nodes from official router
      
-    
-    crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
-                                                                  #sometimes it doesnt reply even on n6 
-    crawler.findNode("router.silotis.us", 6881, crawler.id) 
-    
+    try:
+        crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
+    except:
+        print "Can not connect to central dht.transmissionbt.com"
+        pass
+    try:
+        crawler.findNode("router.silotis.us", 6881, crawler.id) 
+    except:
+        print "Can not connect to central router router.silotis.us"
+        pass
               
     crawler.start_crawl(False)
     print "%.2f minutes" % ((time.time() - now)/60.0)
-    crawler.serialize()"""
+    crawler.serialize()
     pass 
 
     

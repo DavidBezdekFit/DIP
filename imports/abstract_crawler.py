@@ -27,11 +27,7 @@ class AbstractCrawler(object):
     def start_sender(self):
         pass
     
-    @abc.abstractmethod
-    def serialize(self):
-        """ Writing node objects into file"""
-        pass    
-
+        
     @abc.abstractmethod
     def info(self):
         """ Print info about nodes, queue, and so on"""        
@@ -62,6 +58,32 @@ class AbstractCrawler(object):
                 r = n
                 break
         return r
+        
+    def saveNodes(self,timestamp, type):
+        obj = {}
+        for k, nlist in self.nodePool.items():
+            for v in nlist:
+                addr = (v['host'], v['port'])
+                if addr in self.addrPool:
+                    v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
+                obj[k] = obj.get(k, []) + [v]
+        
+
+        #store nodePool
+        obj3 = {}
+        for infohash in obj:
+            for dict in obj[infohash]:
+                lv_timestamp = dict["timestamp"]
+                pomid = str(intify(infohash))
+                host = dict['host']
+                port = dict['port']
+                obj3[pomid] = { "host" : host, "port" : port, "timestamp" : lv_timestamp } 
+        print "Saving Nodes"    
+        filename= "ipv%snodes.%s.%s.json" % (str(type),timestamp, str(intify(self.id)))
+        with open(filename, "w") as f:
+            f.write(json.dumps(obj3, ensure_ascii=False))
+        f.close()        
+
 
     def start_listener(self, searchingKey, ipv4):
         while self.counter:
@@ -108,16 +130,6 @@ class AbstractCrawler(object):
         t2.daemon = True
         t2.start()
 
-        """if ipv4:
-            crawler.findNode("router.bittorrent.com", 6881, self.id)
-        else:
-            print "crawl for ipv6"
-            try:
-                self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply,                                                        #sometimes it doesnt reply even on n6 
-                self.findNode("router.silotis.us", 6881, self.id)
-            except Exception, err:
-                print "IPv6 central router is not available", err
-            time.sleep(3)"""
         print "\nStart bootstrapping"        
         while self.counter:
             try:
