@@ -44,7 +44,7 @@ class DhtCrawler(AbstractCrawler):
         self.isock_lock = threading.Lock()
         
         self.filesPool = {}
-        self.noSearchingFiles = 10                                #number of files from rss_feed.xml for that will be searched peers
+        self.noSearchingFiles = 100                                #number of files from rss_feed.xml for that will be searched peers
         self.actualFile = ()      
         self.peerPool = {}
         self.peerReplied = []
@@ -308,6 +308,8 @@ if __name__ == '__main__':
     
     crawler = DhtCrawler()
     crawler.filesPool = torrent.filesPool
+    if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
+        crawler.noSearchingFiles = 10
 
     try:
         crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
