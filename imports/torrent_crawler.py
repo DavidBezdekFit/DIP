@@ -89,7 +89,7 @@ class TorrentCrawler(object):
     def check_rss(self):
         try:
             self.setXMLTree(self.xmlFile)
-            print "Reading of rss_feed.xml"
+            print "Reading rss_feed.xml"
         except:
             print "Automatic downloading of RSS file"
             r = self.getRSS('https://thepiratebay.org/rss/top100/201')
@@ -159,17 +159,37 @@ class TorrentCrawler(object):
         pass
     
     def chooseFiles(self):
-    
-        #for torr in self.filesPool:
-        for param in self.param:
-            print param
-            print self.param[param]
+        filesPoolPom = []
+        if self.param['e'] != None:
+            for torr in self.filesPool:
+                if torr[0].find(self.param['e']) != -1:
+                   filesPoolPom.append(torr)
+            self.filesPool = filesPoolPom
+            filesPoolPom = []
+       
+        #print len(self.filesPool)
+                       
+        if self.param['c'] != None:
+            #check if param['c'] is not higher than len of filesPool
+            if len(self.filesPool) > abs(self.param['c']): 
+                pomRange = abs(self.param['c']) 
+            else: 
+                pomRange = len(self.filesPool)
             
+            #adding file from the end of rss_feed
+            if self.param['c'] < 0:
+                maxindex = len(self.filesPool)-1
+                for count in range(pomRange):
+                    filesPoolPom.append(self.filesPool[maxindex-count])
+            
+            else:
+                for count in range(pomRange):
+                    filesPoolPom.append(self.filesPool[count])
+            
+            self.filesPool = filesPoolPom
     
     def start_crawl(self, argv):
-        print "k"
         self._getParams(argv)        
-        print "kokot"
         if self.param['r'] != None: #Download RSS feed
             r = self.getRSS(self.param['r'])
             try:
@@ -184,9 +204,10 @@ class TorrentCrawler(object):
                 
         self.getFiles()
         
-        #if self.param['r']
-        self.chooseFiles()
+        if self.param['c'] != None or self.param['e'] != None:
+            self.chooseFiles()
         
         if self.newRSS:
             self.makeJson()
+        
         pass

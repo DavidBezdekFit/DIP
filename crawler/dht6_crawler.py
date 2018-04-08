@@ -305,22 +305,27 @@ if __name__ == '__main__':
     
     torrent = TorrentCrawler()
     torrent.start_crawl(sys.argv[1:])
-    #print 'delka:', len(torrent.filesPool)
     
-    #bla = ["4EF3180F2D2C14E55D61B67C3B888793B5267195" , "9581B8C8FF8DC070E672BB56FE0AC9908789DC39", "645C68767E7118191E3B992C58886470B26A49A4", "BD8970C7FCF9379F86FF02529F9FA3EFFA7D8398", "726B4809351ADF6FEDC6AD779762829BF5512AE1" ] 
-    """crawler = DhtCrawler()
+    crawler = DhtCrawler()
     crawler.filesPool = torrent.filesPool
 
     try:
         crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
-                                                                      #sometimes it doesnt reply even on n6 
-        crawler.findNode("router.silotis.us", 6881, crawler.id) 
+        crawler.findNode("router.silotis.us", 6881, crawler.id)                                                    #sometimes it doesnt reply even on n6 
     except:
-        print "Central routers did not reply"
+        try:
+            crawler.findNode("router.silotis.us", 6881, crawler.id) 
+        except:
+            print "Central routers did not reply"
         pass
     # collect some nodes for start
     crawler.start_crawl(False) 
     # search with querying the closest nodes
+    
+    if not crawler.nodePool:
+        print "No response from central routers"
+        sys.exit(0)
+    
     crawler.start_searching()
     
     # part for mergePeers and check if they are alive with ping
@@ -359,6 +364,6 @@ if __name__ == '__main__':
     print ("Number of Reported peers after merge -: %i" % noReportedPeers  )
     print ("Number of Filtered peers -------------: %i" % crawler.noFiltered  )
     print ("Number of peers after filter----------: %i" % (noReportedPeers - crawler.noFiltered ) )
-    print ("Number of peers after ping -----------: %i" % noPingedPeers  )"""
+    print ("Number of peers after ping -----------: %i" % noPingedPeers  )
 
     pass
