@@ -86,8 +86,8 @@ def get_port(min, max):
             s.bind(("127.0.0.1", port))
             #print 'port %i is ok' % port
             break
-        except socket.error as e:
-            print("Port %i is already in use" %  port)
+        except socket.error:
+            #print("Port %i is already in use" %  port)
             pass
         
         if port == max:
@@ -95,7 +95,7 @@ def get_port(min, max):
             break
         port += 1
     s.close()
-    print "Chosen port:", port
+    #print "Chosen port:", port
     return port
 
 

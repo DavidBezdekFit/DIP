@@ -7,6 +7,7 @@ import threading
 import json
 import abc
 import os, sys
+import errno
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -87,7 +88,7 @@ class DhtCrawler(AbstractCrawler):
                               "nodes" : nodes, \
                               "peers" : peers }
         print "Saving peers"
-        filename= "ipv4peers.%s.%s.json" % (timestamp, str(intify(self.id)))
+        filename= "ipv4peers.%s.json" % (timestamp)
         with open(filename, "w") as f:
             f.write(json.dumps(obj, ensure_ascii=False))
         f.close()               
@@ -105,7 +106,7 @@ class DhtCrawler(AbstractCrawler):
                 node = self.nodeQueue.get(True)
                 self.findNode(node["host"], node["port"], node["id"])
                 
-                if crawl and self.nodeQueue.qsize() < 10000:
+                if crawl and self.nodeQueue.qsize() < 1000:
                     #self.findNode(node["host"], node["port"], node["id"])
                     count = 0
                     for torrent in self.filesPool:
@@ -140,7 +141,7 @@ class DhtCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 with self.nodePool_lock:
                     self.nodePool[id] = [node]
-                if id != self.id and len(self.nodePool) < 100000:
+                if id != self.id and len(self.nodePool) < 50000:
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -158,7 +159,7 @@ class DhtCrawler(AbstractCrawler):
         t1.daemon = True
         t1.start()
         
-        t2 = threading.Thread(target=self.start_sender, args=(False,))
+        t2 = threading.Thread(target=self.start_sender, args=(True,))
         t2.daemon = True
         t2.start()
         
@@ -234,10 +235,13 @@ class DhtCrawler(AbstractCrawler):
         t1 = threading.Thread(target=self.ping_listener, args=())
         t1.daemon = True
         t1.start()    
+        noNoPeersFound = 0
         print "Checking nodes via ping"
         for info in self.peerPool:
             print "Name:", self.peerPool[info]["name"] 
             #print self.peerPool[info]
+            if len(self.peerPool[info]["peers"]) == 0:
+                noNoPeersFound += 1
             for peer in self.peerPool[info]["peers"]:
                 self.ping(peer[0], peer[1])
                 #time.sleep(0.05)
@@ -249,7 +253,7 @@ class DhtCrawler(AbstractCrawler):
             self.peerReplied = []
             
         self.counter = 0
-        pass
+        return noNoPeersFound
     
     def ping_listener(self):
         while self.counter:
@@ -314,7 +318,7 @@ if __name__ == '__main__':
     crawler.savePeers(timestamp)
     
     
-    crawler.ping_peers()
+    noNoPeersFound = crawler.ping_peers()
     print "\n\nAfter Ping" 
     noPingedPeers = 0
     for info in crawler.peerPool:
@@ -333,6 +337,7 @@ if __name__ == '__main__':
     
     crawler.info()
     print ("Number of Seeking torrents -----------: %i" % len(crawler.filesPool)  )
+    print ("Number of torrents with no peers found: %i" % noNoPeersFound  )
     print ("Number of Reported peers after merge -: %i" % noReportedPeers  )
     print ("Number of Filtered peers -------------: %i" % crawler.noFiltered  )
     print ("Number of peers after filter----------: %i" % (noReportedPeers - crawler.noFiltered ) )

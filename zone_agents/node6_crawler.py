@@ -72,20 +72,10 @@ class NodeCrawler(AbstractCrawler):
                     v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
                 obj[k] = obj.get(k, []) + [v]
         timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
-
-        #store nodePool
-        obj3 = {}
-        for infohash in obj:
-            for dict in obj[infohash]:
-                lv_timestamp = dict["timestamp"]
-                pomid = str(intify(infohash))
-                host = dict['host']
-                port = dict['port']
-                obj3[pomid] = { "host" : host, "port" : port, "timestamp" : lv_timestamp } 
-        print "Saving Nodes"    
-        filename= "ipv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
+        print "Serializing Nodes"    
+        filename= "serializedIpv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
         with open(filename, "w") as f:
-            f.write(json.dumps(obj3, ensure_ascii=False))
+            f.write(json.dumps(obj, ensure_ascii=False))
         f.close()  
         pass
     
@@ -113,9 +103,8 @@ class NodeCrawler(AbstractCrawler):
         while self.counter:
             try:
                 node = self.nodeQueue.get(True)
-                self.findNode(node["host"], node["port"], self.id)
-                """if (distance(self.id, node["id"])>>148)==0:
-                    #self.findNode(node["host"], node["port"], node["id"])
+                if (distance(self.id, node["id"])>>148)==0:
+                    self.findNode(node["host"], node["port"], node["id"])
                     for i in range(1,5):
                         tid = stringify(intify(node["id"]) ^ (2**(i*3) - 1))
                         self.findNode(node["host"], node["port"], tid)

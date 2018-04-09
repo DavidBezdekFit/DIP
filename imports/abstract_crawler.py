@@ -123,7 +123,7 @@ class AbstractCrawler(object):
 
 
     def start_crawl(self, ipv4):
-        t1 = threading.Thread(target=self.start_listener, args=("nodes",False,))
+        t1 = threading.Thread(target=self.start_listener, args=("nodes",ipv4,))
         t1.daemon = True
         t1.start()
         t2 = threading.Thread(target=self.start_sender, args=(True,))
