@@ -5,10 +5,9 @@ import Queue
 import time
 import threading
 import json
-import fnmatch, re
-import codecs
-import io 
 import os, sys
+import fnmatch
+import pickle
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -22,6 +21,7 @@ from abstract_crawler import AbstractCrawler
 
 CTTIME = 10
 PACKET_LEN = 1024
+IPv6 = 6
 
 """ pro IPv6
     crawler.findNode("router.bittorrent.com", 6881, crawler.id)
@@ -50,7 +50,7 @@ class NodeCrawler(AbstractCrawler):
         self.tnspeed = 0
 
         self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
-        self.isock.bind( ("",self.port) )
+        self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
 
         pass
@@ -63,7 +63,7 @@ class NodeCrawler(AbstractCrawler):
         self.isock.sendto(msg, (host,port))
         pass    
         
-    def serialize(self):
+    def serialize(self,timestamp):
         obj = {}
         for k, nlist in self.nodePool.items():
             for v in nlist:
@@ -71,12 +71,15 @@ class NodeCrawler(AbstractCrawler):
                 if addr in self.addrPool:
                     v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
                 obj[k] = obj.get(k, []) + [v]
-        timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
         print "Serializing Nodes"    
-        filename= "serializedIpv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
-        with open(filename, "w") as f:
+        #filename= "serializedIpv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
+        filename= "serializedIpv6nodes.%s.%s" % (timestamp, str(intify(self.id)))
+        f = open(filename, "w")
+        pickle.Pickler(f).dump(obj)
+        f.close()
+        """with open(filename, "w") as f:
             f.write(json.dumps(obj, ensure_ascii=False))
-        f.close()  
+        f.close()"""  
         pass
     
     def processNodes(self, nodes):
@@ -88,7 +91,7 @@ class NodeCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 self.nodePool[id] = [node]
                 self.convergeSpeed(node)
-                if id != self.id:
+                if id != self.id and len(self.nodePool) < 100000:
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -109,14 +112,11 @@ class NodeCrawler(AbstractCrawler):
                         tid = stringify(intify(node["id"]) ^ (2**(i*3) - 1))
                         self.findNode(node["host"], node["port"], tid)
                 
-                # This threshold can be tuned, maybe use self.respondent
+                # This threshold can be tuned
                 #elif self.tn < 2000:
                 elif len(self.nodePool) < 100000: 
                     self.findNode(node["host"], node["port"], self.id)
-                    #for i in range(1,5):
-                    #    self.findNode(node["host"], node["port"], newID())"""
             except Exception, err:
-                #print("Unexpected error:", sys.exc_info()[0])
                 print "Exception:Crawler.start_sender()", err, 
                 print node
         pass
@@ -139,25 +139,25 @@ class NodeCrawler(AbstractCrawler):
     
     
     #read some additional ipv6 address for better bootstraping
-    def readNodes(self):
+    def loadCache(self):
         try:
-            for file in os.listdir('.'):
-                if fnmatch.fnmatch(file, 'ipv6.*'):
-                    print "Loading File:", file                
-                    f = open(file, 'r')
-                    text = f.read()
-                    bla = json.loads(text)
-                    
-                    for key in bla:
-                        node = {}
-                        node = bla[key]
-                        node["id"] = stringify(int(key)) 
-                        
-                        node["timestamp"] = time.time()
-                        node["rtt"] = float('inf')
-                        self.nodeQueue.put(node)
-                    print len(bla)
-        except Exception, err:
+            pomFile = "nodes6cache*"
+            for fileName in os.listdir('.'):
+                if fnmatch.fnmatch(fileName, pomFile):
+                    print ("Loading File:", fileName)
+                    #files.append(fileName)
+                    f = open(fileName,"r")
+                    nl = pickle.load(f)
+                    for n in nl:
+                        n["timestamp"] = time.time()
+                        n["rtt"] = float('inf')
+                        self.nodeQueue.put(n)
+                    f.close()
+                    """try:
+                        os.remove(fileName)
+                    except:
+                        pass"""
+        except:
             pass
         pass
         
@@ -167,11 +167,11 @@ if __name__=="__main__":
     id = stringify(int(sys.argv[1])) if len(sys.argv)>1 else newID()
     crawler = NodeCrawler(id)
     # Try to load local node cache
-    #crawler.readNodes()
-      
-    crawler.info()
+    crawler.loadCache()
+    print crawler.nodeQueue.qsize()
+    print intify(crawler.id)  
+    
     # Try to get bootstrap nodes from official router
-     
     try:
         crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
     except:
@@ -185,7 +185,9 @@ if __name__=="__main__":
               
     crawler.start_crawl(False)
     print "%.2f minutes" % ((time.time() - now)/60.0)
-    crawler.serialize()
+    timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
+    crawler.serialize(timestamp)
+    crawler.saveNodes(timestamp, IPv6)
     pass 
 
     

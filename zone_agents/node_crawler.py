@@ -43,22 +43,27 @@ class NodeCrawler(AbstractCrawler):
         self.tnspeed = 0
         
         self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.my_bind("",self.port )
+        self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
         pass
     
-    def my_bind(self, str, port):
-        while True:
-            try:
-                self.isock.bind( (str,self.port) )
-                #print 'port %i is ok' % self.port
-                break
-            except socket.error:
-                #print("Port %i is already in use" %  port)
-                self.port += 1
-                pass
-            
-        print "Chosen port:", self.port
+    def serialize(self,timestamp):
+        obj = {}
+        for k, nlist in self.nodePool.items():
+            for v in nlist:
+                addr = (v['host'], v['port'])
+                if addr in self.addrPool:
+                    v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
+                obj[k] = obj.get(k, []) + [v]
+        print "Serializing Nodes"    
+        #filename= "serializedIpv4nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
+        filename= "serializedIpv4nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
+        f = open(filename, "w")
+        pickle.Pickler(f).dump(obj)
+        f.close()
+        """with open(filename, "w") as f:
+            f.write(json.dumps(obj, ensure_ascii=False))
+        f.close() """ 
         pass
     
     def processNodes(self, nodes):
@@ -90,7 +95,7 @@ class NodeCrawler(AbstractCrawler):
                     for i in range(1,5):
                         tid = stringify(intify(node["id"]) ^ (2**(i*3) - 1))
                         self.findNode(node["host"], node["port"], tid)
-                # This threshold can be tuned, maybe use self.respondent
+                # This threshold can be tuned
                 #elif self.tn < 2000:
                 elif len(self.nodePool) < 100000:    
                     self.findNode(node["host"], node["port"], self.id)
@@ -99,7 +104,7 @@ class NodeCrawler(AbstractCrawler):
         pass
     
     def info(self):
-        print "[NodeSet]:%i\t\t[12-bit Zone]:%i [%i/s]\t\t[Response]:%.2f%%\t\t[Queue]:%i\t\t[Dup]:%.2f%%" % \
+        print "[NodeSet]:%i\t[12-bit Zone]:%i [%i/s]\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%" % \
               (len(self.nodePool), self.tn, self.tnspeed,
                self.respondent*100.0/max(1,len(self.nodePool)),
                self.nodeQueue.qsize(), self.duplicates*100.0/self.total)
@@ -112,21 +117,6 @@ class NodeCrawler(AbstractCrawler):
             self.tnspeed = int((self.tn-self.tnold)/(time.time()-self.tntold))
             self.tnold = self.tn
             self.tntold = time.time()
-        pass
-    
-    def serialize(self,timestamp):
-        obj = {}
-        for k, nlist in self.nodePool.items():
-            for v in nlist:
-                addr = (v['host'], v['port'])
-                if addr in self.addrPool:
-                    v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
-                obj[k] = obj.get(k, []) + [v]
-        print "Serializing Nodes"    
-        filename= "serializedIpv4nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
-        with open(filename, "w") as f:
-            f.write(json.dumps(obj, ensure_ascii=False))
-        f.close()  
         pass
     
     def loadCache(self):
@@ -159,7 +149,6 @@ if __name__=="__main__":
     crawler = NodeCrawler(id)
     
     print intify(crawler.id)  
-    #print crawler.id
     print "calling inject"
     """tx = threading.Thread(target=start_injectors, args=(intify(crawler.id),))
     tx.daemon = True
@@ -170,9 +159,6 @@ if __name__=="__main__":
     print crawler.nodeQueue.qsize()
     # Try to get bootstrap nodes from official router
     crawler.findNode("router.bittorrent.com", 6881, crawler.id)
-    
-        
-    
     
     crawler.start_crawl(True)
     print "%.2f minutes" % ((time.time() - now)/60.0)

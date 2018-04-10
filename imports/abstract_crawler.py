@@ -36,6 +36,18 @@ class AbstractCrawler(object):
     @abc.abstractmethod
     def processNodes(self, nodes):
         pass    
+        
+    def my_bind(self, str, port):
+        while True:
+            try:
+                self.isock.bind( (str,self.port) )
+                break
+            except socket.error:
+                self.port += 1
+                pass
+            
+        print "Chosen port:", self.port
+        pass
     
     def ping(self, host, port):
         mtid = 3
@@ -143,3 +155,5 @@ class AbstractCrawler(object):
             except Exception, err:
                 print "Exception:Crawler.start_crawl()", err
         pass
+        
+    
