@@ -16,6 +16,7 @@ from db_utils import *
 
 CTTIME = 2
 
+
 class AbstractCrawler(object):
     __metaclass__ = abc.ABCMeta    
     
@@ -46,7 +47,7 @@ class AbstractCrawler(object):
                 self.port += 1
                 pass
             
-        print "Chosen port:", self.port
+        self.logger.info("Chosen port: %i" % self.port)
         pass
     
     def ping(self, host, port):
@@ -63,6 +64,26 @@ class AbstractCrawler(object):
         self.isock.sendto(msg, (host,port))
         pass
 
+    def find_routers(self):
+        if self.type == IPv4:
+            try:
+                self.findNode("router.bittorrent.com", 6881, self.id)
+            except:
+                print "Can not connect to central router router.bittorrent.com"
+                sys.exit(0)
+        else:
+            try:
+                self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
+            except:
+                print "Can not connect to central dht.transmissionbt.com"
+                pass
+            try:
+                self.findNode("router.silotis.us", 6881, self.id) 
+            except:
+                print "Can not connect to central router router.silotis.us"
+                pass
+        pass
+        
     def hasNode(self, id, host, port):
         r = None
         for n in self.nodePool[id]:
@@ -71,7 +92,7 @@ class AbstractCrawler(object):
                 break
         return r
         
-    def saveNodes(self,timestamp, type):
+    def saveNodes(self,timestamp):
         obj = {}
         for k, nlist in self.nodePool.items():
             for v in nlist:
@@ -90,14 +111,14 @@ class AbstractCrawler(object):
                 host = dict['host']
                 port = dict['port']
                 obj3[pomid] = { "host" : host, "port" : port, "timestamp" : lv_timestamp } 
-        print "Saving Nodes"    
-        filename= "ipv%snodes.%s.%s.json" % (str(type),timestamp, str(intify(self.id)))
+        self.logger.info( "Saving Nodes" )    
+        filename= "ipv%snodes.%s.%s.json" % (str(self.type),timestamp, str(intify(self.id)))
         with open(filename, "w") as f:
             f.write(json.dumps(obj3, ensure_ascii=False))
         f.close()        
 
 
-    def start_listener(self, searchingKey, ipv4):
+    def start_listener(self, searchingKey):
         while self.counter:
             try:
                 msg, addr = self.isock.recvfrom(PACKET_LEN)
@@ -116,10 +137,12 @@ class AbstractCrawler(object):
                     torrentName = self.actualFile[0]
                     torrentID = self.actualFile[1]
                     torrentID = torrentID.encode('hex').upper()
-                    if ipv4:
+                    if self.type == IPv4:
                         peers = unpackValues(msgContent["values"])
-                    else:
+                    elif self.type == IPv6:
                         peers = unpackValues6(msgContent["values"])
+                    else:
+                        self.logger.info("Non valid type of IP protocol!")
                     self.peerPool[torrentID].append( { "name" : torrentName, "nodeID" : nodeID, "peers" : peers, "nodeAddr" : addr } )
                 #necessary to set because IPv6 addr = (host, port, flowinfo, scopeid)
                 addrPom = ( addr[0], addr[1] )
@@ -129,31 +152,33 @@ class AbstractCrawler(object):
                 if not "v" in decMsg: 
                     #if err.code != 126: 
                     # [Errno 126] Network dropped connection on reset
-                    print "Exception:Crawler.listener():", err
+                    self.logger.info("Exception:Crawler.listener(): %s" % err)
                     
         pass
 
 
-    def start_crawl(self, ipv4):
-        t1 = threading.Thread(target=self.start_listener, args=("nodes",ipv4,))
+    def start_crawl(self):
+        t1 = threading.Thread(target=self.start_listener, args=("nodes",))
         t1.daemon = True
         t1.start()
         t2 = threading.Thread(target=self.start_sender, args=(True,))
         t2.daemon = True
         t2.start()
 
-        print "\nStart bootstrapping"        
+        # collect some nodes for start
+        self.find_routers()
+        self.logger.info( "\nStart bootstrapping" )       
         while self.counter:
             try:
                 self.counter = CTTIME if self.nodeQueue.qsize() else self.counter-1
                 self.info()
                 time.sleep(1)
             except KeyboardInterrupt:
-                print "\nKeyboard Interrupt - start_crawl()"
+                self.logger.info( "\nKeyboard Interrupt - start_crawl()" )
                 self.counter = 0
                 break
             except Exception, err:
-                print "Exception:Crawler.start_crawl()", err
+                self.logger.info("Exception:Crawler.start_crawl(): %s" % err)
         pass
         
     

@@ -18,6 +18,9 @@ from khash import *
 PACKET_LEN = 2048
 SIZEOF_BYTE = 8
 
+IPv6 = 6
+IPv4 = 4
+
 def unpackNodes(n):
     nodes = []
     for x in xrange(0, len(n), 26):

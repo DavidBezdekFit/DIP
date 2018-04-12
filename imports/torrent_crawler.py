@@ -7,6 +7,7 @@ import getopt
 import time
 import json
 import urllib3
+import logging
 from db_utils import *
 
 """ examples of RSS feed URL
@@ -17,15 +18,17 @@ rssFeed = [
 	'https://thepiratebay.org/rss/top100/300'  # top 100 applications
 ]"""
 
-
-
 class TorrentCrawler(object):
     def __init__(self):
         self.tree = ''
         self.filesPool = []
-        self.param = { 'r' : None, 'i' : None, 'c': None, 's': None }
+        #self.param = { 'r' : None, 'i' : None, 'c': None, 's': None }
+        self.param = {}
         self.xmlFile = 'rss_feed.xml'
         self.newRSS = False
+        
+        logging.basicConfig(level=logging.INFO, format='%(message)s')
+        self.logger = logging.getLogger()
         
         self.noFilesLimit = 100
         
@@ -33,7 +36,7 @@ class TorrentCrawler(object):
         pass
 
     def getRSS(self, url):
-        print "Downloading RSS feed"
+        self.logger.info("Downloading RSS feed")
         self.newRSS = True
         try:
             r = requests.get(url, verify = False)
@@ -42,7 +45,7 @@ class TorrentCrawler(object):
             sys.exit(2)
     
         try:
-            print "Writing into rss_feed.xml"
+            self.logger.info("Writing into rss_feed.xml")
             f = open(self.xmlFile, 'w')
             pom = r.text.encode('utf-8')
             f.write(pom)
@@ -54,12 +57,12 @@ class TorrentCrawler(object):
 
     def setXMLTree(self, xmlFile):
         try:
-            #print xmlFile
+            #self.logger.info(xmlFile)
             f = open(xmlFile, 'r')
             text = f.read()
             f.close()
         except:
-            sys.stderr.write('Error in opening file rss_feed.xml\n')
+            sys.stderr.write('Error in opening file: %s\n' % xmlFile)
             sys.exit(-1)
         try:
             self.tree = ET.fromstring(text)
@@ -89,9 +92,9 @@ class TorrentCrawler(object):
     def check_rss(self):
         try:
             self.setXMLTree(self.xmlFile)
-            print "Reading rss_feed.xml"
+            self.logger.info("Reading rss_feed.xml")
         except:
-            print "Automatic downloading of RSS file"
+            self.logger.info("Automatic downloading of RSS file")
             r = self.getRSS('https://thepiratebay.org/rss/top100/201')
             try:
                 self.tree = ET.fromstring(r.content)
@@ -100,49 +103,7 @@ class TorrentCrawler(object):
                 sys.exit(-1) 
         
         pass
-    
-    """
-    -r [--rss] URL -- URL of RSS feed
-    -i [--input-announcement] filename -- already downloaded RSS feed
-    -c [--set-limit] -- choose number of files ( negative number mean files from the end )
-    -s [--substr] -- substring for choosing files - case sensitive!
-    """
-    def _getParams(self, argv):
-        
-        try:
-            opts, args = getopt.getopt(argv,"hr:i:c:s:",["rss=", "input-announcement=", "set-limit=", "substr=", "help"])
-        except getopt.GetoptError:
-            sys.stderr.write('Unexpected parameters\n') 
-            self._printHelp()
-            sys.exit(1)
-        for opt, arg in opts:
-            if opt == '-r' or opt == '--rss':
-                self.param["r"] = arg
-            elif opt == '-i' or opt == '--input-announcement':
-                self.param["i"] = arg
-            elif opt == '--set-limit' or opt == '-c':
-                self.param["c"] = int(arg)
-            elif opt == '--substr' or opt == '-s':
-                self.param["s"] = arg
-            elif opt == '--help' or opt == '-h':
-                self._printHelp()
-                sys.exit(0)
-            else:
-                sys.stderr.write('Unknown parameter: --help\n') 
-                sys.exit(1)
-        pass
-    
-    def _printHelp(self):
-        helper = "Master Thesis - Monitoring BitTorrent \n"
-        helper += "David Bezdek , xbezde11 , xbezde11@stud.fit.vutbr.cz , 23.05.2018\n"
-        helper += "   --help - print help\n"
-        helper += "   -r [--rss] URL -- URL of RSS feed\n"
-        helper += "   -i [--input-announcement] filename -- already downloaded RSS feed\n"
-        helper += "   -c [--set-limit] -- choose number of files ( negative number mean files from the end )\n"
-        helper += "   -s [--substr] -- substring for choosing files - case sensitive!"
-        print helper 
-        pass
-    
+
     def makeJson(self):
         timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
         filename= "torrents.%s.json" % (timestamp)
@@ -188,8 +149,10 @@ class TorrentCrawler(object):
             
             self.filesPool = filesPoolPom
     
-    def start_crawl(self, argv):
-        self._getParams(argv)        
+    def start_crawl(self):
+
+        if self.param['v'] != None:
+            self.logger.disabled = True
         if self.param['r'] != None: #Download RSS feed
             r = self.getRSS(self.param['r'])
             try:
@@ -209,5 +172,4 @@ class TorrentCrawler(object):
         
         if self.newRSS:
             self.makeJson()
-        
         pass
