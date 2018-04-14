@@ -356,7 +356,7 @@ def start_injecting(id):
 #def start_injectors(crawlerID):
 if __name__=="__main__":    
     now = time.time()
-    #id = stringify(crawlerID)
+    
     id = stringify(long(sys.argv[1])) if len(sys.argv)>1 else newID()
     
     ids = []
@@ -379,6 +379,8 @@ if __name__=="__main__":
         try:
             p = Process(target=start_injecting, args=(tid,))
             p.start()
+        except KeyboardInterrupt:
+            break
         except:
             pass
 

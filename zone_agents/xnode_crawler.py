@@ -8,6 +8,7 @@ import json
 import os, sys
 import fnmatch
 import pickle
+import logging
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -21,7 +22,7 @@ from abstract_crawler import AbstractCrawler
 
 CTTIME = 10
 PACKET_LEN = 1024
-IPv6 = 6
+
 
 """ pro IPv6
     crawler.findNode("router.bittorrent.com", 6881, crawler.id)
@@ -31,7 +32,7 @@ IPv6 = 6
 """
 
 class NodeCrawler(AbstractCrawler):
-    def __init__(self, id = None):
+    def __init__(self, type, id = None):
         self.noisy = True                                       # Output extra info or not
         self.id = id if id else newID()                         # Injector's ID
         #self.ip = '2001:67c:1220:c1b1:4582:871a:2b8c:8088'
@@ -49,19 +50,19 @@ class NodeCrawler(AbstractCrawler):
         self.tntold = 0
         self.tnspeed = 0
 
-        self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
+        logging.basicConfig(level=logging.INFO, format='%(message)s')
+        self.logger = logging.getLogger()
+        
+        self.type = type if type else IPv4    
+        if self.type == IPv4:
+            self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        else:
+            self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
         self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
-
+        
+        
         pass
-    
-    def findNode6(self, host, port, target):
-        mtid = 5
-        msg = bencode({"t":chr(mtid), "y":"q", "q":"find_node", "a":  {"id":self.id, "target":target}, "want": ["n6"]})  
-        #parameter "want": ["n6"] in find_node works, but IPv6 values still has to be sent over IPv6 socket
-        # In other words - "n6" works for nodes, but not for "values" (reply of get_peers)
-        self.isock.sendto(msg, (host,port))
-        pass    
         
     def serialize(self,timestamp):
         obj = {}
@@ -71,15 +72,11 @@ class NodeCrawler(AbstractCrawler):
                 if addr in self.addrPool:
                     v["rtt"] = self.addrPool[addr]["timestamp"]- v["timestamp"]
                 obj[k] = obj.get(k, []) + [v]
-        print "Serializing Nodes"    
-        #filename= "serializedIpv6nodes.%s.%s.json" % (timestamp, str(intify(self.id)))
-        filename= "serializedIpv6nodes.%s.%s" % (timestamp, str(intify(self.id)))
+        self.logger.info("Serializing Nodes")    
+        filename= "serializedIpv%snodes.%s.%s" % (str(self.type),timestamp, str(intify(self.id)))
         f = open(filename, "w")
         pickle.Pickler(f).dump(obj)
         f.close()
-        """with open(filename, "w") as f:
-            f.write(json.dumps(obj, ensure_ascii=False))
-        f.close()"""  
         pass
     
     def processNodes(self, nodes):
@@ -117,15 +114,14 @@ class NodeCrawler(AbstractCrawler):
                 elif len(self.nodePool) < 100000: 
                     self.findNode(node["host"], node["port"], self.id)
             except Exception, err:
-                print "Exception:Crawler.start_sender()", err, 
-                print node
+                self.logger.info( "Exception:Crawler.start_sender(): %s" % err )
         pass
     
     def info(self):
-        print "[NodeSet]:%i\t[12-bit Zone]:%i [%i/s]\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%" % \
+        self.logger.info( "[NodeSet]:%i\t[12-bit Zone]:%i [%i/s]\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%" % \
               (len(self.nodePool), self.tn, self.tnspeed,
                self.respondent*100.0/max(1,len(self.nodePool)),
-               self.nodeQueue.qsize(), self.duplicates*100.0/self.total)
+               self.nodeQueue.qsize(), self.duplicates*100.0/self.total) )
         pass
     
     def convergeSpeed(self,node):
@@ -138,13 +134,13 @@ class NodeCrawler(AbstractCrawler):
         pass
     
     
-    #read some additional ipv6 address for better bootstraping
+    #read some additional address for better bootstraping
     def loadCache(self):
         try:
-            pomFile = "nodes6cache*"
+            pomFile = "nodes%scache*" % str(self.type)
             for fileName in os.listdir('.'):
                 if fnmatch.fnmatch(fileName, pomFile):
-                    print ("Loading File:", fileName)
+                    self.logger.info("Loading File: %s" % fileName)
                     #files.append(fileName)
                     f = open(fileName,"r")
                     nl = pickle.load(f)
@@ -164,30 +160,26 @@ class NodeCrawler(AbstractCrawler):
         
 if __name__=="__main__":
     now = time.time()
-    id = stringify(int(sys.argv[1])) if len(sys.argv)>1 else newID()
-    crawler = NodeCrawler(id)
+    
+    params = getParam(sys.argv[1:])
+
+    crawler = NodeCrawler(params['t'], params['id'])
+    if params['v'] != None:
+        crawler.logger.disabled = True
     # Try to load local node cache
     crawler.loadCache()
-    print crawler.nodeQueue.qsize()
-    print intify(crawler.id)  
+    
+    crawler.logger.info( "queue size:", crawler.nodeQueue.qsize())
+    crawler.logger.info( "id:", intify(crawler.id)  )
     
     # Try to get bootstrap nodes from official router
-    try:
-        crawler.findNode("dht.transmissionbt.com", 6881, crawler.id) # reply on want n6 -- combination n4 and n6 no reply, 
-    except:
-        print "Can not connect to central dht.transmissionbt.com"
-        pass
-    try:
-        crawler.findNode("router.silotis.us", 6881, crawler.id) 
-    except:
-        print "Can not connect to central router router.silotis.us"
-        pass
-              
-    crawler.start_crawl(False)
-    print "%.2f minutes" % ((time.time() - now)/60.0)
+    crawler.find_routers()
+
+    crawler.start_crawl()
+    crawler.logger.info( "%.2f minutes" % ((time.time() - now)/60.0))
     timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
     crawler.serialize(timestamp)
-    crawler.saveNodes(timestamp, IPv6)
+    crawler.saveNodes(timestamp)
     pass 
 
     

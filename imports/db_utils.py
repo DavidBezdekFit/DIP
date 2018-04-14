@@ -9,7 +9,7 @@ import os, sys
 import socket
 
 #from ipaddr import IPv6Address, Bytes
-
+from param_parser import ParamParser
 
 import struct
 import fcntl
@@ -65,12 +65,15 @@ def unpackValues6(values):
     return peers    
     
 def get_ip_address(ifname):
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    
+    hostname = socket.gethostname()
+    return socket.gethostbyname(hostname)
+    """s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     return socket.inet_ntoa(fcntl.ioctl(
         s.fileno(),
         0x8915,  # SIOCGIFADDR
         struct.pack('256s', ifname[:15])
-    )[20:24])
+    )[20:24])"""
     
 
 def strxor(a, b):
@@ -163,3 +166,8 @@ def generate_injector_ids(id, nBitZone, numofIDs):
         ids.append(genID)
         
     return ids
+    
+def getParam(argv):
+    parser = ParamParser()
+    parser.start_parser(argv)
+    return parser.param

@@ -8,7 +8,7 @@ import json
 import abc
 import errno
 import os, sys
-import logging
+
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -20,7 +20,7 @@ from db_utils import *
     
 from abstract_crawler import AbstractCrawler
 from torrent_crawler import TorrentCrawler
-from param_parser import ParamParser
+#from param_parser import ParamParser
 
 CTTIME = 3
 PACKET_LEN = 1024
@@ -321,21 +321,23 @@ class DhtCrawler(AbstractCrawler):
         self.logger.info("Number of peers after filter----------: %i" % (noReportedPeers - self.noFiltered ) )
         self.logger.info("Number of peers after ping -----------: %i" % noPingedPeers  ) 
         pass
+        
     
 if __name__ == '__main__':
     
     now = time.time()
-    parser = ParamParser()
-    parser.start_parser(sys.argv[1:])
+
+    params = getParam(sys.argv[1:])
     
     torrent = TorrentCrawler()
-    torrent.param = parser.param
+    #torrent.param = parser.param
+    torrent.param = params
     torrent.start_crawl()
     
-    crawler = DhtCrawler(parser.param['t'])
+    crawler = DhtCrawler(params['t'])
     
     # switching off the outputs
-    if parser.param['v'] != None:
+    if params['v'] != None:
         crawler.logger.disabled = True
 
     crawler.logger.info("type: IPv%s" % crawler.type)
@@ -343,7 +345,7 @@ if __name__ == '__main__':
     if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
         crawler.noSearchingFiles = 10
 
-    # bootstrap arnout 100 000 nodes to start
+    # bootstrap around 100 000 nodes to start
     crawler.start_crawl() 
     if not crawler.nodePool:
         crawler.logger.info("No response from central routers")

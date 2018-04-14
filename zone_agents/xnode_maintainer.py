@@ -27,13 +27,11 @@ from bencode import bencode, bdecode
 from common import *
 
 from db_utils import *
-
+from abstract_crawler import AbstractCrawler
 
 MYPORT = 6886             # The port used for communication
 ACTIVE_THRESHOLD = 10000   # The minimum number of nodes in nodePool
 REFRESH_LIMIT = 60        # The time interval to refresh a node
-
-
 
 TID = 't'
 REQ = 'q'
@@ -43,9 +41,9 @@ ARG = 'a'
 ERR = 'e'
 
 
-
-class Maintainer(object):
-    def __init__(self, id = None):
+#class Maintainer(object):
+class Maintainer(AbstractCrawler):
+    def __init__(self, type, id = None):
         self.id = id if id else newID()                         # Maintainer's ID
         self.noisy = True                                       # Output extra info or not
         self.nodePool = {}                                      # Dict of the nodes collected
@@ -55,7 +53,11 @@ class Maintainer(object):
         self.respondent = 0                                     # Number of respondent
         self.noCaches = 0
     
-        self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.type = type if type else IPv4
+        if self.type == IPv4:
+            self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        else:
+            self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
         self.isock.bind( ("",MYPORT) )
         self.isock_lock = threading.Lock()
 
@@ -90,8 +92,17 @@ class Maintainer(object):
         self.nodePool_lock.acquire()
         try:
             if len(self.nodePool) == 0:
-                #print 'router.bittorrent.com'
-                self.findNode("router.bittorrent.com", 6881, self.id)
+                self.find_routers()
+                """try:
+                    self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
+                except:
+                    print "Can not connect to central dht.transmissionbt.com"
+                    pass
+                try:
+                    self.findNode("router.silotis.us", 6881, self.id) 
+                except:
+                    print "Can not connect to central router router.silotis.us"
+                    pass"""
             else:
                 for n in self.nodePool.values():
                     self.findNode(n["host"], n["port"], newID(), n["id"])
@@ -106,7 +117,7 @@ class Maintainer(object):
         
         self.sendMsg(msg, (host,port))
         pass
-
+        
     def ping(self, host, port):
         mtid = 3
         msg = bencode({"t":chr(mtid), "y":"q", "q":"ping", "a":  {"id":self.id}})
@@ -167,8 +178,8 @@ class Maintainer(object):
             # Choose those stable nodes to cache
             tmp = self.nodePool.values()
             tmp.sort(key=lambda x: x["timestamp"])
-            tmp = tmp[:500]
-            tmp = random.sample(tmp, min(100,len(tmp)))
+            tmp = tmp[:1000]
+            #tmp = random.sample(tmp, min(100,len(tmp)))
             # Cache the nodes
             obj = []
             for v in tmp:
@@ -185,10 +196,12 @@ class Maintainer(object):
         except Exception, err:
             print "Exception:Maintainer.serialize():", err
         self.nodePool_lock.release()
-        print "longest", time.time()-tmp[0]["timestamp"]
-        
+        try:
+            print "longest", time.time()-tmp[0]["timestamp"]
+        except:
+            pass
         print "writing into cache%s file" % str(self.noCaches)
-        f = open("nodes4cache%s" % str(self.noCaches), "w")
+        f = open("nodes%scache%s" % (str(self.type), str(self.noCaches)), "w")
         pickle.Pickler(f).dump(obj)
         f.close()
         self.noCaches += 1
@@ -204,12 +217,13 @@ class Maintainer(object):
                 msgTID = decMsg['t']
                 msgType = decMsg['y']
                 msgContent = decMsg[decMsg['y']]
-                #print 'Type of message: ' + decMsg['y'] + ' from: '
-                #print addr
-
+                
                 if msgType==RSP and "nodes" in msgContent:
                     if len(self.nodePool) < 2*ACTIVE_THRESHOLD:
-                        self.processNodes(unpackNodes(msgContent["nodes"]))
+                        self.processNodes(unpackNodes(msgContent["nodes"]))                
+                if msgType==RSP and "nodes6" in msgContent:
+                    if len(self.nodePool) < 2*ACTIVE_THRESHOLD:
+                        self.processNodes(unpackIPv6Nodes(msgContent["nodes6"]))
                 if msgType==RSP and "id" in msgContent:
                     id = msgContent["id"]
                     if id != self.id:
@@ -251,7 +265,7 @@ class Maintainer(object):
                 if int(now)%15==0:
                     self.scan_nodePool()
                 # Cache the nodes to file
-                if int(now)%10==0 and len(self.nodePool) > 200:
+                if int(now)%10==0 and len(self.nodePool) > 1000:
                     self.serialize()
                 self.info()
                 
@@ -278,10 +292,14 @@ class Maintainer(object):
 
 if __name__=="__main__":
     now = time.time()
-    maintainer = Maintainer()
+    params = getParam(sys.argv[1:])
+    print params
+    
+    maintainer = Maintainer(params['t'], params['id'])
 
     #print 'maintainer ID: ' + maintainer.id
 
     maintainer.start_service()
+    maintainer.serialize()
     print "%.2f minutes" % ((time.time() - now)/60.0)
     pass

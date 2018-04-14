@@ -1,13 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import requests
-import xml.etree.ElementTree as ET
 import getopt
-import time
-import json
-import urllib3
-from db_utils import *
+
+from khash import *
 
 
 class ParamParser(object):
@@ -17,7 +13,8 @@ class ParamParser(object):
                        'c': None,\
                        's': None, \
                        'v': None, \
-                       't': None}
+                       't': None, \
+                       'id': None}
         pass
 
     """
@@ -27,12 +24,13 @@ class ParamParser(object):
     -s [--substr] value -- substring for choosing files - case sensitive!
     -v [--verbose] -- choose between version with or without outputs 
     -t [--type] number -- (4 or 6) choose type of crawler (IPv4 or IPv6). Implicit IPv4
+    --id intified_id_format -- set id of the crawler/maintainer
     """
     def getParams(self, argv):
         
         try:
             opts, args = getopt.getopt(argv,"hv,r:i:c:s:t:",\
-            ["rss=", "input-announcement=", "set-limit=", "substr=", "help", "verbose", "type="])
+            ["rss=", "input-announcement=", "set-limit=", "substr=", "help", "verbose", "type=", "id="])
         except getopt.GetoptError:
             sys.stderr.write('Unexpected parameters\n') 
             self.printHelp()
@@ -55,6 +53,13 @@ class ParamParser(object):
                     sys.stderr.write('Non valid value of type\n') 
                     self.printHelp()
                     sys.exit(0)
+            elif opt == '--id':
+                try:
+                    self.param["id"] = stringify(long(arg))
+                except Exception as err:
+                    sys.stderr.write('Non valid value of ID\n') 
+                    self.printHelp()
+                    sys.exit(0)
             elif opt == '--help' or opt == '-h':
                 self.printHelp()
                 sys.exit(0)
@@ -73,6 +78,7 @@ class ParamParser(object):
         helper += "   -s [--substr] -- substring for choosing files - case sensitive!\n"
         helper += "   -v [--verbose] -- choose between version with or without outputs\n" 
         helper += "   -t [--type] number -- (4 or 6) choose type of crawler (IPv4 or IPv6). Implicit IPv4\n"
+        helper += "   --id intified_id_format -- set id of the crawler/maintainer\n"
         print helper 
         pass
     
