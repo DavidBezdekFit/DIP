@@ -93,5 +93,5 @@ def start_reading(filename):
         dtb.makePeers()
 
     dtb.conn.close()
-
+    pass
 

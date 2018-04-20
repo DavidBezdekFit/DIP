@@ -47,7 +47,7 @@ class AbstractCrawler(object):
                 self.port += 1
                 pass
             
-        self.logger.info("Chosen port: %i" % self.port)
+        #self.logger.info("Chosen port: %i" % self.port)
         pass
     
     def ping(self, host, port):
@@ -116,7 +116,7 @@ class AbstractCrawler(object):
         with open(filename, "w") as f:
             f.write(json.dumps(obj3, ensure_ascii=False))
         f.close()        
-
+        pass
 
     def start_listener(self, searchingKey):
         while self.counter:

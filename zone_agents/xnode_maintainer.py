@@ -40,8 +40,6 @@ TYP = 'y'
 ARG = 'a'
 ERR = 'e'
 
-
-#class Maintainer(object):
 class Maintainer(AbstractCrawler):
     def __init__(self, type, id = None):
         self.id = id if id else newID()                         # Maintainer's ID
@@ -93,16 +91,7 @@ class Maintainer(AbstractCrawler):
         try:
             if len(self.nodePool) == 0:
                 self.find_routers()
-                """try:
-                    self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
-                except:
-                    print "Can not connect to central dht.transmissionbt.com"
-                    pass
-                try:
-                    self.findNode("router.silotis.us", 6881, self.id) 
-                except:
-                    print "Can not connect to central router router.silotis.us"
-                    pass"""
+
             else:
                 for n in self.nodePool.values():
                     self.findNode(n["host"], n["port"], newID(), n["id"])

@@ -192,26 +192,26 @@ class Database(object):
     
 def start_filling(filename):
 
-        dtb = Database()
-        
-        c = dtb.conn.cursor()
+    dtb = Database()
+    
+    c = dtb.conn.cursor()
 
-        print ("Loading File for database:", filename)
-        if filename[len(filename)-3:] != ".py" and filename[len(filename)-3:] != ".db":
-            if filename.find("node") != -1:
-                dtb.saveNodes(filename)
-            elif filename.find("torrent") != -1:    
-                dtb.saveFiles(filename)
-            elif filename.find("peer") != -1:
-                dtb.savePeers(filename)
-                
-            try:
-                os.remove(filename)
-            except OSError:
-                pass   
-            print ("\n")       
+    print ("Loading File for database:", filename)
+    if filename[len(filename)-3:] != ".py" and filename[len(filename)-3:] != ".db":
+        if filename.find("node") != -1:
+            dtb.saveNodes(filename)
+        elif filename.find("torrent") != -1:    
+            dtb.saveFiles(filename)
+        elif filename.find("peer") != -1:
+            dtb.savePeers(filename)
+            
+        try:
+            os.remove(filename)
+        except OSError:
+            pass   
+        print ("\n")       
 
-        dtb.conn.commit()
-        
-        dtb.conn.close()
-
+    dtb.conn.commit()
+    
+    dtb.conn.close()
+    pass

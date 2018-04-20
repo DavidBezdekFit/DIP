@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # 
 # 
 #
@@ -15,6 +15,8 @@ READ = '-r'
 SEND = '-s'
 READNC = '-r-nc'
 READSOC = '-r-soc'
+SENDSOC = '-s-soc'
+PACKET_SIZE = 2048
 
 class Client(object):
     def __init__(self, port):
@@ -47,14 +49,14 @@ class Client(object):
             print ("Can not open the file:", err)
             return
         print ('Sending via socket')
-        l = f.read(2048)
+        l = f.read(PACKET_SIZE)
         while (l):
             self.sock.send(l)
-            l = f.read(2048)
+            l = f.read(PACKET_SIZE)
         f.close()
         print ("Sending done")
         self.sock.shutdown(socket.SHUT_WR)
-        resp = self.sock.recv(2048)
+        resp = self.sock.recv(PACKET_SIZE)
         print ("Server responded: %s" % resp.decode())
         self.sock.close()
         pass
@@ -80,16 +82,21 @@ class Client(object):
     def recFile(self, fileName):
         print ( "Receiving data" )
         #self.sock.settimeout(2)
+        first = True
         with open(fileName, 'wb') as f:
             while 1:
                 try:
-                    data = self.sock.recv(2048)
+                    data = self.sock.recv(PACKET_SIZE)
                     if not data:
                         print ( "No more data\n" )
                         response = "Data accepted\n"
                         self.sock.sendall(response.encode())
                         break
                     else:
+                        if first:
+                            if 'Unexpected name of file' in data.decode() or 'Unknown request' in data.decode():
+                                print ( "Error server response:", data.decode() )
+                                break
                         f.write(data)
                 except KeyboardInterrupt:
                     print ("keyboardInterrupt")
