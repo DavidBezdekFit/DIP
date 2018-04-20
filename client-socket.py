@@ -93,10 +93,11 @@ class Client(object):
                         self.sock.sendall(response.encode())
                         break
                     else:
-                        if first:
+                        if first and len(data.decode()) < 50:
                             if 'Unexpected name of file' in data.decode() or 'Unknown request' in data.decode():
                                 print ( "Error server response:", data.decode() )
                                 break
+                            first = False
                         f.write(data)
                 except KeyboardInterrupt:
                     print ("keyboardInterrupt")
@@ -159,7 +160,7 @@ if __name__=="__main__":
             
         for fileName in files:
             #print ("Sending File:", file)
-            client.sendSync(fileName)
+            client.sendSync(SENDSOC+"-"+fileName)
             client.sendFile(fileName)
             #client.sendFileNC(fileName) - not ready
             

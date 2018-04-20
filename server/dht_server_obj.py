@@ -9,6 +9,7 @@ import time
 import sys
 import os
 import threading
+import logging
 
 READ = '-r'
 READNC = '-r-nc'
@@ -40,52 +41,55 @@ class Server(object):
         self.conn = None
         self.fileNames = ['ipv4nodes.json', 'ipv6nodes.json', 'torrentsAndPeers.json' ]
         self.dtb_lock = threading.Lock()
+        
+        logging.basicConfig(level=logging.INFO, format='%(message)s')
+        self.logger = logging.getLogger()
         pass   
         
     def sendViaSocket(self, filename):
-        print ( "Sending data for socket read" )
-        self.conn.settimeout(2)
+        self.logger.info( "Sending data for socket read" )
+        self.conn.settimeout(10)
         
         if not filename in self.fileNames:
             response = 'Unexpected name of file\n'
-            print ( response )
+            self.logger.info( response )
             self.conn.send(response.encode())
             self.conn.shutdown(socket.SHUT_WR)
             self.conn.close()
             return
         elif os.path.exists(filename):
-            print ("file exists")
+            self.logger.info("file exists")
         else:
-            print ("file doesnt exist - need to call dtb")
+            self.logger.info("file doesnt exist - need to call dtb")
             start_reading([filename])
         
         try:
             f = open(filename,'rb')
-            print ( 'Sending via socket' )
+            self.logger.info( 'Sending via socket' )
             l = f.read(PACKET_SIZE)
             while (l):
                 self.conn.send(l)
                 l = f.read(PACKET_SIZE)
             f.close()
         except Exception as err:
-            print ("Error during sending data:",  err)
+            self.logger.info("Error during sending data: %s" %  err)
             pass
-        print ( "Sending done\n" )
+        self.logger.info( "Sending done\n" )
         self.conn.shutdown(socket.SHUT_WR)
         self.conn.close()
         pass
      
     def receive(self, data):
-        print ( "Receiving data" )
+        self.logger.info( "Receiving data" )
         filename = data
         with open(filename, 'wb') as f:
             #f.write(data)
-            self.conn.settimeout(2)
+            self.conn.settimeout(10)
             while 1:
                 try:
                     data = self.conn.recv(PACKET_SIZE)
                     if not data: 
-                        print ( "No more data\n" )
+                        self.logger.info( "No more data\n" )
                         f.close()
                         start_filling(filename)
                         response = "Data accepted\n"
@@ -94,10 +98,10 @@ class Server(object):
                     else:
                         f.write(data)
                 except KeyboardInterrupt:
-                    print ("keyboardInterrupt\n")
+                    self.logger.info("keyboardInterrupt\n")
                     break
                 except socket.timeout:
-                    print ("Timeout - No more data\n")
+                    self.logger.info("Timeout - No more data\n")
                     response = "Timeout - saving data as a file\n"
                     self.conn.sendall(response.encode())
                     break
@@ -117,27 +121,28 @@ class Server(object):
             try:
                 self.sock.listen(1)
                 self.conn, addr = self.sock.accept()
-                print ( 'Connected by', addr )
+                self.logger.info('Connected by: %s, port: %i' % ( addr[0], addr[1]) )
                 data = self.conn.recv(PACKET_SIZE)
-                print (data.decode())
+                self.logger.info(data.decode())
 
                 if READSOC in data.decode(): #sending data
                     self.sendViaSocket(data.decode()[7:])
                 #elif data.decode() == READNC: #sending data
                 #    self.sendViaNetcat(addr)
                 elif SENDSOC in data.decode(): #receiving data
-                    print ("File:", data.decode())
-                    self.receive(data.decode())
+                    self.logger.info("File:" + data.decode())
+                    self.logger.info("File:" + data.decode()[7:])
+                    self.receive(data.decode()[7:])
                 else: 
                     response = "Unknown request\n"
                     self.conn.sendall(response.encode())
                     self.conn.close()
-                    print (response, ":", data.decode())
+                    self.logger.info(response + ":" + data.decode())
             except KeyboardInterrupt:
-               print ( 'keyboardInterrupt' )
+               self.logger.info( 'keyboardInterrupt' )
                break
             except Exception as err:
-               print ("Error during the action:", err, "\n")
+               self.logger.info("Error during the action: %s" % err )
                pass
             
         pass
@@ -145,9 +150,12 @@ class Server(object):
 if __name__ == '__main__':
     
     if not os.path.exists('dtb/dht_crawling.db'):
-        print ("Creating database")
+        self.logger.info("Creating database")
         createDtb()
     server = Server(HOST, PORT)
+    
+    if '-v' in sys.argv:
+        server.logger.disabled = True
     server.startListen()
     pass
 
