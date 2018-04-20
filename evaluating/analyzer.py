@@ -14,15 +14,24 @@ import os, sys
 import pickle
 import sqlite3 as sqlite
 import signal
+from binascii import hexlify
+import socket
+import json
 
 from datetime import datetime
 
 IP_DB_FILE = "./ip.db"
+IP_DB_FILE6 = "./ip6.db"
+IPv4 = 4
+IPv6 = 6
 
 class IPDB(object):
     def __init__(self, db=IP_DB_FILE):
         self.conn = sqlite.connect(db)
         self.cur = self.conn.cursor()
+        
+        self.conn6 = sqlite.connect(IP_DB_FILE6)
+        self.cur6 = self.conn6.cursor()
         pass
 
     def ip2loc(self, ip):
@@ -42,6 +51,21 @@ class IPDB(object):
         for i in range(4):
             k = (k<<8) + int(a[i])
         return k
+        
+    def ipv6_2loc(self, ip):
+        i = str(self.ipv6_2int(ip))
+        self.cur6.execute("select * from iplocs where ip_start<=? order by ip_start desc limit 1;", (i,))
+        for r in self.cur:
+            """return {"ip":ip, "country_code":r[1], "country_name":r[2],\
+                    "region_code":r[3], "region_name":r[4], "city":r[5],\
+                    "zipcode":r[6], "latitude":r[7], "longtitude":r[8],\
+                    "metrocodde":r[9]}"""
+            return {"ip":ip, "country_code":r[2], "country_name":r[3],\
+                    "city":r[4]}
+
+    def ipv6_2int(self, ip):
+        return int(hexlify(socket.inet_pton(socket.AF_INET6, ip)), 16)
+
 
     def debug(self):
         # Put test code here.
@@ -61,13 +85,24 @@ class Parser(object):
             self.enum_func = self.enum_idip
         elif m == "-idipport":
             self.enum_func = self.enum_idipport
+            
+    def get_type(self, host):
+        if host.find(':') == -1:
+            htype = IPv4
+        else:
+            htype = IPv6
+        return htype
 
     def citiesInCountry(self, nodes, country_code):
         geo = {"unknown":0}
         err = 0
         for node in self.enum_idip(nodes.values()):
             try:
-                info = self.ipdb.ip2loc(node["host"])
+                if self.get_type(node["host"]) == IPv4:
+                    info = self.ipdb.ip2loc(node["host"])
+                else:
+                    info = self.ipdb.ip6_2loc(node["host"])
+                
                 if info and info["country_code"] == country_code:
                     if len(info["city"]) == 0:
                         print node["host"]
@@ -141,7 +176,11 @@ class Parser(object):
 
 def rawdata(f):
     """return the dict to the calling function without any processing."""
-    nodes = pickle.Unpickler(open(f, "r")).load()
+    #nodes = pickle.Unpickler(open(f, "r")).load()
+    
+    f = open('ipv6nodes_reduced.txt', 'rb')
+    nodes = json.loads( f.read() )
+    f.close()
     return nodes
 
 
