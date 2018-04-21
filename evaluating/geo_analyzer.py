@@ -55,11 +55,7 @@ class IPDB(object):
     def ipv6_2loc(self, ip):
         i = str(self.ipv6_2int(ip))
         self.cur6.execute("select * from iplocs where ip_start<=? order by ip_start desc limit 1;", (i,))
-        for r in self.cur:
-            """return {"ip":ip, "country_code":r[1], "country_name":r[2],\
-                    "region_code":r[3], "region_name":r[4], "city":r[5],\
-                    "zipcode":r[6], "latitude":r[7], "longtitude":r[8],\
-                    "metrocodde":r[9]}"""
+        for r in self.cur6:
             return {"ip":ip, "country_code":r[2], "country_name":r[3],\
                     "city":r[4]}
 
@@ -101,7 +97,7 @@ class Parser(object):
                 if self.get_type(node["host"]) == IPv4:
                     info = self.ipdb.ip2loc(node["host"])
                 else:
-                    info = self.ipdb.ip6_2loc(node["host"])
+                    info = self.ipdb.ipv6_2loc(node["host"])
                 
                 if info and info["country_code"] == country_code:
                     if len(info["city"]) == 0:
@@ -122,14 +118,17 @@ class Parser(object):
         count = 0
         start_time = datetime.now()
         print 'kokot'
-        for node in self.enum_idip(nodes.values()):
+        for node in nodes:
             print count
             count += 1
-            print node
-            print node['host']
-            break
+
+            host = nodes[node]['host']
             try:
-                info = self.ipdb.ip2loc(node["host"])
+                #info = self.ipdb.ip2loc(node["host"])
+                if self.get_type(host) == IPv4:
+                    info = self.ipdb.ip2loc(host)
+                else:
+                    info = self.ipdb.ipv6_2loc(host)
                 print info
                 if info:
                     if info[col] in geo:
@@ -180,7 +179,6 @@ class Parser(object):
 
 def rawdata(f):
     """return the dict to the calling function without any processing."""
-    #nodes = pickle.Unpickler(open(f, "r")).load()
     nodes = {}
     try: 
         f = open(f, 'rb')
@@ -193,8 +191,8 @@ def rawdata(f):
 
 if __name__=="__main__":
     # The command line is in fix format, sorry for this.
-    if len(sys.argv) < 3:
-        print "Usage: %s -[id|idip|idipport] logfile" % sys.argv[0]
+    if len(sys.argv) < 2:
+        print "Usage: %s logfile" % sys.argv[0]
         sys.exit(1)
     nodes = rawdata(sys.argv[2])
     for nodeid in nodes:
@@ -203,11 +201,11 @@ if __name__=="__main__":
         break
     
     geo, city, err = Parser(sys.argv[1]).geoDistribution(nodes)
-    """
+    
     for k, v in sorted(geo.items(), key=lambda x: -x[1]):
         print k,":",v
     print 'cities:'
     for k, v in sorted(city.items(), key=lambda x: -x[1]):
         print k,":",v
-    print err, "errors."""
+    print err, "errors."
     pass
