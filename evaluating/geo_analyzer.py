@@ -9,6 +9,22 @@
 # 2010.12.01
 #
 
+# This script was modified by David Bezdek for purpose of a master
+# thesis on Faculty of Information Technology, BUT
+# David Bezdek
+# xbezde11@stud.fit.vutbr.cz
+# 2018.05.23
+
+
+# This script use IP2Location LITE database under this licence:
+# All sites, advertising materials and documentation mentioning features
+# or use of this database must display the following acknowledgment:
+# This site or product includes IP2Location LITE data available from
+# http://www.ip2location.com.
+# IP2Location is a registered trademark of Hexasoft Development Sdn Bhd. 
+# All other trademarks are the property of their respective owners.
+
+
 
 import os, sys
 import pickle
@@ -71,17 +87,10 @@ class IPDB(object):
 class Parser(object):
     def __init__(self, dup = "-id"):
         self.ipdb = IPDB()
-        self.set_enum(dup)
+        #self.set_enum(dup)
         pass
 
-    def set_enum(self, m):
-        if m == "-id":
-            self.enum_func = self.enum_id
-        elif m == "-idip":
-            self.enum_func = self.enum_idip
-        elif m == "-idipport":
-            self.enum_func = self.enum_idipport
-            
+
     def get_type(self, host):
         if host.find(':') == -1:
             htype = IPv4
@@ -89,40 +98,17 @@ class Parser(object):
             htype = IPv6
         return htype
 
-    def citiesInCountry(self, nodes, country_code):
-        geo = {"unknown":0}
-        err = 0
-        for node in self.enum_idip(nodes.values()):
-            try:
-                if self.get_type(node["host"]) == IPv4:
-                    info = self.ipdb.ip2loc(node["host"])
-                else:
-                    info = self.ipdb.ipv6_2loc(node["host"])
-                
-                if info and info["country_code"] == country_code:
-                    if len(info["city"]) == 0:
-                        print node["host"]
-                    if info["city"] in geo:
-                        geo[info["city"]] += 1
-                    else:
-                        geo[info["city"]] = 1
-            except Exception, errMsg:
-                print errMsg
-                err += 1
-        return geo, err
-
-    def geoDistribution(self, nodes, col = "country_name"):
+    def geoDistribution(self, dataJson, col = "country_name"):
         geo = {"unknown":0}
         city = {"unknown":0}
         err = 0
         count = 0
         start_time = datetime.now()
-        print 'kokot'
-        for node in nodes:
+        for node in dataJson:
             print count
-            count += 1
+            
 
-            host = nodes[node]['host']
+            host = dataJson[node]['host']
             try:
                 #info = self.ipdb.ip2loc(node["host"])
                 if self.get_type(host) == IPv4:
@@ -131,62 +117,109 @@ class Parser(object):
                     info = self.ipdb.ipv6_2loc(host)
                 print info
                 if info:
-                    if info[col] in geo:
-                        geo[info[col]] += 1
-                        city[info["city"]] += 1
+                    if info[col].encode('ascii') in geo:
+                        geo[info[col].encode('ascii')] += 1
+                        try:
+                            city[info["city"].encode('ascii')] += 1
+                        except:
+                            city[info["city"].encode('ascii')] = 1
                     else:
-                        geo[info[col]] = 1
-                        city[info["city"]] = 1
+                        geo[info[col].encode('ascii')] = 1
+                        city[info["city"].encode('ascii')] = 1
                 else:
                     geo["unknown"] += 1
                     city["unknown"] += 1
             except Exception, errMsg:
-                print errMsg
+                print "Err:", errMsg
                 err += 1
             except KeyboardInterrupt:
                 print ''
+                self.saveNotAnalyzedNodes(dataJson, count, True)
+                    
                 break;
             if count == 200:
                 break
-        
+            count += 1
         end_time = datetime.now()
-        print end_time-start_time
+        print "Duration:", end_time-start_time
         return geo, city, err
-    
-    def enum_id(self, nodes):
-        """Each (ID) maps to a distinct node"""
-        for n in nodes:
-            yield n[0]
+      
+    def geoDistributionPeers(self, dataJson, col = "country_name"):
+        geo = {"unknown":0}
+        city = {"unknown":0}
+        err = 0
+        count = 0
+        start_time = datetime.now()
+        for infohash in dataJson:
+            print count
+            for peer in dataJson[infohash]["peers"]:
+                print peer['addr'][0]
+                host = peer['addr'][0]
+                try:
+                    #info = self.ipdb.ip2loc(node["host"])
+                    if self.get_type(host) == IPv4:
+                        info = self.ipdb.ip2loc(host)
+                    else:
+                        info = self.ipdb.ipv6_2loc(host)
+                    print info
+                    if info:
+                        if info[col].encode('ascii') in geo:
+                            geo[info[col].encode('ascii')] += 1
+                            try:
+                                city[info["city"].encode('ascii')] += 1
+                            except:
+                                city[info["city"].encode('ascii')] = 1
+                        else:
+                            geo[info[col].encode('ascii')] = 1
+                            city[info["city"].encode('ascii')] = 1
+                    else:
+                        geo["unknown"] += 1
+                        city["unknown"] += 1
+                except Exception, errMsg:
+                    print "Err:", errMsg
+                    err += 1
+                except KeyboardInterrupt:
+                    print ''
+                    self.saveNotAnalyzedNodes(dataJson, count, False)
+                    break;
+            count += 1
+            
+        end_time = datetime.now()
+        print "Duration:", end_time-start_time
+        return geo, city, err
+        
+        
+    def saveNotAnalyzedNodes(self, nodes, count, bool_node):
+        notAnalyzedNodes = {}
+        count2 = 0
+        for node in nodes:
+            if count2 >= (count-1):
+                notAnalyzedNodes[node] = nodes[node] 
+            count2 += 1
+            
+        if bool_node:
+            filename= "notAnalyzedNodes.json"
+        else:
+            filename= "notAnalyzedPeers.json"
+        print "Saving not analyzed data into %s" % filename
+        
+        with open(filename, "w") as f:
+            f.write(json.dumps(notAnalyzedNodes, ensure_ascii=False))
+        f.close()    
         pass
-
-    def enum_idip(self, nodes):
-        """Each (ID,ip) maps to a distinct node"""
-        for n in nodes:
-            s = set()
-            for i in n:
-                if i["id"] not in s:
-                    s.add(i["id"])
-                    yield i
-        pass
-
-    def enum_idipport(self, nodes):
-        """Each (ID,ip,port) maps to a distinct node"""
-        for n in nodes:
-            for i in n:
-                yield i
-        pass
-
-
+   
 def rawdata(f):
     """return the dict to the calling function without any processing."""
-    nodes = {}
+    dataJson = {}
     try: 
         f = open(f, 'rb')
-        nodes = json.loads( f.read() )
+        dataJson = json.loads( f.read() )
         f.close()
+        #maybe delete file for better overview of analyzed files
     except:
         pass
-    return nodes
+    return dataJson
+    
 
 
 if __name__=="__main__":
@@ -194,18 +227,22 @@ if __name__=="__main__":
     if len(sys.argv) < 2:
         print "Usage: %s logfile" % sys.argv[0]
         sys.exit(1)
-    nodes = rawdata(sys.argv[2])
-    for nodeid in nodes:
-        print nodes[nodeid]
-        print nodes[nodeid]['host']
-        break
+    dataJson = rawdata(sys.argv[1])
     
-    geo, city, err = Parser(sys.argv[1]).geoDistribution(nodes)
-    
-    for k, v in sorted(geo.items(), key=lambda x: -x[1]):
-        print k,":",v
-    print 'cities:'
-    for k, v in sorted(city.items(), key=lambda x: -x[1]):
-        print k,":",v
-    print err, "errors."
+    if "nodes" in sys.argv[1] or "Nodes" in sys.argv[1]:
+        print "Zpracuji nodes"
+        geo, city, err = Parser(sys.argv[1]).geoDistribution(dataJson)
+    elif "peers" in sys.argv[1] or "Peers" in sys.argv[1]:
+        print "zpracuji peery"
+        geo, city, err = Parser(sys.argv[1]).geoDistributionPeers(dataJson)
+    try:
+        print '\nCountries:'
+        for k, v in sorted(geo.items(), key=lambda x: -x[1]):
+            print k,":",v
+        print '\nCities:'
+        for k, v in sorted(city.items(), key=lambda x: -x[1]):
+            print k,":",v
+        print err, "errors."
+    except:
+        pass
     pass

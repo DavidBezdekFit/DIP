@@ -81,7 +81,7 @@ class Client(object):
     """Sending file via IPv6 Socket"""
     def recFile(self, fileName):
         print ( "Receiving data" )
-        #self.sock.settimeout(2)
+        self.sock.settimeout(5)
         first = True
         with open(fileName, 'wb') as f:
             while 1:
@@ -93,11 +93,12 @@ class Client(object):
                         self.sock.sendall(response.encode())
                         break
                     else:
-                        if first and len(data.decode()) < 50:
-                            if 'Unexpected name of file' in data.decode() or 'Unknown request' in data.decode():
-                                print ( "Error server response:", data.decode() )
-                                break
+                        if first:
                             first = False
+                            if len(data.decode()) < 50:
+                                if 'Unexpected name of file' in data.decode() or 'Unknown request' in data.decode():
+                                    print ( "Error server response:", data.decode() )
+                                    break
                         f.write(data)
                 except KeyboardInterrupt:
                     print ("keyboardInterrupt")

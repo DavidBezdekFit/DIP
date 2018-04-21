@@ -48,7 +48,7 @@ class Server(object):
         
     def sendViaSocket(self, filename):
         self.logger.info( "Sending data for socket read" )
-        self.conn.settimeout(10)
+        self.conn.settimeout(5)
         
         if not filename in self.fileNames:
             response = 'Unexpected name of file\n'
@@ -84,7 +84,7 @@ class Server(object):
         filename = data
         with open(filename, 'wb') as f:
             #f.write(data)
-            self.conn.settimeout(10)
+            #self.conn.settimeout(15)
             while 1:
                 try:
                     data = self.conn.recv(PACKET_SIZE)
