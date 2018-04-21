@@ -10,9 +10,9 @@
 #
 
 # This script was modified by David Bezdek for purpose of a master
-# thesis on Faculty of Information Technology, BUT
-# David Bezdek
-# xbezde11@stud.fit.vutbr.cz
+# thesis 
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
 # 2018.05.23
 
 

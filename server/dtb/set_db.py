@@ -1,8 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # 
 # script for set the database for dht crawling
 # author: David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
 # 23. 5. 2018
+
 
 
 import socket

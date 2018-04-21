@@ -69,7 +69,7 @@ def start_crawl(filesPool):
     print "port:", crawler.bind_port
     
     noSearchingFiles = setLimit(len(filesPool))
-    wait(15)
+    wait(10)
 
         
     print 'Start Finding'

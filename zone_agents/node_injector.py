@@ -6,6 +6,12 @@
 # 2011.09.21
 #
 
+# 
+# Modified by: David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 23. 5. 2018
+
+
 import os
 import sys
 import socket
