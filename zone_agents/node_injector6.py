@@ -43,7 +43,7 @@ class Injector(object):
         self.noisy = True                                       # Output extra info or not
         self.id = id if id else newID()                         # Injector's ID
         self.injID = counter
-        self.ip = get_ip_address('eth0')                        # my ip
+        self.ip = "2001:67c:1220:c1b1:4582:871a:2b8c:8088"      # my ip
         self.port = get_port(30000,31000)                       # my listening port
         self.buckets = []                                       # Bucket structure holding the known nodes
         self.nodePool = {}                                      # Dict of the nodes collected
@@ -60,7 +60,7 @@ class Injector(object):
         self.tnspeed = 0
         self.ndist = 2**160-1
 
-        self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
         #self.isock.bind( ("",self.port) )
         self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
@@ -163,7 +163,16 @@ class Injector(object):
     def bootstrap(self):
         """Bootstrap myself"""
         self.add_to_bucket({"id":self.id, "host":self.ip, "port":self.port})
-        self.findNode("router.bittorrent.com", 6881, self.id)
+        try:
+            self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
+        except:
+            print "Can not connect to central dht.transmissionbt.com"
+            pass
+        try:
+            self.findNode("router.silotis.us", 6881, self.id) 
+        except:
+            print "Can not connect to central router router.silotis.us"
+            pass
         pass
 
     def nearest(self, target, nl, limit=None):
@@ -239,7 +248,7 @@ class Injector(object):
                 obj[k] = obj.get(k, []) + [v]
 
         timestamp = time.strftime("%Y%m%d%H%M%S")
-        f = open("nodes.%s.%s" % (timestamp, str(intify(self.id))), "w")
+        f = open("nodes6.%s.%s" % (timestamp, str(intify(self.id))), "w")
         pickle.Pickler(f).dump(obj)
         f.close()
         pass
@@ -264,14 +273,14 @@ class Injector(object):
                     self.add_to_bucket(n)
                 # Process message according to their message type
                 if d[TYP] == RSP:
-                    if "nodes" in d[MSG]:
+                    if "nodes6" in d[MSG]:
                         tdist = distance(self.id, d[MSG]["id"])
                         if tdist < self.ndist:
                             self.ndist = tdist
-                            self.processNodes(unpackNodes(d[MSG]["nodes"]))
+                            self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
                             #print tdist, "+"*100
                         elif self.respondent < 10000:
-                            self.processNodes(unpackNodes(d[MSG]["nodes"]))
+                            self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
                 elif d[TYP] == REQ:
                     print addr, d[TID], d[TYP], d[MSG], d[ARG]
                     if "ping" == d[MSG].lower():
@@ -354,7 +363,7 @@ class Injector(object):
 
         pass
 
-def start_injecting(id,counter):
+def start_injecting(id, counter):
     """Start all the injectors"""
     injector = Injector(counter, id)
     injector.start()
@@ -381,6 +390,7 @@ if __name__=="__main__":
         f.write("%s\n" % str(i))
     f.close()
     
+    
     counter = 0
     for tid in ids:
         try:
@@ -391,6 +401,7 @@ if __name__=="__main__":
         except:
             pass
         counter += 1
+
     # injector = Injector(id)
     #  Try to load local node cache
     # try:

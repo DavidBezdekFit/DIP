@@ -112,11 +112,17 @@ class TorrentCrawler(object):
         #converting of infohash to printable format 
         for torr in self.filesPool:
             pomFiles.append( ( torr[0],str(intify(torr[1])) ) )
-        
-        with open(filename, "w") as f:
-            f.write(json.dumps(pomFiles, ensure_ascii=False))
-        f.close()               
-                    
+         
+        try: 
+            with open(filename, "w") as f:
+                f.write(json.dumps(pomFiles, ensure_ascii=False))
+            f.close()
+        except:
+            f.close()
+            os.remove(filename)
+            sys.stderr.write('Cant write peers into JSON, probably name of some torrent file is unsupported')
+            sys.exit(-1)
+      
         pass
     
     def chooseFiles(self):

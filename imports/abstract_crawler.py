@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+# This Abstract class was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
 
 import socket
 import Queue
@@ -132,11 +137,13 @@ class AbstractCrawler(object):
                 if "nodes6" in msgContent:
                     self.processNodes(unpackIPv6Nodes(msgContent["nodes6"]))    
                 if searchingKey == "values" and "values" in msgContent:  
-                    #print "Contains values"
+                    #self.logger.info("Contains values")
                     nodeID = msgContent['id']
                     torrentName = self.actualFile[0]
                     torrentID = self.actualFile[1]
                     torrentID = torrentID.encode('hex').upper()
+                    self.logger.info("Number of peers in values: %i" % len(msgContent["values"]))
+                    self.noAllPeers += len(msgContent["values"])
                     if self.type == IPv4:
                         peers = unpackValues(msgContent["values"])
                     elif self.type == IPv6:

@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+
+# This Monitoring script was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
 
 import sys, os
 import requests

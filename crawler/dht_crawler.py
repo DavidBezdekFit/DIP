@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+# This Monitoring class was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
+
+
 import socket
 import Queue
 import time
@@ -8,6 +15,7 @@ import json
 import abc
 import errno
 import os, sys
+import logging
 
 
 imports_path = os.getcwd() + "/../imports/"
@@ -57,8 +65,7 @@ class DhtCrawler(AbstractCrawler):
         
         self.noENETUNREACH = 0
         self.noFiltered = 0
-        self.noReportedPeers = 0
-        
+        self.noAllPeers = 0
         
         logging.basicConfig(level=logging.INFO, format='%(message)s')
         self.logger = logging.getLogger()
@@ -115,7 +122,7 @@ class DhtCrawler(AbstractCrawler):
                 node = self.nodeQueue.get(True)
                 self.findNode(node["host"], node["port"], node["id"])
                 
-                if crawl and self.nodeQueue.qsize() < 10000:
+                """if crawl and self.nodeQueue.qsize() < 10000:
                     #self.findNode(node["host"], node["port"], node["id"])
                     count = 0
                     for torrent in self.filesPool:
@@ -124,8 +131,9 @@ class DhtCrawler(AbstractCrawler):
                         if count >= self.noSearchingFiles:
                             break
                         count = count + 1
-                #elif not crawl:
-                #    self.findNode(node["host"], node["port"], node["id"])
+                elif not crawl:
+                    print "actual file infohash:", self.actualFile[1]
+                    #self.getPeers(node["host"], node["port"], self.actualFile[1])"""
                 
             except Exception, err:
                 if err.errno == errno.EADDRNOTAVAIL:
@@ -157,7 +165,7 @@ class DhtCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 with self.nodePool_lock:
                     self.nodePool[id] = [node]
-                if id != self.id and len(self.nodePool) < 100000:
+                if id != self.id and len(self.nodePool) < 50000: #100000: pro ipv6 byl dobry 5000
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -186,6 +194,14 @@ class DhtCrawler(AbstractCrawler):
         self.info()
         self.counter = 0
         pass
+        
+    def sendGetPeers(self, infohash):
+        closeNodes = self.getClosestNodes(infohash, 5)
+        for node in closeNodes:
+            #print node
+            for nodeInfo in node[1]:
+                self.getPeers(nodeInfo["host"], nodeInfo["port"], infohash)
+        pass
  
     def start_finder(self):
         self.logger.info( "\n\nStart finder")
@@ -198,16 +214,18 @@ class DhtCrawler(AbstractCrawler):
             torrentID = torrent[1].encode('hex').upper()
             self.peerPool[torrentID] = []
             
-            closeNodes = self.getClosestNodes(infohash, 5)
+            for i in range(5):
+                self.sendGetPeers(infohash)
+                time.sleep(0.1)        
 
-            for node in closeNodes:
-                #print node
-                for nodeInfo in node[1]:
-                    self.getPeers(nodeInfo["host"], nodeInfo["port"], infohash)
+            #time.sleep(2.5)
+            time.sleep(0.5)
+            self.sendGetPeers(infohash)
+            time.sleep(1)
+            
             if count >= self.noSearchingFiles:
                 break
             count = count +1
-            time.sleep(2.5)
         pass
     
     def getClosestNodes(self, infohash, K):
@@ -313,15 +331,32 @@ class DhtCrawler(AbstractCrawler):
         return noPingedPeers
     
     def printEvaluation(self, noReportedPeers, noPingedPeers):
-        self.logger.info("Number of error noENETUNREACH: %i" % self.noENETUNREACH  )
+        #self.logger.info("\n\nNumber of error noENETUNREACH: %i" % self.noENETUNREACH  )
         self.info()
         self.logger.info("Number of Seeking torrents -----------: %i" % len(self.filesPool)  )
+        self.logger.info("Number of Reported peers -------------: %i" % self.noAllPeers  )
         self.logger.info("Number of Reported peers after merge -: %i" % noReportedPeers  )
         self.logger.info("Number of Filtered peers -------------: %i" % self.noFiltered  )
         self.logger.info("Number of peers after filter----------: %i" % (noReportedPeers - self.noFiltered ) )
         self.logger.info("Number of peers after ping -----------: %i" % noPingedPeers  ) 
         pass
         
+    def printEvaluationToFile(self, noReportedPeers, noPingedPeers, timestamp):
+        f = open('output---%s.txt' % (timestamp), 'w')
+       
+        #f.write("Number of error noENETUNREACH: %i\n" % self.noENETUNREACH  )
+        f.write( "[NodeSet]:%i\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%\n" % \
+              (len(self.nodePool),
+               self.respondent*100.0/max(1,len(self.nodePool)),
+               self.nodeQueue.qsize(), self.duplicates*100.0/self.total)  )
+        f.write("Number of Seeking torrents -----------: %i\n" % len(self.filesPool)  )
+        f.write("Number of Reported peers -------------: %i\n" % self.noAllPeers  )
+        f.write("Number of Reported peers after merge -: %i\n" % noReportedPeers  )
+        f.write("Number of Filtered peers -------------: %i\n" % self.noFiltered  )
+        f.write("Number of peers after filter----------: %i\n" % (noReportedPeers - self.noFiltered ) )
+        f.write("Number of peers after ping -----------: %i\n" % noPingedPeers  ) 
+        f.close() 
+        pass
     
 if __name__ == '__main__':
     
@@ -358,11 +393,15 @@ if __name__ == '__main__':
     crawler.filter_peers()
     
     timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
-    crawler.savePeers(timestamp)
+    try:
+        crawler.savePeers(timestamp)
+    except:
+        sys.stderr.write('\nCant write peers into JSON, probably name of some torrent file is unsupported!\n\n')
 
     noPingedPeers = crawler.getPingedPeers()
     crawler.info()
     crawler.saveNodes(timestamp)
     crawler.printEvaluation( noReportedPeers, noPingedPeers )
+    crawler.printEvaluationToFile( noReportedPeers, noPingedPeers, timestamp )
 
     pass

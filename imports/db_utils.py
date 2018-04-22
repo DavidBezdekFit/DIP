@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 25 10:06:07 2018
 
-@author: isa2015
-"""
+# This utilities was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
+
 import os, sys
 import socket
 
-#from ipaddr import IPv6Address, Bytes
 from param_parser import ParamParser
 
 import struct
@@ -43,7 +44,7 @@ def unpackIPv6Nodes(n):
     return nodes
 
 def unpackValues(values):
-    print "Number of peers in values: ", len(values)
+    #print "Number of peers in values: ", len(values)
     offset = 4
     peers = []
     for node in values:
@@ -54,7 +55,7 @@ def unpackValues(values):
     return peers
 
 def unpackValues6(values):
-    print "Number of peers in values: ", len(values)
+    #print "Number of peers in values: ", len(values)
     offset = 16
     peers = []
     for node in values:

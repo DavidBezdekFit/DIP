@@ -1,5 +1,17 @@
 #!/usr/bin/env python
 
+# This script is experimental.
+#
+# Liang Wang @ Dept. Computer Science, University of Helsinki
+# 2011.09.20
+#
+
+# This script was modified by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
+
 import socket
 import Queue
 import time
