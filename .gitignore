@@ -8,5 +8,10 @@ evaluating/nodes.20180227202628.287196884928521620812134626184711178331034230885
 evaluating/ipv4nodes.2018-04-14-10-49-34.904252227595890439063404970195943101789482640790.json
 evaluating/ipv6peers.20180329223331.412087068076430785589137898569273691746125611300.json
 evaluating/notAnalyzedNodes.json
+imports/abstract_crawler.pyc
 imports/bencode/BTL.pyc
 imports/bencode/__init__.pyc
+imports/db_utils.pyc
+imports/khash.pyc
+imports/param_parser.pyc
+imports/torrent_crawler.pyc
