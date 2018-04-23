@@ -368,6 +368,23 @@ def start_injecting(id, counter):
     injector = Injector(counter, id)
     injector.start()
     pass
+    
+def getIDs(id):
+    ids = []
+    # Check if the injector_ids.txt exists or not
+    if os.path.exists("injector_ids_%s.txt" % intify(id)):  #every call is with newID
+        f = open("injector_ids_%s.txt" % intify(id), "r")
+        for line in f.readlines():
+            ids.append(stringify(long(line)))
+    """else:
+        print "vytvarim nove"
+        ids = generate_injector_ids(intify(id), 12, 50)
+        f = open("injector_ids_%s.txt" % str(intify(id)), "w")
+        for tid in ids:
+            i = intify(tid)
+            f.write("%s\n" % str(i))
+        f.close()"""
+    return ids
 
 #def start_injectors(crawlerID):
 if __name__=="__main__":    
@@ -375,24 +392,11 @@ if __name__=="__main__":
     
     id = stringify(long(sys.argv[1])) if len(sys.argv)>1 else newID()
     
-    ids = []
-    print "id:", id
-    # Check if the injector_ids.txt exists or not
-    """if os.path.exists("injector_ids.txt"):  #every call is with newID
-        f = open("injector_ids.txt", "r")
-        for line in f.readlines():
-            ids.append(stringify(long(line)))
-    else:"""
-    ids = generate_injector_ids(intify(id), 12, 5)
-    f = open("injector_ids_%s.txt" % str(intify(id)), "w")
-    for tid in ids:
-        i = intify(tid)
-        f.write("%s\n" % str(i))
-    f.close()
-    
+    ids = getIDs(id)
     
     counter = 0
     for tid in ids:
+        #print intify(tid)
         try:
             p = Process(target=start_injecting, args=(tid,counter,))
             p.start()
