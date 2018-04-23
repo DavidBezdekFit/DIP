@@ -181,8 +181,9 @@ if __name__=="__main__":
     # Try to load local node cache
     crawler.loadCache()
     
-    crawler.logger.info( "queue size:", crawler.nodeQueue.qsize())
-    crawler.logger.info( "id:", intify(crawler.id)  )
+    crawler.logger.info( "queue size: %i" % crawler.nodeQueue.qsize())
+    crawler.logger.info( "port: %i" % crawler.port)
+    crawler.logger.info( "id: %s", str(intify(crawler.id))  )
     
     # Try to get bootstrap nodes from official router
     crawler.find_routers()
@@ -190,7 +191,7 @@ if __name__=="__main__":
     crawler.start_crawl()
     crawler.logger.info( "%.2f minutes" % ((time.time() - now)/60.0))
     timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
-    crawler.serialize(timestamp)
+    #crawler.serialize(timestamp)
     crawler.saveNodes(timestamp)
     pass 
 
