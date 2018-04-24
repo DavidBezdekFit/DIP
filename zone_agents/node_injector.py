@@ -19,7 +19,6 @@ import pickle
 import time
 import threading
 import resource
-import fnmatch
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -193,7 +192,7 @@ class Injector(object):
 
     def processNodes(self, nodes):
         timestamp = time.time()
-        nodes = self.nearest(self.id, nodes, 3)
+        nodes = self.nearest(self.id, nodes, 10) #3
         for node in nodes:
             id = node["id"]
             node["timestamp"] = timestamp
@@ -256,7 +255,7 @@ class Injector(object):
 
                 # Add to bucket if it is a new node, otherwise update it.
                 MSG = d[TYP]
-                tid = d[RSP]["id"] if d[TYP] == RSP else d["ARG"]["id"]
+                tid = d[RSP]["id"] if d[TYP] == RSP else d[ARG]["id"]
                 bucket = self.in_which_bucket(tid, self.buckets)
                 if bucket:
                     pass
@@ -272,9 +271,10 @@ class Injector(object):
                             self.processNodes(unpackNodes(d[MSG]["nodes"]))
                             #print tdist, "+"*100
                         elif self.respondent < 10000:
+                            #else:
                             self.processNodes(unpackNodes(d[MSG]["nodes"]))
                 elif d[TYP] == REQ:
-                    print addr, d[TID], d[TYP], d[MSG], d[ARG]
+                    #print addr, d[TID], d[TYP], d[MSG], d[ARG]
                     if "ping" == d[MSG].lower():
                         rsp = {TID:d[TID], TYP:RSP, RSP:{"id":self.id}}
                         #rsp = self.krpc.encodeMsg(rsp)

@@ -100,7 +100,7 @@ class NodeCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 self.nodePool[id] = [node]
                 self.convergeSpeed(node)
-                if id != self.id and len(self.nodePool) < 100000:
+                if id != self.id and len(self.nodePool) < 20000: # 100000 find 50/50
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\

@@ -19,6 +19,7 @@ import pickle
 import time
 import threading
 import resource
+import fnmatch
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -201,7 +202,7 @@ class Injector(object):
 
     def processNodes(self, nodes):
         timestamp = time.time()
-        nodes = self.nearest(self.id, nodes, 3)
+        nodes = self.nearest(self.id, nodes, 10) #3
         for node in nodes:
             id = node["id"]
             node["timestamp"] = timestamp
@@ -264,7 +265,7 @@ class Injector(object):
 
                 # Add to bucket if it is a new node, otherwise update it.
                 MSG = d[TYP]
-                tid = d[RSP]["id"] if d[TYP] == RSP else d["ARG"]["id"]
+                tid = d[RSP]["id"] if d[TYP] == RSP else d[ARG]["id"]
                 bucket = self.in_which_bucket(tid, self.buckets)
                 if bucket:
                     pass
@@ -282,7 +283,7 @@ class Injector(object):
                         elif self.respondent < 10000:
                             self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
                 elif d[TYP] == REQ:
-                    print addr, d[TID], d[TYP], d[MSG], d[ARG]
+                    #print addr, d[TID], d[TYP], d[MSG], d[ARG]
                     if "ping" == d[MSG].lower():
                         rsp = {TID:d[TID], TYP:RSP, RSP:{"id":self.id}}
                         #rsp = self.krpc.encodeMsg(rsp)
@@ -297,12 +298,13 @@ class Injector(object):
                 print "Exception:Injector.listener():", err
         pass
 
-    def start_sender(self):
+    def start_sender(self): # findNode(self, host, port, target):
         target = self.id
         while self.counter:
             try:
                 node = self.nodeQueue.get(True)
-                self.findNode(node["host"], node["port"], target, node["id"])
+                #self.findNode(node["host"], node["port"], target)
+                self.findNode(node["host"], node["port"], node["id"])
             except Exception, err:
                 print "Exception:Injector.start_sender()", err, node
         pass
@@ -311,9 +313,10 @@ class Injector(object):
         t1 = threading.Thread(target=self.start_listener, args=())
         t1.daemon = True
         t1.start()
-        #t2 = threading.Thread(target=self.start_sender, args=())
-        #t2.daemon = True
-        #t2.start()
+        #for IPv4 was t2 as comment !!!
+        t2 = threading.Thread(target=self.start_sender, args=())
+        t2.daemon = True
+        t2.start()
         self.bootstrap()
         while True:
             try:
@@ -362,10 +365,36 @@ class Injector(object):
             print len(x[1])
 
         pass
+        
+    #read some additional address for better bootstraping
+    def loadCache(self):
+        print("Loading Cache")
+        try:
+            pomFile = "nodes6cache*"
+            for fileName in os.listdir('.'):
+                if fnmatch.fnmatch(fileName, pomFile):
+                    #print("Loading File: %s" % fileName)
+                    #files.append(fileName)
+                    f = open(fileName,"r")
+                    nl = pickle.load(f)
+                    for n in nl:
+                        n["timestamp"] = time.time()
+                        n["rtt"] = float('inf')
+                        self.nodeQueue.put(n)
+                    f.close()
+                    """try:
+                        os.remove(fileName)
+                    except:
+                        pass"""
+        except:
+            pass
+        pass    
 
 def start_injecting(id, counter):
     """Start all the injectors"""
     injector = Injector(counter, id)
+    injector.loadCache()
+    
     injector.start()
     pass
     
@@ -386,7 +415,6 @@ def getIDs(id):
         f.close()"""
     return ids
 
-#def start_injectors(crawlerID):
 if __name__=="__main__":    
     now = time.time()
     

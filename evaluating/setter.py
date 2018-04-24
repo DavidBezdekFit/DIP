@@ -55,11 +55,13 @@ if __name__ == '__main__':
     f.close()
 
     print "Commands for experiment over IPv4:"
+    print "python xnode_maintainer.py --id %s -t 4" % intify(setter.id)
     print "python node_injector.py %s" % intify(setter.id)
     for crawlID in setter.crawlIDs:    
         print "python xnode_crawler.py --id %s -t 4" % intify(crawlID)
     
     print "\nCommands for experiment over IPv6:"
+    print "python xnode_maintainer.py --id %s -t 6" % intify(setter.id)
     print "python node_injector6.py %s" % intify(setter.id)
     for crawlID in setter.crawlIDs:
         print "python xnode_crawler.py --id %s -t 6" % intify(crawlID)

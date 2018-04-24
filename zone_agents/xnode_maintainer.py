@@ -289,6 +289,6 @@ if __name__=="__main__":
     #print 'maintainer ID: ' + maintainer.id
 
     maintainer.start_service()
-    maintainer.serialize()
+    #maintainer.serialize()
     print "%.2f minutes" % ((time.time() - now)/60.0)
     pass
