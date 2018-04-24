@@ -50,7 +50,7 @@ class Maintainer(AbstractCrawler):
         self.startTime = time.time()                            # Time start the crawler
         self.respondent = 0                                     # Number of respondent
         self.noCaches = 0
-    
+        self.counter = 5
         self.type = type if type else IPv4
         if self.type == IPv4:
             self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -198,7 +198,7 @@ class Maintainer(AbstractCrawler):
 
     
     def start_listener(self):
-        while True:
+        while self.counter:
             try:
                 msg, addr = self.isock.recvfrom(PACKET_LEN)
                 #print 'listener accepted message'
@@ -224,7 +224,7 @@ class Maintainer(AbstractCrawler):
         pass
 
     def start_sender(self):
-        while True:
+        while self.counter:
             try:
                 # Check are there any nodes in the queue waiting for processing
                 node = self.nodeQueue.get(True)
@@ -244,7 +244,7 @@ class Maintainer(AbstractCrawler):
         t2.daemon = True
         t2.start()
 	    
-        while True:
+        while self.counter:
             try:
                 now = time.time()
                 # Should we request more nodes?
@@ -256,6 +256,8 @@ class Maintainer(AbstractCrawler):
                 # Cache the nodes to file
                 if int(now)%10==0 and len(self.nodePool) > 1000:
                     self.serialize()
+                    if self.noCaches >= 5: #reduce number of made nodescaches
+                        self.counter = 0
                 self.info()
                 
                 time.sleep(1)
@@ -263,6 +265,8 @@ class Maintainer(AbstractCrawler):
                 break
             except Exception, err:
                 print "Exception:Maintainer.start_service()", err
+                
+                
         pass
 
     def info(self):

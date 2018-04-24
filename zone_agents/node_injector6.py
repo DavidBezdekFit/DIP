@@ -211,7 +211,8 @@ class Injector(object):
                 self.nodePool[id] = [node]
                 self.convergeSpeed(node)
                 if id != self.id:
-                    self.findNode(node["host"], node["port"], self.id)
+                    #self.findNode(node["host"], node["port"], self.id)
+                    self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
                        and id != self.id:
@@ -280,8 +281,9 @@ class Injector(object):
                             self.ndist = tdist
                             self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
                             #print tdist, "+"*100
-                        elif self.respondent < 10000:
-                            self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
+                        #elif self.respondent < 10000:
+                        
+                        self.processNodes(unpackIPv6Nodes(d[MSG]["nodes6"]))
                 elif d[TYP] == REQ:
                     #print addr, d[TID], d[TYP], d[MSG], d[ARG]
                     if "ping" == d[MSG].lower():
@@ -295,7 +297,8 @@ class Injector(object):
                 #self.addrPool[addr] = {"timestamp":time.time()}
                 self.respondent += 1
             except Exception, err:
-                print "Exception:Injector.listener():", err
+                #print "Exception:Injector.listener():", err
+                pass
         pass
 
     def start_sender(self): # findNode(self, host, port, target):
@@ -303,10 +306,11 @@ class Injector(object):
         while self.counter:
             try:
                 node = self.nodeQueue.get(True)
-                #self.findNode(node["host"], node["port"], target)
-                self.findNode(node["host"], node["port"], node["id"])
+                self.findNode(node["host"], node["port"], target)
+                #self.findNode(node["host"], node["port"], node["id"])
             except Exception, err:
-                print "Exception:Injector.start_sender()", err, node
+                #print "Exception:Injector.start_sender()", err, node
+                pass
         pass
 
     def start(self):
@@ -322,6 +326,8 @@ class Injector(object):
             try:
                 self.info()
                 time.sleep(5)
+                if len(self.nodePool) < 10000:
+                    self.bootstrap()
             except KeyboardInterrupt:
                 break
             except Exception, err:

@@ -21,6 +21,7 @@ class Evaluator(object):
         self.percentageDuplResponse = 0
         
         self.noTorrents = 0
+        self.noFoundPeers = 0
         self.noAllPeers = 0
         self.noAfterMergePeers = 0
         
@@ -68,16 +69,18 @@ class Evaluator(object):
                 if lineCount == 0:
                     self.parseFirstLine(line)
                 elif lineCount == 1:
-                    self.noTorrents += self.getValue(line)
+                    self.noFoundPeers += self.getValue(line)
                 elif lineCount == 2:
-                    self.noAllPeers += self.getValue(line)
+                    self.noTorrents += self.getValue(line)
                 elif lineCount == 3:
+                    self.noAllPeers += self.getValue(line)
+                elif lineCount == 4:
                     self.noAfterMergePeers += self.getValue(line)
-                elif lineCount == 4:    
+                elif lineCount == 5:    
                     self.noFilteredPeers += self.getValue(line)
-                elif lineCount == 5:
-                    self.noAfterFilterPeers += self.getValue(line)
                 elif lineCount == 6:
+                    self.noAfterFilterPeers += self.getValue(line)
+                elif lineCount == 7:
                     self.noAfterPing += self.getValue(line)
                 lineCount += 1    
 
@@ -91,9 +94,10 @@ class Evaluator(object):
         print "Average percentage of duplicated nodes in resp: %.2f%%\n\n" % (self.percentageDuplResponse / self.noFiles)
         
         print "Peers:"
-        print "Number of Torrents --------- : %i" % self.noTorrents
-        print "Number of all reported peers : %i  --- avrg: %i" % (self.noAllPeers, (self.noAllPeers/ self.noFiles))
-        print "Number of After Merge peers- : %i" % self.noAfterMergePeers
+        print "Number of Torrents -------------- : %i" % self.noTorrents
+        print "Number of Torrents without peers: : %i" % self.noFoundPeers
+        print "Number of all reported peers ---- : %i  --- avrg: %i" % (self.noAllPeers, (self.noAllPeers/ self.noFiles))
+        print "Number of After Merge peers ----- : %i" % self.noAfterMergePeers
         print "\t\t\t       ----"
         duplic = (self.noAllPeers - self.noAfterMergePeers )
         print "Number of duplication -------: %i  --- avrg: %i" % (duplic, (duplic/ self.noFiles))

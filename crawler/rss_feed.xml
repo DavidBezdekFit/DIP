@@ -6,8 +6,8 @@
 		<link>http://thepiratebay.org</link>
 		<description>The top100 torrents from The Pirate Bay</description>
 		<language>en</language>
-		<pubDate>Thu, 12 Apr 2018 20:00:31 +0200</pubDate>
-		<lastBuildDate>Thu, 12 Apr 2018 20:00:31 +0200</lastBuildDate>
+		<pubDate>Tue, 24 Apr 2018 22:00:20 +0200</pubDate>
+		<lastBuildDate>Tue, 24 Apr 2018 22:00:20 +0200</lastBuildDate>
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
 		<generator>TPB RSS Generator 1.2</generator>
 
@@ -26,31 +26,31 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Maze Runner The Death Cure 2018 HDTC-720P-X264-MP3-]]></title>
-			<link>magnet:?xt=urn:btih:0726C8A148E203B8F311547E831D9BAA6A26837C&amp;dn=Maze+Runner+The+Death+Cure+2018+HDTC-720P-X264-MP3-</link>
-			<comments>http://thepiratebay.org/torrent/20430766</comments>
-			<pubDate>Wed, 07 Mar 2018 06:14:53 +0100</pubDate>
+			<title><![CDATA[Den of Thieves 2018 UNRATED 720p BluRay HEVC x265-RMTeam ]]></title>
+			<link>magnet:?xt=urn:btih:592B32CF0A987F3B9916AE66DF24988DDCF01CD8&amp;dn=Den+of+Thieves+2018+UNRATED+720p+BluRay+HEVC+x265-RMTeam+</link>
+			<comments>http://thepiratebay.org/torrent/21093052</comments>
+			<pubDate>Mon, 16 Apr 2018 00:35:04 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20430766/</guid>
+			<dc:creator><![CDATA[.BONE.]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21093052/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1487381855</contentLength>
-				<infoHash>0726C8A148E203B8F311547E831D9BAA6A26837C</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:0726C8A148E203B8F311547E831D9BAA6A26837C&amp;dn=Maze+Runner+The+Death+Cure+2018+HDTC-720P-X264-MP3-]]></magnetURI>
+				<contentLength>837408925</contentLength>
+				<infoHash>592B32CF0A987F3B9916AE66DF24988DDCF01CD8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:592B32CF0A987F3B9916AE66DF24988DDCF01CD8&amp;dn=Den+of+Thieves+2018+UNRATED+720p+BluRay+HEVC+x265-RMTeam+]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Fifty Shades Freed 2018 NEW 720p HD-TS X264-UNiQUE]]></title>
-			<link>magnet:?xt=urn:btih:12612E4AE81F4549AF6E127AC525879204BB8245&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE</link>
-			<comments>http://thepiratebay.org/torrent/20077743</comments>
-			<pubDate>Wed, 14 Feb 2018 15:16:46 +0100</pubDate>
+			<title><![CDATA[Red.Sparrow.2018.HC.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:6E9393183457D3C183D49CC3BA76C29E6FEE37E4&amp;dn=Red.Sparrow.2018.HC.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/21088413</comments>
+			<pubDate>Sun, 15 Apr 2018 17:44:22 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20077743/</guid>
+			<dc:creator><![CDATA[EtHD]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21088413/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2003370638</contentLength>
-				<infoHash>12612E4AE81F4549AF6E127AC525879204BB8245</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:12612E4AE81F4549AF6E127AC525879204BB8245&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE]]></magnetURI>
+				<contentLength>1404178136</contentLength>
+				<infoHash>6E9393183457D3C183D49CC3BA76C29E6FEE37E4</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6E9393183457D3C183D49CC3BA76C29E6FEE37E4&amp;dn=Red.Sparrow.2018.HC.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -82,6 +82,20 @@
 			</torrent>
 		</item>
 		<item>
+			<title><![CDATA[Fifty Shades Freed 2018 NEW 720p HD-TS X264-UNiQUE]]></title>
+			<link>magnet:?xt=urn:btih:12612E4AE81F4549AF6E127AC525879204BB8245&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE</link>
+			<comments>http://thepiratebay.org/torrent/20077743</comments>
+			<pubDate>Wed, 14 Feb 2018 15:16:46 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20077743/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2003370638</contentLength>
+				<infoHash>12612E4AE81F4549AF6E127AC525879204BB8245</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:12612E4AE81F4549AF6E127AC525879204BB8245&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
 			<title><![CDATA[The Greatest Showman 2017 720p BluRay HEVC x265-RMTeam ]]></title>
 			<link>magnet:?xt=urn:btih:11516A493655C6ED33E0B12D6BA9C70C9F2E22AA&amp;dn=The+Greatest+Showman+2017+720p+BluRay+HEVC+x265-RMTeam+</link>
 			<comments>http://thepiratebay.org/torrent/20750345</comments>
@@ -93,6 +107,20 @@
 				<contentLength>606593441</contentLength>
 				<infoHash>11516A493655C6ED33E0B12D6BA9C70C9F2E22AA</infoHash>
 				<magnetURI><![CDATA[magnet:?xt=urn:btih:11516A493655C6ED33E0B12D6BA9C70C9F2E22AA&amp;dn=The+Greatest+Showman+2017+720p+BluRay+HEVC+x265-RMTeam+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Maze Runner The Death Cure 2018 HDTC-720P-X264-MP3-]]></title>
+			<link>magnet:?xt=urn:btih:0726C8A148E203B8F311547E831D9BAA6A26837C&amp;dn=Maze+Runner+The+Death+Cure+2018+HDTC-720P-X264-MP3-</link>
+			<comments>http://thepiratebay.org/torrent/20430766</comments>
+			<pubDate>Wed, 07 Mar 2018 06:14:53 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20430766/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1487381855</contentLength>
+				<infoHash>0726C8A148E203B8F311547E831D9BAA6A26837C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0726C8A148E203B8F311547E831D9BAA6A26837C&amp;dn=Maze+Runner+The+Death+Cure+2018+HDTC-720P-X264-MP3-]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -110,59 +138,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Deep Blue Sea 2.2018.DVDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:32FA70FF92D7077D916B12CE52202219324847F5&amp;dn=Deep+Blue+Sea+2.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/21013418</comments>
-			<pubDate>Sat, 07 Apr 2018 23:42:11 +0200</pubDate>
+			<title><![CDATA[Pacific.Rim.2.Uprising.2018.HC.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:989C6D8D9C229115F2C51947D24F57DBFE50A404&amp;dn=Pacific.Rim.2.Uprising.2018.HC.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21124548</comments>
+			<pubDate>Wed, 18 Apr 2018 04:55:22 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21013418/</guid>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21124548/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1506962483</contentLength>
-				<infoHash>32FA70FF92D7077D916B12CE52202219324847F5</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:32FA70FF92D7077D916B12CE52202219324847F5&amp;dn=Deep+Blue+Sea+2.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Baaghi 2 (2018) Hindi Movie Pre-DVDRip x264]]></title>
-			<link>magnet:?xt=urn:btih:95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1&amp;dn=Baaghi+2+%282018%29+Hindi+Movie+Pre-DVDRip+x264</link>
-			<comments>http://thepiratebay.org/torrent/20850696</comments>
-			<pubDate>Sat, 31 Mar 2018 17:15:49 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20850696/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>763271658</contentLength>
-				<infoHash>95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1&amp;dn=Baaghi+2+%282018%29+Hindi+Movie+Pre-DVDRip+x264]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Jumanji Welcome To The Jungle 2017 NEW 720p HD-TS X264 HQ-CPG]]></title>
-			<link>magnet:?xt=urn:btih:9F22134B8D504921745012528490022F62DBAD42&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19529664</comments>
-			<pubDate>Sun, 31 Dec 2017 13:32:12 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19529664/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>3082613902</contentLength>
-				<infoHash>9F22134B8D504921745012528490022F62DBAD42</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:9F22134B8D504921745012528490022F62DBAD42&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Sonu Ke Titu Ki Sweety (2018) Hindi 720p PRE x264 AAC ]]></title>
-			<link>magnet:?xt=urn:btih:487B13850E3ADCC621073BA27954E575BB8A3FBF&amp;dn=Sonu+Ke+Titu+Ki+Sweety+%282018%29+Hindi+720p+PRE+x264+AAC+</link>
-			<comments>http://thepiratebay.org/torrent/20265310</comments>
-			<pubDate>Sat, 24 Feb 2018 13:33:50 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20265310/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1090777854</contentLength>
-				<infoHash>487B13850E3ADCC621073BA27954E575BB8A3FBF</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:487B13850E3ADCC621073BA27954E575BB8A3FBF&amp;dn=Sonu+Ke+Titu+Ki+Sweety+%282018%29+Hindi+720p+PRE+x264+AAC+]]></magnetURI>
+				<contentLength>1504800199</contentLength>
+				<infoHash>989C6D8D9C229115F2C51947D24F57DBFE50A404</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:989C6D8D9C229115F2C51947D24F57DBFE50A404&amp;dn=Pacific.Rim.2.Uprising.2018.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -180,17 +166,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[The.Post.2017.DVDScr.XVID.AC3.HQ.Hive-CM8[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:C88E2B73606C9E1E71187E7A5ABC5BF05BCCE458&amp;dn=The.Post.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/19777804</comments>
-			<pubDate>Tue, 23 Jan 2018 00:59:07 +0100</pubDate>
+			<title><![CDATA[Jumanji Welcome To The Jungle 2017 NEW 720p HD-TS X264 HQ-CPG]]></title>
+			<link>magnet:?xt=urn:btih:9F22134B8D504921745012528490022F62DBAD42&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG</link>
+			<comments>http://thepiratebay.org/torrent/19529664</comments>
+			<pubDate>Sun, 31 Dec 2017 13:32:12 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19777804/</guid>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19529664/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1724717328</contentLength>
-				<infoHash>C88E2B73606C9E1E71187E7A5ABC5BF05BCCE458</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C88E2B73606C9E1E71187E7A5ABC5BF05BCCE458&amp;dn=The.Post.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovies%5D]]></magnetURI>
+				<contentLength>3082613902</contentLength>
+				<infoHash>9F22134B8D504921745012528490022F62DBAD42</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:9F22134B8D504921745012528490022F62DBAD42&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -208,115 +194,45 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Den of Thieves 2018 NEW 720p HD-TS X264-CPG]]></title>
-			<link>magnet:?xt=urn:btih:25F0F0D20D13A1DDE1362D3DE1939428F2406F0E&amp;dn=Den+of+Thieves+2018+NEW+720p+HD-TS+X264-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19927477</comments>
-			<pubDate>Sat, 03 Feb 2018 14:26:20 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19927477/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>3272045359</contentLength>
-				<infoHash>25F0F0D20D13A1DDE1362D3DE1939428F2406F0E</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:25F0F0D20D13A1DDE1362D3DE1939428F2406F0E&amp;dn=Den+of+Thieves+2018+NEW+720p+HD-TS+X264-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Pacific Rim 2 Uprising 2018 NEW HDCAM 2D X264 HQMic-CPG]]></title>
-			<link>magnet:?xt=urn:btih:6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30&amp;dn=Pacific+Rim+2+Uprising+2018+NEW+HDCAM+2D+X264+HQMic-CPG</link>
-			<comments>http://thepiratebay.org/torrent/20724054</comments>
-			<pubDate>Sat, 24 Mar 2018 05:33:54 +0100</pubDate>
+			<title><![CDATA[Tomb Raider 2018 720p HD-TC NEW X264-CPG ]]></title>
+			<link>magnet:?xt=urn:btih:BFAC30E51E6A6822F14BA1C3445DD8ADBF8ECC95&amp;dn=Tomb+Raider+2018+720p+HD-TC+NEW+X264-CPG+</link>
+			<comments>http://thepiratebay.org/torrent/21168638</comments>
+			<pubDate>Sat, 21 Apr 2018 02:47:30 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20724054/</guid>
+			<guid>http://thepiratebay.org/torrent/21168638/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1672541375</contentLength>
-				<infoHash>6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30&amp;dn=Pacific+Rim+2+Uprising+2018+NEW+HDCAM+2D+X264+HQMic-CPG]]></magnetURI>
+				<contentLength>2683109680</contentLength>
+				<infoHash>BFAC30E51E6A6822F14BA1C3445DD8ADBF8ECC95</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:BFAC30E51E6A6822F14BA1C3445DD8ADBF8ECC95&amp;dn=Tomb+Raider+2018+720p+HD-TC+NEW+X264-CPG+]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Coco 2017 HD-TS X264 HQ-CPG]]></title>
-			<link>magnet:?xt=urn:btih:586E5DA18C32B85305EB9B6440545FC1FD21FF09&amp;dn=Coco+2017+HD-TS+X264+HQ-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19308107</comments>
-			<pubDate>Thu, 07 Dec 2017 19:45:26 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19308107/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1654004052</contentLength>
-				<infoHash>586E5DA18C32B85305EB9B6440545FC1FD21FF09</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:586E5DA18C32B85305EB9B6440545FC1FD21FF09&amp;dn=Coco+2017+HD-TS+X264+HQ-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Fifty Shades Freed 2018 NEW 720p HD-TS X264-UNiQUE]]></title>
-			<link>magnet:?xt=urn:btih:486C27D53A1471C80C7A1FD9EF285BE1AE59569C&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE</link>
-			<comments>http://thepiratebay.org/torrent/20077985</comments>
-			<pubDate>Wed, 14 Feb 2018 16:25:10 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20077985/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2003370638</contentLength>
-				<infoHash>486C27D53A1471C80C7A1FD9EF285BE1AE59569C</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:486C27D53A1471C80C7A1FD9EF285BE1AE59569C&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Phantom Thread 2017 DVDSCR x264 AC3 TiTAN]]></title>
-			<link>magnet:?xt=urn:btih:5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3&amp;dn=Phantom+Thread+2017+DVDSCR+x264+AC3+TiTAN</link>
-			<comments>http://thepiratebay.org/torrent/19970162</comments>
-			<pubDate>Wed, 07 Feb 2018 12:37:40 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19970162/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1409791692</contentLength>
-				<infoHash>5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3&amp;dn=Phantom+Thread+2017+DVDSCR+x264+AC3+TiTAN]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Tomb Raider 2018 NEW TS.XViD.AC3-ETRG]]></title>
-			<link>magnet:?xt=urn:btih:6999723FBE58036C80B7BCA33D6D4A2054247DCC&amp;dn=Tomb+Raider+2018+NEW+TS.XViD.AC3-ETRG</link>
-			<comments>http://thepiratebay.org/torrent/20668049</comments>
-			<pubDate>Tue, 20 Mar 2018 16:28:47 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[ETRG]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20668049/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1367608571</contentLength>
-				<infoHash>6999723FBE58036C80B7BCA33D6D4A2054247DCC</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:6999723FBE58036C80B7BCA33D6D4A2054247DCC&amp;dn=Tomb+Raider+2018+NEW+TS.XViD.AC3-ETRG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Raid 2018 Hindi Movie Pre-DVDRip x264]]></title>
-			<link>magnet:?xt=urn:btih:A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6&amp;dn=Raid+2018+Hindi+Movie+Pre-DVDRip+x264</link>
-			<comments>http://thepiratebay.org/torrent/20618539</comments>
-			<pubDate>Sat, 17 Mar 2018 10:09:51 +0100</pubDate>
+			<title><![CDATA[Sonu Ke Titu Ki Sweety (2018) Hindi 720p PRE x264 AAC ]]></title>
+			<link>magnet:?xt=urn:btih:487B13850E3ADCC621073BA27954E575BB8A3FBF&amp;dn=Sonu+Ke+Titu+Ki+Sweety+%282018%29+Hindi+720p+PRE+x264+AAC+</link>
+			<comments>http://thepiratebay.org/torrent/20265310</comments>
+			<pubDate>Sat, 24 Feb 2018 13:33:50 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20618539/</guid>
+			<guid>http://thepiratebay.org/torrent/20265310/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>752467296</contentLength>
-				<infoHash>A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6&amp;dn=Raid+2018+Hindi+Movie+Pre-DVDRip+x264]]></magnetURI>
+				<contentLength>1090777854</contentLength>
+				<infoHash>487B13850E3ADCC621073BA27954E575BB8A3FBF</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:487B13850E3ADCC621073BA27954E575BB8A3FBF&amp;dn=Sonu+Ke+Titu+Ki+Sweety+%282018%29+Hindi+720p+PRE+x264+AAC+]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[A Quiet Place 2018 NEW HDCAM ENG X264-Mr.HIVE]]></title>
-			<link>magnet:?xt=urn:btih:C39FDCA037F06CA22F62849262F4DF4BA9216DB3&amp;dn=A+Quiet+Place+2018+NEW+HDCAM+ENG+X264-Mr.HIVE</link>
-			<comments>http://thepiratebay.org/torrent/21013689</comments>
-			<pubDate>Sun, 08 Apr 2018 06:08:33 +0200</pubDate>
+			<title><![CDATA[Rampage 2018.720p.HDCAM.X264-WeWantToSell]]></title>
+			<link>magnet:?xt=urn:btih:70A87C8C40FD73323BCCCE947D3CAD9A8F6E7161&amp;dn=Rampage+2018.720p.HDCAM.X264-WeWantToSell</link>
+			<comments>http://thepiratebay.org/torrent/21071380</comments>
+			<pubDate>Fri, 13 Apr 2018 19:27:43 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21013689/</guid>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21071380/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1472739791</contentLength>
-				<infoHash>C39FDCA037F06CA22F62849262F4DF4BA9216DB3</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C39FDCA037F06CA22F62849262F4DF4BA9216DB3&amp;dn=A+Quiet+Place+2018+NEW+HDCAM+ENG+X264-Mr.HIVE]]></magnetURI>
+				<contentLength>3225322518</contentLength>
+				<infoHash>70A87C8C40FD73323BCCCE947D3CAD9A8F6E7161</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:70A87C8C40FD73323BCCCE947D3CAD9A8F6E7161&amp;dn=Rampage+2018.720p.HDCAM.X264-WeWantToSell]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -334,31 +250,31 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[I.Kill.Giants.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:2984D4C97634237C95EA49A2358418A9C2D54DEB&amp;dn=I.Kill.Giants.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/20705443</comments>
-			<pubDate>Fri, 23 Mar 2018 06:42:24 +0100</pubDate>
+			<title><![CDATA[Phantom Thread 2017 DVDSCR x264 AC3 TiTAN]]></title>
+			<link>magnet:?xt=urn:btih:5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3&amp;dn=Phantom+Thread+2017+DVDSCR+x264+AC3+TiTAN</link>
+			<comments>http://thepiratebay.org/torrent/19970162</comments>
+			<pubDate>Wed, 07 Feb 2018 12:37:40 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20705443/</guid>
+			<guid>http://thepiratebay.org/torrent/19970162/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1468773426</contentLength>
-				<infoHash>2984D4C97634237C95EA49A2358418A9C2D54DEB</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:2984D4C97634237C95EA49A2358418A9C2D54DEB&amp;dn=I.Kill.Giants.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+				<contentLength>1409791692</contentLength>
+				<infoHash>5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:5EBD5BCE6C7A816C915FFF05F3A52C4F9E269ED3&amp;dn=Phantom+Thread+2017+DVDSCR+x264+AC3+TiTAN]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[12.Strong.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:744B61540136DA63787FD49964740DB9B86EBEB7&amp;dn=12.Strong.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/20916090</comments>
-			<pubDate>Tue, 03 Apr 2018 06:37:36 +0200</pubDate>
+			<title><![CDATA[Coco 2017 HD-TS X264 HQ-CPG]]></title>
+			<link>magnet:?xt=urn:btih:586E5DA18C32B85305EB9B6440545FC1FD21FF09&amp;dn=Coco+2017+HD-TS+X264+HQ-CPG</link>
+			<comments>http://thepiratebay.org/torrent/19308107</comments>
+			<pubDate>Thu, 07 Dec 2017 19:45:26 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20916090/</guid>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19308107/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1631203363</contentLength>
-				<infoHash>744B61540136DA63787FD49964740DB9B86EBEB7</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:744B61540136DA63787FD49964740DB9B86EBEB7&amp;dn=12.Strong.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
+				<contentLength>1654004052</contentLength>
+				<infoHash>586E5DA18C32B85305EB9B6440545FC1FD21FF09</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:586E5DA18C32B85305EB9B6440545FC1FD21FF09&amp;dn=Coco+2017+HD-TS+X264+HQ-CPG]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -376,45 +292,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:800E7781B9711CB9A2D3792DAE5E9FFB595D57E3&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/21025300</comments>
-			<pubDate>Tue, 10 Apr 2018 06:16:40 +0200</pubDate>
+			<title><![CDATA[Black.Panther.2018.ENG.HDCAM.x264[SpaceMov]]]></title>
+			<link>magnet:?xt=urn:btih:15FB503FD621A353B8DF9AF8823D5605D755D89B&amp;dn=Black.Panther.2018.ENG.HDCAM.x264%5BSpaceMov%5D</link>
+			<comments>http://thepiratebay.org/torrent/20099343</comments>
+			<pubDate>Fri, 16 Feb 2018 04:31:53 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21025300/</guid>
+			<guid>http://thepiratebay.org/torrent/20099343/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1636934650</contentLength>
-				<infoHash>800E7781B9711CB9A2D3792DAE5E9FFB595D57E3</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:800E7781B9711CB9A2D3792DAE5E9FFB595D57E3&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Suicide Squad Hell to Pay.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038&amp;dn=Suicide+Squad+Hell+to+Pay.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/20769622</comments>
-			<pubDate>Tue, 27 Mar 2018 07:34:45 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20769622/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1178679325</contentLength>
-				<infoHash>46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038&amp;dn=Suicide+Squad+Hell+to+Pay.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Baaghi 2 (2018) Hindi 720p Pre x264 AAC - Downloadhub]]></title>
-			<link>magnet:?xt=urn:btih:4C7D865359882F316731EA21FF522B4CFBE56793&amp;dn=Baaghi+2+%282018%29+Hindi+720p+Pre+x264+AAC+-+Downloadhub</link>
-			<comments>http://thepiratebay.org/torrent/20850702</comments>
-			<pubDate>Sat, 31 Mar 2018 17:19:22 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20850702/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1196993173</contentLength>
-				<infoHash>4C7D865359882F316731EA21FF522B4CFBE56793</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:4C7D865359882F316731EA21FF522B4CFBE56793&amp;dn=Baaghi+2+%282018%29+Hindi+720p+Pre+x264+AAC+-+Downloadhub]]></magnetURI>
+				<contentLength>1229387867</contentLength>
+				<infoHash>15FB503FD621A353B8DF9AF8823D5605D755D89B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:15FB503FD621A353B8DF9AF8823D5605D755D89B&amp;dn=Black.Panther.2018.ENG.HDCAM.x264%5BSpaceMov%5D]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -432,17 +320,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Black.Panther.2018.ENG.HDCAM.x264[SpaceMov]]]></title>
-			<link>magnet:?xt=urn:btih:15FB503FD621A353B8DF9AF8823D5605D755D89B&amp;dn=Black.Panther.2018.ENG.HDCAM.x264%5BSpaceMov%5D</link>
-			<comments>http://thepiratebay.org/torrent/20099343</comments>
-			<pubDate>Fri, 16 Feb 2018 04:31:53 +0100</pubDate>
+			<title><![CDATA[Deep Blue Sea 2.2018.DVDRip.XviD.AC3-EVO[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:32FA70FF92D7077D916B12CE52202219324847F5&amp;dn=Deep+Blue+Sea+2.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/21013418</comments>
+			<pubDate>Sat, 07 Apr 2018 23:42:11 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20099343/</guid>
+			<dc:creator><![CDATA[EtHD]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21013418/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1229387867</contentLength>
-				<infoHash>15FB503FD621A353B8DF9AF8823D5605D755D89B</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:15FB503FD621A353B8DF9AF8823D5605D755D89B&amp;dn=Black.Panther.2018.ENG.HDCAM.x264%5BSpaceMov%5D]]></magnetURI>
+				<contentLength>1506962483</contentLength>
+				<infoHash>32FA70FF92D7077D916B12CE52202219324847F5</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:32FA70FF92D7077D916B12CE52202219324847F5&amp;dn=Deep+Blue+Sea+2.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -460,31 +348,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Justice League 2017 NEW HD-TS X264 HQ-CPG]]></title>
-			<link>magnet:?xt=urn:btih:C90719ADB074FAA056EEF16D4297714E1A4BA94F&amp;dn=Justice+League+2017+NEW+HD-TS+X264+HQ-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19099889</comments>
-			<pubDate>Sun, 19 Nov 2017 20:47:44 +0100</pubDate>
+			<title><![CDATA[Tomb Raider 2018 NEW TS.XViD.AC3-ETRG]]></title>
+			<link>magnet:?xt=urn:btih:6999723FBE58036C80B7BCA33D6D4A2054247DCC&amp;dn=Tomb+Raider+2018+NEW+TS.XViD.AC3-ETRG</link>
+			<comments>http://thepiratebay.org/torrent/20668049</comments>
+			<pubDate>Tue, 20 Mar 2018 16:28:47 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19099889/</guid>
+			<dc:creator><![CDATA[ETRG]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20668049/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2256368487</contentLength>
-				<infoHash>C90719ADB074FAA056EEF16D4297714E1A4BA94F</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C90719ADB074FAA056EEF16D4297714E1A4BA94F&amp;dn=Justice+League+2017+NEW+HD-TS+X264+HQ-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[La.La.Land.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></title>
-			<link>magnet:?xt=urn:btih:CCFA6A813321A33F0E6DB0ADD7C1B3E1A961B86B&amp;dn=La.La.Land.2016.DVDScr.XVID.AC3.HQ.Hive-CM8</link>
-			<comments>http://thepiratebay.org/torrent/16789565</comments>
-			<pubDate>Sun, 15 Jan 2017 10:21:29 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/16789565/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1760866801</contentLength>
-				<infoHash>CCFA6A813321A33F0E6DB0ADD7C1B3E1A961B86B</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:CCFA6A813321A33F0E6DB0ADD7C1B3E1A961B86B&amp;dn=La.La.Land.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></magnetURI>
+				<contentLength>1367608571</contentLength>
+				<infoHash>6999723FBE58036C80B7BCA33D6D4A2054247DCC</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6999723FBE58036C80B7BCA33D6D4A2054247DCC&amp;dn=Tomb+Raider+2018+NEW+TS.XViD.AC3-ETRG]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -502,45 +376,73 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Black Panther (2018) 720p HDTS 999MB - MkvCage]]></title>
-			<link>magnet:?xt=urn:btih:AA7D933114752D7B1A49447589D7941E57CDAC97&amp;dn=Black+Panther+%282018%29+720p+HDTS+999MB+-+MkvCage</link>
-			<comments>http://thepiratebay.org/torrent/20858642</comments>
-			<pubDate>Sun, 01 Apr 2018 03:42:51 +0200</pubDate>
+			<title><![CDATA[Baaghi 2 (2018) Hindi Movie Pre-DVDRip x264]]></title>
+			<link>magnet:?xt=urn:btih:95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1&amp;dn=Baaghi+2+%282018%29+Hindi+Movie+Pre-DVDRip+x264</link>
+			<comments>http://thepiratebay.org/torrent/20850696</comments>
+			<pubDate>Sat, 31 Mar 2018 17:15:49 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20858642/</guid>
+			<guid>http://thepiratebay.org/torrent/20850696/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1059307148</contentLength>
-				<infoHash>AA7D933114752D7B1A49447589D7941E57CDAC97</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:AA7D933114752D7B1A49447589D7941E57CDAC97&amp;dn=Black+Panther+%282018%29+720p+HDTS+999MB+-+MkvCage]]></magnetURI>
+				<contentLength>763271658</contentLength>
+				<infoHash>95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:95CCAD19F7E1B2E05D1834E5D4BD13F1A111FAD1&amp;dn=Baaghi+2+%282018%29+Hindi+Movie+Pre-DVDRip+x264]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Pirates.of.the.Caribbean.Dead.Men.Tell.No.Tales.2017.HDRip.XviD.]]></title>
-			<link>magnet:?xt=urn:btih:CA548AA95DEADD1681C4826E61AD122A5E57B0D7&amp;dn=Pirates.of.the.Caribbean.Dead.Men.Tell.No.Tales.2017.HDRip.XviD.</link>
-			<comments>http://thepiratebay.org/torrent/18531850</comments>
-			<pubDate>Tue, 05 Sep 2017 16:29:48 +0200</pubDate>
+			<title><![CDATA[Fifty Shades Freed 2018 NEW 720p HD-TS X264-UNiQUE]]></title>
+			<link>magnet:?xt=urn:btih:486C27D53A1471C80C7A1FD9EF285BE1AE59569C&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE</link>
+			<comments>http://thepiratebay.org/torrent/20077985</comments>
+			<pubDate>Wed, 14 Feb 2018 16:25:10 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18531850/</guid>
+			<guid>http://thepiratebay.org/torrent/20077985/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1633618262</contentLength>
-				<infoHash>CA548AA95DEADD1681C4826E61AD122A5E57B0D7</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:CA548AA95DEADD1681C4826E61AD122A5E57B0D7&amp;dn=Pirates.of.the.Caribbean.Dead.Men.Tell.No.Tales.2017.HDRip.XviD.]]></magnetURI>
+				<contentLength>2003370638</contentLength>
+				<infoHash>486C27D53A1471C80C7A1FD9EF285BE1AE59569C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:486C27D53A1471C80C7A1FD9EF285BE1AE59569C&amp;dn=Fifty+Shades+Freed+2018+NEW+720p+HD-TS+X264-UNiQUE]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Hostiles.2017.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01&amp;dn=Hostiles.2017.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/21025462</comments>
-			<pubDate>Tue, 10 Apr 2018 06:49:57 +0200</pubDate>
+			<title><![CDATA[Suicide Squad Hell to Pay.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038&amp;dn=Suicide+Squad+Hell+to+Pay.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/20769622</comments>
+			<pubDate>Tue, 27 Mar 2018 07:34:45 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21025462/</guid>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20769622/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1611622954</contentLength>
-				<infoHash>0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01&amp;dn=Hostiles.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
+				<contentLength>1178679325</contentLength>
+				<infoHash>46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:46EA3D59E7D7AB78DBD35FFBC52B99B34DF84038&amp;dn=Suicide+Squad+Hell+to+Pay.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[I.Kill.Giants.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:2984D4C97634237C95EA49A2358418A9C2D54DEB&amp;dn=I.Kill.Giants.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/20705443</comments>
+			<pubDate>Fri, 23 Mar 2018 06:42:24 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20705443/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1468773426</contentLength>
+				<infoHash>2984D4C97634237C95EA49A2358418A9C2D54DEB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2984D4C97634237C95EA49A2358418A9C2D54DEB&amp;dn=I.Kill.Giants.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Den of Thieves 2018 NEW 720p HD-TS X264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:25F0F0D20D13A1DDE1362D3DE1939428F2406F0E&amp;dn=Den+of+Thieves+2018+NEW+720p+HD-TS+X264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/19927477</comments>
+			<pubDate>Sat, 03 Feb 2018 14:26:20 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19927477/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3272045359</contentLength>
+				<infoHash>25F0F0D20D13A1DDE1362D3DE1939428F2406F0E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:25F0F0D20D13A1DDE1362D3DE1939428F2406F0E&amp;dn=Den+of+Thieves+2018+NEW+720p+HD-TS+X264-CPG]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -558,31 +460,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Red Sparrow 2018 HDCAM ENG X264 HQMic-BABY ]]></title>
-			<link>magnet:?xt=urn:btih:8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B&amp;dn=Red+Sparrow+2018+HDCAM+ENG+X264+HQMic-BABY+</link>
-			<comments>http://thepiratebay.org/torrent/20409731</comments>
-			<pubDate>Mon, 05 Mar 2018 07:35:03 +0100</pubDate>
+			<title><![CDATA[Raid 2018 Hindi Movie Pre-DVDRip x264]]></title>
+			<link>magnet:?xt=urn:btih:A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6&amp;dn=Raid+2018+Hindi+Movie+Pre-DVDRip+x264</link>
+			<comments>http://thepiratebay.org/torrent/20618539</comments>
+			<pubDate>Sat, 17 Mar 2018 10:09:51 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20409731/</guid>
+			<guid>http://thepiratebay.org/torrent/20618539/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2139779041</contentLength>
-				<infoHash>8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B&amp;dn=Red+Sparrow+2018+HDCAM+ENG+X264+HQMic-BABY+]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Wonder.Woman.2017.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C&amp;dn=Wonder.Woman.2017.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/18497130</comments>
-			<pubDate>Tue, 29 Aug 2017 01:43:24 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18497130/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1691467128</contentLength>
-				<infoHash>12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C&amp;dn=Wonder.Woman.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
+				<contentLength>752467296</contentLength>
+				<infoHash>A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A91CCC232EDB30B1F2DF8CB0AF95328DBE0C12F6&amp;dn=Raid+2018+Hindi+Movie+Pre-DVDRip+x264]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -597,6 +485,20 @@
 				<contentLength>1475574601</contentLength>
 				<infoHash>2277A81195F880427F8D1F92A54A2FEA7E040862</infoHash>
 				<magnetURI><![CDATA[magnet:?xt=urn:btih:2277A81195F880427F8D1F92A54A2FEA7E040862&amp;dn=Baby.Driver.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Wonder.Woman.2017.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C&amp;dn=Wonder.Woman.2017.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/18497130</comments>
+			<pubDate>Tue, 29 Aug 2017 01:43:24 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/18497130/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1691467128</contentLength>
+				<infoHash>12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:12A8C2EAB1C3ED4F676CC90DE4E5173276719D6C&amp;dn=Wonder.Woman.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -628,143 +530,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Braven.2018.HDRip.x264.AC3-Manning]]></title>
-			<link>magnet:?xt=urn:btih:C37C21108ABABEB2CCA3DBD855FAE8E0EB27AF42&amp;dn=Braven.2018.HDRip.x264.AC3-Manning</link>
-			<comments>http://thepiratebay.org/torrent/19919392</comments>
-			<pubDate>Fri, 02 Feb 2018 17:51:06 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[TvTeam]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19919392/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1506504717</contentLength>
-				<infoHash>C37C21108ABABEB2CCA3DBD855FAE8E0EB27AF42</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C37C21108ABABEB2CCA3DBD855FAE8E0EB27AF42&amp;dn=Braven.2018.HDRip.x264.AC3-Manning]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[El capitan trueno y el santo grial (2011) [HDrip][Castellano]]]></title>
-			<link>magnet:?xt=urn:btih:48F62225DD235C7C2133303C497A164CF13F3D9B&amp;dn=El+capitan+trueno+y+el+santo+grial+%282011%29+%5BHDrip%5D%5BCastellano%5D</link>
-			<comments>http://thepiratebay.org/torrent/10538943</comments>
-			<pubDate>Sat, 12 Jul 2014 19:52:56 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[traperoyo]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/10538943/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1819195392</contentLength>
-				<infoHash>48F62225DD235C7C2133303C497A164CF13F3D9B</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:48F62225DD235C7C2133303C497A164CF13F3D9B&amp;dn=El+capitan+trueno+y+el+santo+grial+%282011%29+%5BHDrip%5D%5BCastellano%5D]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Raid (2018) Hindi 720p PRE x264 AAC - Downloadhub]]></title>
-			<link>magnet:?xt=urn:btih:AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0&amp;dn=Raid+%282018%29+Hindi+720p+PRE+x264+AAC+-+Downloadhub</link>
-			<comments>http://thepiratebay.org/torrent/20618701</comments>
-			<pubDate>Sat, 17 Mar 2018 10:31:51 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20618701/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>943408112</contentLength>
-				<infoHash>AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0&amp;dn=Raid+%282018%29+Hindi+720p+PRE+x264+AAC+-+Downloadhub]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[BAAGHI 2 (2018) 1CD DESI PRE DVD RIP - X264 AAC - DTONE EXCLUSIV]]></title>
-			<link>magnet:?xt=urn:btih:903DD60E6AAA344E5D44CF208ECB9A25997E6036&amp;dn=BAAGHI+2+%282018%29+1CD+DESI+PRE+DVD+RIP+-+X264+AAC+-+DTONE+EXCLUSIV</link>
-			<comments>http://thepiratebay.org/torrent/20838596</comments>
-			<pubDate>Fri, 30 Mar 2018 18:32:58 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20838596/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>727730504</contentLength>
-				<infoHash>903DD60E6AAA344E5D44CF208ECB9A25997E6036</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:903DD60E6AAA344E5D44CF208ECB9A25997E6036&amp;dn=BAAGHI+2+%282018%29+1CD+DESI+PRE+DVD+RIP+-+X264+AAC+-+DTONE+EXCLUSIV]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Daddys.Home.2.2017.BRRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:14C2052C5D9EB3E71EEF73016E49011D89E4798C&amp;dn=Daddys.Home.2.2017.BRRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/19967118</comments>
-			<pubDate>Wed, 07 Feb 2018 04:05:42 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19967118/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1496869463</contentLength>
-				<infoHash>14C2052C5D9EB3E71EEF73016E49011D89E4798C</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:14C2052C5D9EB3E71EEF73016E49011D89E4798C&amp;dn=Daddys.Home.2.2017.BRRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The Death of Stalin.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:CBD183B1BE18CFD92D150CB65F9AF219052697F3&amp;dn=The+Death+of+Stalin.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/20149888</comments>
-			<pubDate>Mon, 19 Feb 2018 02:23:13 +0100</pubDate>
+			<title><![CDATA[12.Strong.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:744B61540136DA63787FD49964740DB9B86EBEB7&amp;dn=12.Strong.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/20916090</comments>
+			<pubDate>Tue, 03 Apr 2018 06:37:36 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20149888/</guid>
+			<guid>http://thepiratebay.org/torrent/20916090/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1504306714</contentLength>
-				<infoHash>CBD183B1BE18CFD92D150CB65F9AF219052697F3</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:CBD183B1BE18CFD92D150CB65F9AF219052697F3&amp;dn=The+Death+of+Stalin.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The.Titan.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:395C30ECB40834F8041576B65FBFFB15237EF405&amp;dn=The.Titan.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/20833560</comments>
-			<pubDate>Fri, 30 Mar 2018 09:59:35 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20833560/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1444870280</contentLength>
-				<infoHash>395C30ECB40834F8041576B65FBFFB15237EF405</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:395C30ECB40834F8041576B65FBFFB15237EF405&amp;dn=The.Titan.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:0FF547590AABE732F9A3927AF9778E08E18848C1&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/21025666</comments>
-			<pubDate>Tue, 10 Apr 2018 08:16:44 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21025666/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1636934688</contentLength>
-				<infoHash>0FF547590AABE732F9A3927AF9778E08E18848C1</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:0FF547590AABE732F9A3927AF9778E08E18848C1&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Black Panther 2018 FULL HDCAM ENG X264-UNiQUE]]></title>
-			<link>magnet:?xt=urn:btih:AAD54DE9DDAE57F83BF487D47C573A133320D9F7&amp;dn=Black+Panther+2018+FULL+HDCAM+ENG+X264-UNiQUE</link>
-			<comments>http://thepiratebay.org/torrent/20120911</comments>
-			<pubDate>Sat, 17 Feb 2018 13:04:06 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20120911/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2083267479</contentLength>
-				<infoHash>AAD54DE9DDAE57F83BF487D47C573A133320D9F7</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:AAD54DE9DDAE57F83BF487D47C573A133320D9F7&amp;dn=Black+Panther+2018+FULL+HDCAM+ENG+X264-UNiQUE]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Get.Out.2017.HC.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:8F1072EDC4E74BB41F12F425D7A91BF5A534BD26&amp;dn=Get.Out.2017.HC.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/17640590</comments>
-			<pubDate>Fri, 21 Apr 2017 13:17:22 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/17640590/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1487469165</contentLength>
-				<infoHash>8F1072EDC4E74BB41F12F425D7A91BF5A534BD26</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:8F1072EDC4E74BB41F12F425D7A91BF5A534BD26&amp;dn=Get.Out.2017.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
+				<contentLength>1631203363</contentLength>
+				<infoHash>744B61540136DA63787FD49964740DB9B86EBEB7</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:744B61540136DA63787FD49964740DB9B86EBEB7&amp;dn=12.Strong.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -782,48 +558,6 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[The.Big.Sick.2017.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:53157447C2D82E7B6558E27F6399E3540B69475D&amp;dn=The.Big.Sick.2017.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/18530182</comments>
-			<pubDate>Tue, 05 Sep 2017 09:29:49 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18530182/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1500859409</contentLength>
-				<infoHash>53157447C2D82E7B6558E27F6399E3540B69475D</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:53157447C2D82E7B6558E27F6399E3540B69475D&amp;dn=The.Big.Sick.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Star Wars The Last Jedi 2017 FULL HDCAM ENGLiSH x264 HQMIC-DADDY]]></title>
-			<link>magnet:?xt=urn:btih:7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7&amp;dn=Star+Wars+The+Last+Jedi+2017+FULL+HDCAM+ENGLiSH+x264+HQMIC-DADDY</link>
-			<comments>http://thepiratebay.org/torrent/19360672</comments>
-			<pubDate>Fri, 15 Dec 2017 20:18:35 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19360672/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2385182226</contentLength>
-				<infoHash>7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7&amp;dn=Star+Wars+The+Last+Jedi+2017+FULL+HDCAM+ENGLiSH+x264+HQMIC-DADDY]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Maze Runner The Death Cure 2018 NEW 720p HDCAM X264-PAPA]]></title>
-			<link>magnet:?xt=urn:btih:0B11155BBA47313A96D04A07C6FD5470A51702DB&amp;dn=Maze+Runner+The+Death+Cure+2018+NEW+720p+HDCAM+X264-PAPA</link>
-			<comments>http://thepiratebay.org/torrent/19949056</comments>
-			<pubDate>Mon, 05 Feb 2018 12:53:05 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19949056/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>4095892156</contentLength>
-				<infoHash>0B11155BBA47313A96D04A07C6FD5470A51702DB</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:0B11155BBA47313A96D04A07C6FD5470A51702DB&amp;dn=Maze+Runner+The+Death+Cure+2018+NEW+720p+HDCAM+X264-PAPA]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
 			<title><![CDATA[Ready Player One 2018.NEW HD-TS.XViD.AC3-ETRG]]></title>
 			<link>magnet:?xt=urn:btih:8AC6EEDE252CD34CE4B6BF1AF19F613559FA5F3D&amp;dn=Ready+Player+One+2018.NEW+HD-TS.XViD.AC3-ETRG</link>
 			<comments>http://thepiratebay.org/torrent/21008591</comments>
@@ -838,227 +572,129 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[The Assasins Code 2018.HC.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:209ECC52E8A697A563ED52B0A438E03646E92990&amp;dn=The+Assasins+Code+2018.HC.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/21012361</comments>
-			<pubDate>Fri, 06 Apr 2018 11:45:56 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21012361/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1508875831</contentLength>
-				<infoHash>209ECC52E8A697A563ED52B0A438E03646E92990</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:209ECC52E8A697A563ED52B0A438E03646E92990&amp;dn=The+Assasins+Code+2018.HC.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Forever.My.Girl.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:8639A7091413EDADA93185331B68F7361430AA19&amp;dn=Forever.My.Girl.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/21025678</comments>
-			<pubDate>Tue, 10 Apr 2018 08:20:59 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21025678/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1473740927</contentLength>
-				<infoHash>8639A7091413EDADA93185331B68F7361430AA19</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:8639A7091413EDADA93185331B68F7361430AA19&amp;dn=Forever.My.Girl.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The Commuter 2018 720p NEW HD-TS X264-CPG]]></title>
-			<link>magnet:?xt=urn:btih:B9759D29A4AE3837118B15EF96CC09BB37501809&amp;dn=The+Commuter+2018+720p+NEW+HD-TS+X264-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19995180</comments>
-			<pubDate>Fri, 09 Feb 2018 14:37:50 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19995180/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2420163379</contentLength>
-				<infoHash>B9759D29A4AE3837118B15EF96CC09BB37501809</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:B9759D29A4AE3837118B15EF96CC09BB37501809&amp;dn=The+Commuter+2018+720p+NEW+HD-TS+X264-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Tiger.Zinda.Hai.2017.Hindi.(1GB).PRE.x264.AAC.-.Hon3y]]></title>
-			<link>magnet:?xt=urn:btih:19FCE157792F4AF60A8D01F88563055E847FBD07&amp;dn=Tiger.Zinda.Hai.2017.Hindi.%281GB%29.PRE.x264.AAC.-.Hon3y</link>
-			<comments>http://thepiratebay.org/torrent/19432169</comments>
-			<pubDate>Fri, 22 Dec 2017 16:47:08 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[honey8ee]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19432169/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1080281215</contentLength>
-				<infoHash>19FCE157792F4AF60A8D01F88563055E847FBD07</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:19FCE157792F4AF60A8D01F88563055E847FBD07&amp;dn=Tiger.Zinda.Hai.2017.Hindi.%281GB%29.PRE.x264.AAC.-.Hon3y]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Padmaavat 2018 Hindi 1GB PreDvDRip x264 AAC - xRG]]></title>
-			<link>magnet:?xt=urn:btih:3DE5D245595A6EB0A5E7CF082F2F0F6117722749&amp;dn=Padmaavat+2018+Hindi+1GB+PreDvDRip+x264+AAC+-+xRG</link>
-			<comments>http://thepiratebay.org/torrent/19810162</comments>
-			<pubDate>Fri, 26 Jan 2018 04:00:22 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[Team_xRG]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19810162/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1082081548</contentLength>
-				<infoHash>3DE5D245595A6EB0A5E7CF082F2F0F6117722749</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:3DE5D245595A6EB0A5E7CF082F2F0F6117722749&amp;dn=Padmaavat+2018+Hindi+1GB+PreDvDRip+x264+AAC+-+xRG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[American.Made.2017.HC.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:C877BBBD33FBEF6D96E23B6127D2C2BA8FE7A533&amp;dn=American.Made.2017.HC.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/18727083</comments>
-			<pubDate>Thu, 12 Oct 2017 18:24:26 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18727083/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1517792886</contentLength>
-				<infoHash>C877BBBD33FBEF6D96E23B6127D2C2BA8FE7A533</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C877BBBD33FBEF6D96E23B6127D2C2BA8FE7A533&amp;dn=American.Made.2017.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Despicable Me 3 2017 NEW HD-TS x264-CPG]]></title>
-			<link>magnet:?xt=urn:btih:017ACA636E7EC3E5247B02D27B0610C4ABB67D52&amp;dn=Despicable+Me+3+2017+NEW+HD-TS+x264-CPG</link>
-			<comments>http://thepiratebay.org/torrent/18060033</comments>
-			<pubDate>Tue, 04 Jul 2017 20:43:58 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18060033/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1749556755</contentLength>
-				<infoHash>017ACA636E7EC3E5247B02D27B0610C4ABB67D52</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:017ACA636E7EC3E5247B02D27B0610C4ABB67D52&amp;dn=Despicable+Me+3+2017+NEW+HD-TS+x264-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[A Wrinkle in Time 2018 720p HD-TS X264 Mr-UnHive]]></title>
-			<link>magnet:?xt=urn:btih:252D3A44ED42CB276E27BB809920A826AAE35C91&amp;dn=A+Wrinkle+in+Time+2018+720p+HD-TS+X264+Mr-UnHive</link>
-			<comments>http://thepiratebay.org/torrent/20722965</comments>
-			<pubDate>Sat, 24 Mar 2018 03:06:00 +0100</pubDate>
+			<title><![CDATA[Pacific Rim 2 Uprising 2018 NEW HDCAM 2D X264 HQMic-CPG]]></title>
+			<link>magnet:?xt=urn:btih:6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30&amp;dn=Pacific+Rim+2+Uprising+2018+NEW+HDCAM+2D+X264+HQMic-CPG</link>
+			<comments>http://thepiratebay.org/torrent/20724054</comments>
+			<pubDate>Sat, 24 Mar 2018 05:33:54 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20722965/</guid>
+			<guid>http://thepiratebay.org/torrent/20724054/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2777195614</contentLength>
-				<infoHash>252D3A44ED42CB276E27BB809920A826AAE35C91</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:252D3A44ED42CB276E27BB809920A826AAE35C91&amp;dn=A+Wrinkle+in+Time+2018+720p+HD-TS+X264+Mr-UnHive]]></magnetURI>
+				<contentLength>1672541375</contentLength>
+				<infoHash>6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6B11E1C5C9EDEF2802E84218E150AFDF7B9EBF30&amp;dn=Pacific+Rim+2+Uprising+2018+NEW+HDCAM+2D+X264+HQMic-CPG]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8[EtMovie...]]></title>
-			<link>magnet:?xt=urn:btih:4AD4539681162FD8233685CCCEF7E58955F779C5&amp;dn=Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovie...</link>
-			<comments>http://thepiratebay.org/torrent/19474137</comments>
-			<pubDate>Tue, 26 Dec 2017 02:49:09 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19474137/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1882685712</contentLength>
-				<infoHash>4AD4539681162FD8233685CCCEF7E58955F779C5</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:4AD4539681162FD8233685CCCEF7E58955F779C5&amp;dn=Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovie...]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[You Were Never Really Here 2017.HDRip.XViD-ETRG]]></title>
-			<link>magnet:?xt=urn:btih:BECC1E372F8D52FF052B403DD32C80BA30961A8D&amp;dn=You+Were+Never+Really+Here+2017.HDRip.XViD-ETRG</link>
-			<comments>http://thepiratebay.org/torrent/21013254</comments>
-			<pubDate>Sat, 07 Apr 2018 15:54:02 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[ETRG]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/21013254/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>738059193</contentLength>
-				<infoHash>BECC1E372F8D52FF052B403DD32C80BA30961A8D</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:BECC1E372F8D52FF052B403DD32C80BA30961A8D&amp;dn=You+Were+Never+Really+Here+2017.HDRip.XViD-ETRG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The Hurricane Heist.2018.HC.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:83991AC69BC8B5208B593B624FAF38759A3DE848&amp;dn=The+Hurricane+Heist.2018.HC.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/20921749</comments>
-			<pubDate>Tue, 03 Apr 2018 11:33:11 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20921749/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1498079790</contentLength>
-				<infoHash>83991AC69BC8B5208B593B624FAF38759A3DE848</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:83991AC69BC8B5208B593B624FAF38759A3DE848&amp;dn=The+Hurricane+Heist.2018.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Death Wish 2018 720p HD-TS X264-CPG]]></title>
-			<link>magnet:?xt=urn:btih:2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6&amp;dn=Death+Wish+2018+720p+HD-TS+X264-CPG</link>
-			<comments>http://thepiratebay.org/torrent/20831465</comments>
-			<pubDate>Fri, 30 Mar 2018 03:31:43 +0200</pubDate>
+			<title><![CDATA[Black Panther (2018) 720p HDTS 999MB - MkvCage]]></title>
+			<link>magnet:?xt=urn:btih:AA7D933114752D7B1A49447589D7941E57CDAC97&amp;dn=Black+Panther+%282018%29+720p+HDTS+999MB+-+MkvCage</link>
+			<comments>http://thepiratebay.org/torrent/20858642</comments>
+			<pubDate>Sun, 01 Apr 2018 03:42:51 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20831465/</guid>
+			<guid>http://thepiratebay.org/torrent/20858642/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>2805896944</contentLength>
-				<infoHash>2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6&amp;dn=Death+Wish+2018+720p+HD-TS+X264-CPG]]></magnetURI>
+				<contentLength>1059307148</contentLength>
+				<infoHash>AA7D933114752D7B1A49447589D7941E57CDAC97</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:AA7D933114752D7B1A49447589D7941E57CDAC97&amp;dn=Black+Panther+%282018%29+720p+HDTS+999MB+-+MkvCage]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Spider-Man Homecoming 2017 HDRip XviD AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:1ABB366515789A87315BC23FF4137F335250150C&amp;dn=Spider-Man+Homecoming+2017+HDRip+XviD+AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/18648127</comments>
-			<pubDate>Tue, 26 Sep 2017 20:16:56 +0200</pubDate>
+			<title><![CDATA[Baaghi 2 (2018) Hindi 720p Pre x264 AAC - Downloadhub]]></title>
+			<link>magnet:?xt=urn:btih:4C7D865359882F316731EA21FF522B4CFBE56793&amp;dn=Baaghi+2+%282018%29+Hindi+720p+Pre+x264+AAC+-+Downloadhub</link>
+			<comments>http://thepiratebay.org/torrent/20850702</comments>
+			<pubDate>Sat, 31 Mar 2018 17:19:22 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[extremezone]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18648127/</guid>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20850702/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1606198094</contentLength>
-				<infoHash>1ABB366515789A87315BC23FF4137F335250150C</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:1ABB366515789A87315BC23FF4137F335250150C&amp;dn=Spider-Man+Homecoming+2017+HDRip+XviD+AC3-EVO]]></magnetURI>
+				<contentLength>1196993173</contentLength>
+				<infoHash>4C7D865359882F316731EA21FF522B4CFBE56793</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4C7D865359882F316731EA21FF522B4CFBE56793&amp;dn=Baaghi+2+%282018%29+Hindi+720p+Pre+x264+AAC+-+Downloadhub]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Game Night 2018 HDCAM ENG X264 HQMic-SeeHD]]></title>
-			<link>magnet:?xt=urn:btih:21DF8847035ECA979B59ACA48C3ABA5914DD988A&amp;dn=Game+Night+2018+HDCAM+ENG+X264+HQMic-SeeHD</link>
-			<comments>http://thepiratebay.org/torrent/20336569</comments>
-			<pubDate>Wed, 28 Feb 2018 06:28:42 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20336569/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1541910658</contentLength>
-				<infoHash>21DF8847035ECA979B59ACA48C3ABA5914DD988A</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:21DF8847035ECA979B59ACA48C3ABA5914DD988A&amp;dn=Game+Night+2018+HDCAM+ENG+X264+HQMic-SeeHD]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Black.Water.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:AB01F3A2899E1CE1047052E4FC6EB9F7624098F6&amp;dn=Black.Water.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/20574117</comments>
-			<pubDate>Wed, 14 Mar 2018 21:16:37 +0100</pubDate>
+			<title><![CDATA[Get.Out.2017.HC.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:8F1072EDC4E74BB41F12F425D7A91BF5A534BD26&amp;dn=Get.Out.2017.HC.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/17640590</comments>
+			<pubDate>Fri, 21 Apr 2017 13:17:22 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20574117/</guid>
+			<guid>http://thepiratebay.org/torrent/17640590/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1460210814</contentLength>
-				<infoHash>AB01F3A2899E1CE1047052E4FC6EB9F7624098F6</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:AB01F3A2899E1CE1047052E4FC6EB9F7624098F6&amp;dn=Black.Water.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+				<contentLength>1487469165</contentLength>
+				<infoHash>8F1072EDC4E74BB41F12F425D7A91BF5A534BD26</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8F1072EDC4E74BB41F12F425D7A91BF5A534BD26&amp;dn=Get.Out.2017.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Transformers The Last Knight 2017 720p HD-TC x264-TRUMP]]></title>
-			<link>magnet:?xt=urn:btih:28B9885FDCD79BE910863837E72978F7E1AA0991&amp;dn=Transformers+The+Last+Knight+2017+720p+HD-TC+x264-TRUMP</link>
-			<comments>http://thepiratebay.org/torrent/17998698</comments>
-			<pubDate>Sun, 25 Jun 2017 15:17:43 +0200</pubDate>
+			<title><![CDATA[Daddys.Home.2.2017.BRRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:14C2052C5D9EB3E71EEF73016E49011D89E4798C&amp;dn=Daddys.Home.2.2017.BRRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/19967118</comments>
+			<pubDate>Wed, 07 Feb 2018 04:05:42 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19967118/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1496869463</contentLength>
+				<infoHash>14C2052C5D9EB3E71EEF73016E49011D89E4798C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:14C2052C5D9EB3E71EEF73016E49011D89E4798C&amp;dn=Daddys.Home.2.2017.BRRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Black Panther 2018 .NEW PROPER HD-TS X264-.CPG]]></title>
+			<link>magnet:?xt=urn:btih:F2DCB6A9DA3E0288953DBE961D0C2521BB6373F8&amp;dn=Black+Panther+2018+.NEW+PROPER+HD-TS+X264-.CPG</link>
+			<comments>http://thepiratebay.org/torrent/21052223</comments>
+			<pubDate>Thu, 12 Apr 2018 07:11:59 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21052223/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2559443022</contentLength>
+				<infoHash>F2DCB6A9DA3E0288953DBE961D0C2521BB6373F8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:F2DCB6A9DA3E0288953DBE961D0C2521BB6373F8&amp;dn=Black+Panther+2018+.NEW+PROPER+HD-TS+X264-.CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The.Big.Sick.2017.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:53157447C2D82E7B6558E27F6399E3540B69475D&amp;dn=The.Big.Sick.2017.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/18530182</comments>
+			<pubDate>Tue, 05 Sep 2017 09:29:49 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/18530182/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1500859409</contentLength>
+				<infoHash>53157447C2D82E7B6558E27F6399E3540B69475D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:53157447C2D82E7B6558E27F6399E3540B69475D&amp;dn=The.Big.Sick.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Batman.Ninja.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:4B70903B549EA531B30B3B19DD90067F6019A565&amp;dn=Batman.Ninja.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/21209535</comments>
+			<pubDate>Tue, 24 Apr 2018 01:31:35 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[EtHD]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21209535/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1286830034</contentLength>
+				<infoHash>4B70903B549EA531B30B3B19DD90067F6019A565</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4B70903B549EA531B30B3B19DD90067F6019A565&amp;dn=Batman.Ninja.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Star Wars The Last Jedi 2017 FULL HDCAM ENGLiSH x264 HQMIC-DADDY]]></title>
+			<link>magnet:?xt=urn:btih:7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7&amp;dn=Star+Wars+The+Last+Jedi+2017+FULL+HDCAM+ENGLiSH+x264+HQMIC-DADDY</link>
+			<comments>http://thepiratebay.org/torrent/19360672</comments>
+			<pubDate>Fri, 15 Dec 2017 20:18:35 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/17998698/</guid>
+			<guid>http://thepiratebay.org/torrent/19360672/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1891023449</contentLength>
-				<infoHash>28B9885FDCD79BE910863837E72978F7E1AA0991</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:28B9885FDCD79BE910863837E72978F7E1AA0991&amp;dn=Transformers+The+Last+Knight+2017+720p+HD-TC+x264-TRUMP]]></magnetURI>
+				<contentLength>2385182226</contentLength>
+				<infoHash>7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7D08AA1A28394D975BB74ACFB66A2E01A8A8DDC7&amp;dn=Star+Wars+The+Last+Jedi+2017+FULL+HDCAM+ENGLiSH+x264+HQMIC-DADDY]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -1090,20 +726,6 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></title>
-			<link>magnet:?xt=urn:btih:2A31D18580852C9790C17609FEED83063EE2F388&amp;dn=Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8</link>
-			<comments>http://thepiratebay.org/torrent/16945371</comments>
-			<pubDate>Sat, 28 Jan 2017 09:06:11 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[SaM]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/16945371/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1971958252</contentLength>
-				<infoHash>2A31D18580852C9790C17609FEED83063EE2F388</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:2A31D18580852C9790C17609FEED83063EE2F388&amp;dn=Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
 			<title><![CDATA[Deep Blue Sea 2.2018.DVDRip.XviD.AC3-EVO]]></title>
 			<link>magnet:?xt=urn:btih:491B4548A7FE39890B025FEFD404013C53337092&amp;dn=Deep+Blue+Sea+2.2018.DVDRip.XviD.AC3-EVO</link>
 			<comments>http://thepiratebay.org/torrent/21014292</comments>
@@ -1118,45 +740,199 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Hate Story 4 (2018) Hindi 720p Pre x264 AAC]]></title>
-			<link>magnet:?xt=urn:btih:2A4F07C55B773DE23ABD20563E609DA08B71BBA7&amp;dn=Hate+Story+4+%282018%29+Hindi+720p+Pre+x264+AAC</link>
-			<comments>http://thepiratebay.org/torrent/20514351</comments>
-			<pubDate>Sat, 10 Mar 2018 12:46:42 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20514351/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1047951732</contentLength>
-				<infoHash>2A4F07C55B773DE23ABD20563E609DA08B71BBA7</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:2A4F07C55B773DE23ABD20563E609DA08B71BBA7&amp;dn=Hate+Story+4+%282018%29+Hindi+720p+Pre+x264+AAC]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[18+ Fifty Shades Freed 2018 UNCENSORED HD TS x264 Clean Audio]]></title>
-			<link>magnet:?xt=urn:btih:1EB07B32723DA9C17A1E24E568603ECD24E3E30D&amp;dn=18%2B+Fifty+Shades+Freed+2018+UNCENSORED+HD+TS+x264+Clean+Audio</link>
-			<comments>http://thepiratebay.org/torrent/20003169</comments>
-			<pubDate>Sat, 10 Feb 2018 02:46:43 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[basicssom]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20003169/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>744483881</contentLength>
-				<infoHash>1EB07B32723DA9C17A1E24E568603ECD24E3E30D</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:1EB07B32723DA9C17A1E24E568603ECD24E3E30D&amp;dn=18%2B+Fifty+Shades+Freed+2018+UNCENSORED+HD+TS+x264+Clean+Audio]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[All.The.Money.In.The.World.2017.BDRip.x264-DRONES[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:31C642F2AF47B72228BD2DB25AD7D17A5BFBB802&amp;dn=All.The.Money.In.The.World.2017.BDRip.x264-DRONES%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/20721133</comments>
-			<pubDate>Fri, 23 Mar 2018 23:09:22 +0100</pubDate>
+			<title><![CDATA[Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8[EtMovie...]]></title>
+			<link>magnet:?xt=urn:btih:4AD4539681162FD8233685CCCEF7E58955F779C5&amp;dn=Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovie...</link>
+			<comments>http://thepiratebay.org/torrent/19474137</comments>
+			<pubDate>Tue, 26 Dec 2017 02:49:09 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20721133/</guid>
+			<guid>http://thepiratebay.org/torrent/19474137/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>858105244</contentLength>
-				<infoHash>31C642F2AF47B72228BD2DB25AD7D17A5BFBB802</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:31C642F2AF47B72228BD2DB25AD7D17A5BFBB802&amp;dn=All.The.Money.In.The.World.2017.BDRip.x264-DRONES%5BEtMovies%5D]]></magnetURI>
+				<contentLength>1882685712</contentLength>
+				<infoHash>4AD4539681162FD8233685CCCEF7E58955F779C5</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4AD4539681162FD8233685CCCEF7E58955F779C5&amp;dn=Call.Me.By.Your.Name.2017.DVDScr.XVID.AC3.HQ.Hive-CM8%5BEtMovie...]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[A Wrinkle in Time 2018 720p HD-TS X264 Mr-UnHive]]></title>
+			<link>magnet:?xt=urn:btih:252D3A44ED42CB276E27BB809920A826AAE35C91&amp;dn=A+Wrinkle+in+Time+2018+720p+HD-TS+X264+Mr-UnHive</link>
+			<comments>http://thepiratebay.org/torrent/20722965</comments>
+			<pubDate>Sat, 24 Mar 2018 03:06:00 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20722965/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2777195614</contentLength>
+				<infoHash>252D3A44ED42CB276E27BB809920A826AAE35C91</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:252D3A44ED42CB276E27BB809920A826AAE35C91&amp;dn=A+Wrinkle+in+Time+2018+720p+HD-TS+X264+Mr-UnHive]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Genesis.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:255308BF760CE28111DE31D788AA3FBC42A0A2D3&amp;dn=Genesis.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21158892</comments>
+			<pubDate>Fri, 20 Apr 2018 09:42:38 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21158892/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1511748059</contentLength>
+				<infoHash>255308BF760CE28111DE31D788AA3FBC42A0A2D3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:255308BF760CE28111DE31D788AA3FBC42A0A2D3&amp;dn=Genesis.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Maze Runner The Death Cure 2018 NEW 720p HDCAM X264-PAPA]]></title>
+			<link>magnet:?xt=urn:btih:0B11155BBA47313A96D04A07C6FD5470A51702DB&amp;dn=Maze+Runner+The+Death+Cure+2018+NEW+720p+HDCAM+X264-PAPA</link>
+			<comments>http://thepiratebay.org/torrent/19949056</comments>
+			<pubDate>Mon, 05 Feb 2018 12:53:05 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19949056/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4095892156</contentLength>
+				<infoHash>0B11155BBA47313A96D04A07C6FD5470A51702DB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0B11155BBA47313A96D04A07C6FD5470A51702DB&amp;dn=Maze+Runner+The+Death+Cure+2018+NEW+720p+HDCAM+X264-PAPA]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The Commuter 2018 720p NEW HD-TS X264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:B9759D29A4AE3837118B15EF96CC09BB37501809&amp;dn=The+Commuter+2018+720p+NEW+HD-TS+X264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/19995180</comments>
+			<pubDate>Fri, 09 Feb 2018 14:37:50 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19995180/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2420163379</contentLength>
+				<infoHash>B9759D29A4AE3837118B15EF96CC09BB37501809</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:B9759D29A4AE3837118B15EF96CC09BB37501809&amp;dn=The+Commuter+2018+720p+NEW+HD-TS+X264-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The.Titan.2018.HDRip.XviD.AC3-EVO[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:395C30ECB40834F8041576B65FBFFB15237EF405&amp;dn=The.Titan.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/20833560</comments>
+			<pubDate>Fri, 30 Mar 2018 09:59:35 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[EtHD]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20833560/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1444870280</contentLength>
+				<infoHash>395C30ECB40834F8041576B65FBFFB15237EF405</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:395C30ECB40834F8041576B65FBFFB15237EF405&amp;dn=The.Titan.2018.HDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Spider-Man Homecoming 2017 HDRip XviD AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:1ABB366515789A87315BC23FF4137F335250150C&amp;dn=Spider-Man+Homecoming+2017+HDRip+XviD+AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/18648127</comments>
+			<pubDate>Tue, 26 Sep 2017 20:16:56 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[extremezone]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/18648127/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1606198094</contentLength>
+				<infoHash>1ABB366515789A87315BC23FF4137F335250150C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:1ABB366515789A87315BC23FF4137F335250150C&amp;dn=Spider-Man+Homecoming+2017+HDRip+XviD+AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Despicable Me 3 2017 NEW HD-TS x264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:017ACA636E7EC3E5247B02D27B0610C4ABB67D52&amp;dn=Despicable+Me+3+2017+NEW+HD-TS+x264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/18060033</comments>
+			<pubDate>Tue, 04 Jul 2017 20:43:58 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/18060033/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1749556755</contentLength>
+				<infoHash>017ACA636E7EC3E5247B02D27B0610C4ABB67D52</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:017ACA636E7EC3E5247B02D27B0610C4ABB67D52&amp;dn=Despicable+Me+3+2017+NEW+HD-TS+x264-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Raid (2018) Hindi 720p PRE x264 AAC - Downloadhub]]></title>
+			<link>magnet:?xt=urn:btih:AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0&amp;dn=Raid+%282018%29+Hindi+720p+PRE+x264+AAC+-+Downloadhub</link>
+			<comments>http://thepiratebay.org/torrent/20618701</comments>
+			<pubDate>Sat, 17 Mar 2018 10:31:51 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20618701/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>943408112</contentLength>
+				<infoHash>AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:AFB18472E0F33A4E9B0CC99CE384315C7FDD23A0&amp;dn=Raid+%282018%29+Hindi+720p+PRE+x264+AAC+-+Downloadhub]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Red Sparrow 2018 HDCAM ENG X264 HQMic-BABY ]]></title>
+			<link>magnet:?xt=urn:btih:8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B&amp;dn=Red+Sparrow+2018+HDCAM+ENG+X264+HQMic-BABY+</link>
+			<comments>http://thepiratebay.org/torrent/20409731</comments>
+			<pubDate>Mon, 05 Mar 2018 07:35:03 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20409731/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2139779041</contentLength>
+				<infoHash>8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8CBCAD9010D3259C60F51BFF9317A9E9C4B5EB4B&amp;dn=Red+Sparrow+2018+HDCAM+ENG+X264+HQMic-BABY+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Black Panther 2018 FULL HDCAM ENG X264-UNiQUE]]></title>
+			<link>magnet:?xt=urn:btih:AAD54DE9DDAE57F83BF487D47C573A133320D9F7&amp;dn=Black+Panther+2018+FULL+HDCAM+ENG+X264-UNiQUE</link>
+			<comments>http://thepiratebay.org/torrent/20120911</comments>
+			<pubDate>Sat, 17 Feb 2018 13:04:06 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20120911/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2083267479</contentLength>
+				<infoHash>AAD54DE9DDAE57F83BF487D47C573A133320D9F7</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:AAD54DE9DDAE57F83BF487D47C573A133320D9F7&amp;dn=Black+Panther+2018+FULL+HDCAM+ENG+X264-UNiQUE]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Death Wish 2018 720p HD-TS X264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6&amp;dn=Death+Wish+2018+720p+HD-TS+X264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/20831465</comments>
+			<pubDate>Fri, 30 Mar 2018 03:31:43 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20831465/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2805896944</contentLength>
+				<infoHash>2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2278AF9F4D2E9B7D7172847D9DC3E6859D1560F6&amp;dn=Death+Wish+2018+720p+HD-TS+X264-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Game Night 2018 HDCAM ENG X264 HQMic-SeeHD]]></title>
+			<link>magnet:?xt=urn:btih:21DF8847035ECA979B59ACA48C3ABA5914DD988A&amp;dn=Game+Night+2018+HDCAM+ENG+X264+HQMic-SeeHD</link>
+			<comments>http://thepiratebay.org/torrent/20336569</comments>
+			<pubDate>Wed, 28 Feb 2018 06:28:42 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20336569/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1541910658</contentLength>
+				<infoHash>21DF8847035ECA979B59ACA48C3ABA5914DD988A</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:21DF8847035ECA979B59ACA48C3ABA5914DD988A&amp;dn=Game+Night+2018+HDCAM+ENG+X264+HQMic-SeeHD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Batman.Ninja.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:7C5E0751E0CA6B71F10430063D757E2BEFFB0161&amp;dn=Batman.Ninja.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21210405</comments>
+			<pubDate>Tue, 24 Apr 2018 04:27:11 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21210405/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1286829800</contentLength>
+				<infoHash>7C5E0751E0CA6B71F10430063D757E2BEFFB0161</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7C5E0751E0CA6B71F10430063D757E2BEFFB0161&amp;dn=Batman.Ninja.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -1174,6 +950,20 @@
 			</torrent>
 		</item>
 		<item>
+			<title><![CDATA[BAAGHI 2 (2018) 1CD DESI PRE DVD RIP - X264 AAC - DTONE EXCLUSIV]]></title>
+			<link>magnet:?xt=urn:btih:903DD60E6AAA344E5D44CF208ECB9A25997E6036&amp;dn=BAAGHI+2+%282018%29+1CD+DESI+PRE+DVD+RIP+-+X264+AAC+-+DTONE+EXCLUSIV</link>
+			<comments>http://thepiratebay.org/torrent/20838596</comments>
+			<pubDate>Fri, 30 Mar 2018 18:32:58 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20838596/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>727730504</contentLength>
+				<infoHash>903DD60E6AAA344E5D44CF208ECB9A25997E6036</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:903DD60E6AAA344E5D44CF208ECB9A25997E6036&amp;dn=BAAGHI+2+%282018%29+1CD+DESI+PRE+DVD+RIP+-+X264+AAC+-+DTONE+EXCLUSIV]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
 			<title><![CDATA[Hidden.Figures.2016.DVDSCR-P2P]]></title>
 			<link>magnet:?xt=urn:btih:5C373C4818CE2B1BFC6F77A3646D6712CC1DEDC4&amp;dn=Hidden.Figures.2016.DVDSCR-P2P</link>
 			<comments>http://thepiratebay.org/torrent/16758865</comments>
@@ -1188,73 +978,17 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Braven.2018.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:22BDEA3F1DF0CCC51DA93503199AE019D40E048F&amp;dn=Braven.2018.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/19916795</comments>
-			<pubDate>Fri, 02 Feb 2018 11:08:53 +0100</pubDate>
+			<title><![CDATA[Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></title>
+			<link>magnet:?xt=urn:btih:2A31D18580852C9790C17609FEED83063EE2F388&amp;dn=Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8</link>
+			<comments>http://thepiratebay.org/torrent/16945371</comments>
+			<pubDate>Sat, 28 Jan 2017 09:06:11 +0100</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19916795/</guid>
+			<dc:creator><![CDATA[SaM]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16945371/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1497165702</contentLength>
-				<infoHash>22BDEA3F1DF0CCC51DA93503199AE019D40E048F</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:22BDEA3F1DF0CCC51DA93503199AE019D40E048F&amp;dn=Braven.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[John Wick Chapter 2 2017 HDRip XVid Line-NoGrp]]></title>
-			<link>magnet:?xt=urn:btih:308083209E8724B19D165177CAA512CA3FD592DA&amp;dn=John+Wick+Chapter+2+2017+HDRip+XVid+Line-NoGrp</link>
-			<comments>http://thepiratebay.org/torrent/17820503</comments>
-			<pubDate>Mon, 22 May 2017 23:02:37 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[.BONE.]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/17820503/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1395320832</contentLength>
-				<infoHash>308083209E8724B19D165177CAA512CA3FD592DA</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:308083209E8724B19D165177CAA512CA3FD592DA&amp;dn=John+Wick+Chapter+2+2017+HDRip+XVid+Line-NoGrp]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Kong.Skull Island.2017.HC.HDRip.XViD.AC3-ETRG]]></title>
-			<link>magnet:?xt=urn:btih:434CA07305C69F3B8F37F3E69957ECCC32D6BBAF&amp;dn=Kong.Skull+Island.2017.HC.HDRip.XViD.AC3-ETRG</link>
-			<comments>http://thepiratebay.org/torrent/17510311</comments>
-			<pubDate>Fri, 07 Apr 2017 14:48:50 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[ETRG]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/17510311/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1543432919</contentLength>
-				<infoHash>434CA07305C69F3B8F37F3E69957ECCC32D6BBAF</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:434CA07305C69F3B8F37F3E69957ECCC32D6BBAF&amp;dn=Kong.Skull+Island.2017.HC.HDRip.XViD.AC3-ETRG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[T2.Trainspotting.2017.HDRip.XviD.AC3-EVO]]></title>
-			<link>magnet:?xt=urn:btih:CEA7A61C5E712464372ACA2DCCCDC975B46288CE&amp;dn=T2.Trainspotting.2017.HDRip.XviD.AC3-EVO</link>
-			<comments>http://thepiratebay.org/torrent/17813887</comments>
-			<pubDate>Sat, 20 May 2017 13:28:32 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[Supernova]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/17813887/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1508164894</contentLength>
-				<infoHash>CEA7A61C5E712464372ACA2DCCCDC975B46288CE</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:CEA7A61C5E712464372ACA2DCCCDC975B46288CE&amp;dn=T2.Trainspotting.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Insidious (2010) 720p BrRip x264 - 650MB - YIFY]]></title>
-			<link>magnet:?xt=urn:btih:293734A535A1820B4B4383DD4D15B1A2952675DB&amp;dn=Insidious+%282010%29+720p+BrRip+x264+-+650MB+-+YIFY</link>
-			<comments>http://thepiratebay.org/torrent/7547337</comments>
-			<pubDate>Sun, 19 Aug 2012 13:58:33 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[YIFY]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/7547337/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>682279206</contentLength>
-				<infoHash>293734A535A1820B4B4383DD4D15B1A2952675DB</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:293734A535A1820B4B4383DD4D15B1A2952675DB&amp;dn=Insidious+%282010%29+720p+BrRip+x264+-+650MB+-+YIFY]]></magnetURI>
+				<contentLength>1971958252</contentLength>
+				<infoHash>2A31D18580852C9790C17609FEED83063EE2F388</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2A31D18580852C9790C17609FEED83063EE2F388&amp;dn=Lion.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -1272,87 +1006,59 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Girls Trip 2017 NEW HD-TS x264-CPG]]></title>
-			<link>magnet:?xt=urn:btih:70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E&amp;dn=Girls+Trip+2017+NEW+HD-TS+x264-CPG</link>
-			<comments>http://thepiratebay.org/torrent/18411070</comments>
-			<pubDate>Sat, 19 Aug 2017 22:26:02 +0200</pubDate>
+			<title><![CDATA[Transformers The Last Knight 2017 720p HD-TC x264-TRUMP]]></title>
+			<link>magnet:?xt=urn:btih:28B9885FDCD79BE910863837E72978F7E1AA0991&amp;dn=Transformers+The+Last+Knight+2017+720p+HD-TC+x264-TRUMP</link>
+			<comments>http://thepiratebay.org/torrent/17998698</comments>
+			<pubDate>Sun, 25 Jun 2017 15:17:43 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/18411070/</guid>
+			<guid>http://thepiratebay.org/torrent/17998698/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1636240430</contentLength>
-				<infoHash>70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E&amp;dn=Girls+Trip+2017+NEW+HD-TS+x264-CPG]]></magnetURI>
+				<contentLength>1891023449</contentLength>
+				<infoHash>28B9885FDCD79BE910863837E72978F7E1AA0991</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:28B9885FDCD79BE910863837E72978F7E1AA0991&amp;dn=Transformers+The+Last+Knight+2017+720p+HD-TC+x264-TRUMP]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Jumanji Welcome To The Jungle 2017 NEW 720p HD-TS X264 HQ-CPG]]></title>
-			<link>magnet:?xt=urn:btih:31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG</link>
-			<comments>http://thepiratebay.org/torrent/19529663</comments>
-			<pubDate>Sun, 31 Dec 2017 13:30:30 +0100</pubDate>
+			<title><![CDATA[John Wick Chapter 2 2017 HDRip XVid Line-NoGrp]]></title>
+			<link>magnet:?xt=urn:btih:308083209E8724B19D165177CAA512CA3FD592DA&amp;dn=John+Wick+Chapter+2+2017+HDRip+XVid+Line-NoGrp</link>
+			<comments>http://thepiratebay.org/torrent/17820503</comments>
+			<pubDate>Mon, 22 May 2017 23:02:37 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[.BONE.]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/17820503/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1395320832</contentLength>
+				<infoHash>308083209E8724B19D165177CAA512CA3FD592DA</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:308083209E8724B19D165177CAA512CA3FD592DA&amp;dn=John+Wick+Chapter+2+2017+HDRip+XVid+Line-NoGrp]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Hostiles.2017.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01&amp;dn=Hostiles.2017.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21025462</comments>
+			<pubDate>Tue, 10 Apr 2018 06:49:57 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21025462/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1611622954</contentLength>
+				<infoHash>0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0AA7FD3AC51FE3C88B29973D5071D8895ECDEE01&amp;dn=Hostiles.2017.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Forever.My.Girl.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:8639A7091413EDADA93185331B68F7361430AA19&amp;dn=Forever.My.Girl.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21025678</comments>
+			<pubDate>Tue, 10 Apr 2018 08:20:59 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
 			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19529663/</guid>
+			<guid>http://thepiratebay.org/torrent/21025678/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>3082613942</contentLength>
-				<infoHash>31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The Greatest Showman (2017) HDTS AC3]]></title>
-			<link>magnet:?xt=urn:btih:465B9BB9E79E1CB9A3CB0BEBA3CFC00FF869E685&amp;dn=The+Greatest+Showman+%282017%29+HDTS+AC3</link>
-			<comments>http://thepiratebay.org/torrent/19534799</comments>
-			<pubDate>Mon, 01 Jan 2018 01:05:11 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19534799/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1468000256</contentLength>
-				<infoHash>465B9BB9E79E1CB9A3CB0BEBA3CFC00FF869E685</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:465B9BB9E79E1CB9A3CB0BEBA3CFC00FF869E685&amp;dn=The+Greatest+Showman+%282017%29+HDTS+AC3]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG]]></title>
-			<link>magnet:?xt=urn:btih:6F75E430FB2E382D1674DE2770C7ED5292D39F75&amp;dn=The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG</link>
-			<comments>http://thepiratebay.org/torrent/15726497</comments>
-			<pubDate>Thu, 01 Sep 2016 09:20:30 +0200</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[ETRG]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/15726497/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1465823501</contentLength>
-				<infoHash>6F75E430FB2E382D1674DE2770C7ED5292D39F75</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:6F75E430FB2E382D1674DE2770C7ED5292D39F75&amp;dn=The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Fukrey Returns (2017) Hindi 720p CAM x264 AAC - Downloadhub]]></title>
-			<link>magnet:?xt=urn:btih:B0368B7C5A6CACCEEF1920F183A4B9676F93EEC5&amp;dn=Fukrey+Returns+%282017%29+Hindi+720p+CAM+x264+AAC+-+Downloadhub</link>
-			<comments>http://thepiratebay.org/torrent/19322684</comments>
-			<pubDate>Sat, 09 Dec 2017 13:28:11 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19322684/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1176297539</contentLength>
-				<infoHash>B0368B7C5A6CACCEEF1920F183A4B9676F93EEC5</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:B0368B7C5A6CACCEEF1920F183A4B9676F93EEC5&amp;dn=Fukrey+Returns+%282017%29+Hindi+720p+CAM+x264+AAC+-+Downloadhub]]></magnetURI>
-			</torrent>
-		</item>
-		<item>
-			<title><![CDATA[Insidious The Last Key (2018) 720P WEB-DL-X264-MP3-Cr@zyTribal]]></title>
-			<link>magnet:?xt=urn:btih:C68427649A5350C5AB018DFA9A4782E807417316&amp;dn=Insidious+The+Last+Key+%282018%29+720P+WEB-DL-X264-MP3-Cr%40zyTribal</link>
-			<comments>http://thepiratebay.org/torrent/20487171</comments>
-			<pubDate>Fri, 09 Mar 2018 05:21:36 +0100</pubDate>
-			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[makintos13]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/20487171/</guid>
-			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1628998501</contentLength>
-				<infoHash>C68427649A5350C5AB018DFA9A4782E807417316</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:C68427649A5350C5AB018DFA9A4782E807417316&amp;dn=Insidious+The+Last+Key+%282018%29+720P+WEB-DL-X264-MP3-Cr%40zyTribal]]></magnetURI>
+				<contentLength>1473740927</contentLength>
+				<infoHash>8639A7091413EDADA93185331B68F7361430AA19</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8639A7091413EDADA93185331B68F7361430AA19&amp;dn=Forever.My.Girl.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -1370,6 +1076,76 @@
 			</torrent>
 		</item>
 		<item>
+			<title><![CDATA[Tomb Raider 2018 720p HD-TC NEW X264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:712692A1B7251ED454714D4590DFB1649114D6F1&amp;dn=Tomb+Raider+2018+720p+HD-TC+NEW+X264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/21172533</comments>
+			<pubDate>Mon, 23 Apr 2018 04:08:17 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21172533/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2683109718</contentLength>
+				<infoHash>712692A1B7251ED454714D4590DFB1649114D6F1</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:712692A1B7251ED454714D4590DFB1649114D6F1&amp;dn=Tomb+Raider+2018+720p+HD-TC+NEW+X264-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Dr.Strange.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></title>
+			<link>magnet:?xt=urn:btih:4662BCB86393A0A1B4881E9C833567F23C532CE2&amp;dn=Dr.Strange.2016.DVDScr.XVID.AC3.HQ.Hive-CM8</link>
+			<comments>http://thepiratebay.org/torrent/16908289</comments>
+			<pubDate>Wed, 25 Jan 2017 04:29:23 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16908289/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1787806260</contentLength>
+				<infoHash>4662BCB86393A0A1B4881E9C833567F23C532CE2</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4662BCB86393A0A1B4881E9C833567F23C532CE2&amp;dn=Dr.Strange.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG]]></title>
+			<link>magnet:?xt=urn:btih:6F75E430FB2E382D1674DE2770C7ED5292D39F75&amp;dn=The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG</link>
+			<comments>http://thepiratebay.org/torrent/15726497</comments>
+			<pubDate>Thu, 01 Sep 2016 09:20:30 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[ETRG]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/15726497/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1465823501</contentLength>
+				<infoHash>6F75E430FB2E382D1674DE2770C7ED5292D39F75</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6F75E430FB2E382D1674DE2770C7ED5292D39F75&amp;dn=The.Secret.Life.of.Pets.2016.HDRip.XViD.AC3-ETRG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Manchester.by.the.Sea.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></title>
+			<link>magnet:?xt=urn:btih:7C921C0AC5D968F61D876C308B39838FB5215588&amp;dn=Manchester.by.the.Sea.2016.DVDScr.XVID.AC3.HQ.Hive-CM8</link>
+			<comments>http://thepiratebay.org/torrent/16885661</comments>
+			<pubDate>Sun, 22 Jan 2017 08:53:38 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16885661/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1936472331</contentLength>
+				<infoHash>7C921C0AC5D968F61D876C308B39838FB5215588</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7C921C0AC5D968F61D876C308B39838FB5215588&amp;dn=Manchester.by.the.Sea.2016.DVDScr.XVID.AC3.HQ.Hive-CM8]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:800E7781B9711CB9A2D3792DAE5E9FFB595D57E3&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21025300</comments>
+			<pubDate>Tue, 10 Apr 2018 06:16:40 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21025300/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1636934650</contentLength>
+				<infoHash>800E7781B9711CB9A2D3792DAE5E9FFB595D57E3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:800E7781B9711CB9A2D3792DAE5E9FFB595D57E3&amp;dn=Den.of.Thieves.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
 			<title><![CDATA[Wonder.Woman.2017.TC1080P.x264 ]]></title>
 			<link>magnet:?xt=urn:btih:3CD752F7BDCA459323616B2495AC36B4907853B4&amp;dn=Wonder.Woman.2017.TC1080P.x264+</link>
 			<comments>http://thepiratebay.org/torrent/17890338</comments>
@@ -1381,6 +1157,62 @@
 				<contentLength>799577563</contentLength>
 				<infoHash>3CD752F7BDCA459323616B2495AC36B4907853B4</infoHash>
 				<magnetURI><![CDATA[magnet:?xt=urn:btih:3CD752F7BDCA459323616B2495AC36B4907853B4&amp;dn=Wonder.Woman.2017.TC1080P.x264+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Loving Vincent 2017 HDRip XviD AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:0A976091EB39390BFEC0C7CA018D6924B5960727&amp;dn=Loving+Vincent+2017+HDRip+XviD+AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/19027732</comments>
+			<pubDate>Mon, 13 Nov 2017 20:06:07 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[hotpena]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19027732/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1503507176</contentLength>
+				<infoHash>0A976091EB39390BFEC0C7CA018D6924B5960727</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0A976091EB39390BFEC0C7CA018D6924B5960727&amp;dn=Loving+Vincent+2017+HDRip+XviD+AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Padmaavat 2018 Hindi 1GB PreDvDRip x264 AAC - xRG]]></title>
+			<link>magnet:?xt=urn:btih:3DE5D245595A6EB0A5E7CF082F2F0F6117722749&amp;dn=Padmaavat+2018+Hindi+1GB+PreDvDRip+x264+AAC+-+xRG</link>
+			<comments>http://thepiratebay.org/torrent/19810162</comments>
+			<pubDate>Fri, 26 Jan 2018 04:00:22 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[Team_xRG]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19810162/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1082081548</contentLength>
+				<infoHash>3DE5D245595A6EB0A5E7CF082F2F0F6117722749</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:3DE5D245595A6EB0A5E7CF082F2F0F6117722749&amp;dn=Padmaavat+2018+Hindi+1GB+PreDvDRip+x264+AAC+-+xRG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[All.The.Money.In.The.World.2017.BDRip.x264-DRONES[EtMovies]]]></title>
+			<link>magnet:?xt=urn:btih:31C642F2AF47B72228BD2DB25AD7D17A5BFBB802&amp;dn=All.The.Money.In.The.World.2017.BDRip.x264-DRONES%5BEtMovies%5D</link>
+			<comments>http://thepiratebay.org/torrent/20721133</comments>
+			<pubDate>Fri, 23 Mar 2018 23:09:22 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[EtHD]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20721133/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>858105244</contentLength>
+				<infoHash>31C642F2AF47B72228BD2DB25AD7D17A5BFBB802</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:31C642F2AF47B72228BD2DB25AD7D17A5BFBB802&amp;dn=All.The.Money.In.The.World.2017.BDRip.x264-DRONES%5BEtMovies%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Macbeth.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:3F3B0FCB6505EC526F96D2931405AD38D12B55EB&amp;dn=Macbeth.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/21173129</comments>
+			<pubDate>Mon, 23 Apr 2018 04:30:18 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21173129/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1433495836</contentLength>
+				<infoHash>3F3B0FCB6505EC526F96D2931405AD38D12B55EB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:3F3B0FCB6505EC526F96D2931405AD38D12B55EB&amp;dn=Macbeth.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
 			</torrent>
 		</item>
 		<item>
@@ -1398,17 +1230,185 @@
 			</torrent>
 		</item>
 		<item>
-			<title><![CDATA[Accident.Man.2018.DVDRip.XviD.AC3-EVO[EtMovies]]]></title>
-			<link>magnet:?xt=urn:btih:0839D0E068AF4F0C0EF818BBC6039707F98ADEE5&amp;dn=Accident.Man.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D</link>
-			<comments>http://thepiratebay.org/torrent/19830421</comments>
-			<pubDate>Sat, 27 Jan 2018 00:33:17 +0100</pubDate>
+			<title><![CDATA[Me.Before.You.2016.HC.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:85F76D2137ED81C0C1E31A5AD4279F158BA3D20C&amp;dn=Me.Before.You.2016.HC.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/15171673</comments>
+			<pubDate>Fri, 01 Jul 2016 17:51:48 +0200</pubDate>
 			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
-			<dc:creator><![CDATA[EtHD]]></dc:creator>
-			<guid>http://thepiratebay.org/torrent/19830421/</guid>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/15171673/</guid>
 			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
-				<contentLength>1494706900</contentLength>
-				<infoHash>0839D0E068AF4F0C0EF818BBC6039707F98ADEE5</infoHash>
-				<magnetURI><![CDATA[magnet:?xt=urn:btih:0839D0E068AF4F0C0EF818BBC6039707F98ADEE5&amp;dn=Accident.Man.2018.DVDRip.XviD.AC3-EVO%5BEtMovies%5D]]></magnetURI>
+				<contentLength>1507119743</contentLength>
+				<infoHash>85F76D2137ED81C0C1E31A5AD4279F158BA3D20C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:85F76D2137ED81C0C1E31A5AD4279F158BA3D20C&amp;dn=Me.Before.You.2016.HC.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Blockers.2018.CAM.XViD-T3RR0R SQU4D]]></title>
+			<link>magnet:?xt=urn:btih:68F7081667F58A303401EF7E10FA61EF1F341E96&amp;dn=Blockers.2018.CAM.XViD-T3RR0R+SQU4D</link>
+			<comments>http://thepiratebay.org/torrent/21099244</comments>
+			<pubDate>Mon, 16 Apr 2018 19:02:03 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[makintos13]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21099244/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2037861784</contentLength>
+				<infoHash>68F7081667F58A303401EF7E10FA61EF1F341E96</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:68F7081667F58A303401EF7E10FA61EF1F341E96&amp;dn=Blockers.2018.CAM.XViD-T3RR0R+SQU4D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Girls Trip 2017 NEW HD-TS x264-CPG]]></title>
+			<link>magnet:?xt=urn:btih:70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E&amp;dn=Girls+Trip+2017+NEW+HD-TS+x264-CPG</link>
+			<comments>http://thepiratebay.org/torrent/18411070</comments>
+			<pubDate>Sat, 19 Aug 2017 22:26:02 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/18411070/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1636240430</contentLength>
+				<infoHash>70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:70E26A0FC3FE4ACA9D8875458098BE3A9252AA1E&amp;dn=Girls+Trip+2017+NEW+HD-TS+x264-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Kong.Skull Island.2017.HC.HDRip.XViD.AC3-ETRG]]></title>
+			<link>magnet:?xt=urn:btih:434CA07305C69F3B8F37F3E69957ECCC32D6BBAF&amp;dn=Kong.Skull+Island.2017.HC.HDRip.XViD.AC3-ETRG</link>
+			<comments>http://thepiratebay.org/torrent/17510311</comments>
+			<pubDate>Fri, 07 Apr 2017 14:48:50 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[ETRG]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/17510311/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1543432919</contentLength>
+				<infoHash>434CA07305C69F3B8F37F3E69957ECCC32D6BBAF</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:434CA07305C69F3B8F37F3E69957ECCC32D6BBAF&amp;dn=Kong.Skull+Island.2017.HC.HDRip.XViD.AC3-ETRG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The.Martian.2015.HDRip.XviD-ETRG]]></title>
+			<link>magnet:?xt=urn:btih:20130AA512BE804B52C6D751DFA7070E308037CE&amp;dn=The.Martian.2015.HDRip.XviD-ETRG</link>
+			<comments>http://thepiratebay.org/torrent/13070342</comments>
+			<pubDate>Tue, 22 Dec 2015 12:29:02 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[SaM]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/13070342/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>742375391</contentLength>
+				<infoHash>20130AA512BE804B52C6D751DFA7070E308037CE</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:20130AA512BE804B52C6D751DFA7070E308037CE&amp;dn=The.Martian.2015.HDRip.XviD-ETRG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Tiger.Zinda.Hai.2017.Hindi.(1GB).PRE.x264.AAC.-.Hon3y]]></title>
+			<link>magnet:?xt=urn:btih:19FCE157792F4AF60A8D01F88563055E847FBD07&amp;dn=Tiger.Zinda.Hai.2017.Hindi.%281GB%29.PRE.x264.AAC.-.Hon3y</link>
+			<comments>http://thepiratebay.org/torrent/19432169</comments>
+			<pubDate>Fri, 22 Dec 2017 16:47:08 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[honey8ee]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19432169/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1080281215</contentLength>
+				<infoHash>19FCE157792F4AF60A8D01F88563055E847FBD07</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:19FCE157792F4AF60A8D01F88563055E847FBD07&amp;dn=Tiger.Zinda.Hai.2017.Hindi.%281GB%29.PRE.x264.AAC.-.Hon3y]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Braven.2018.HDRip.XviD.AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:22BDEA3F1DF0CCC51DA93503199AE019D40E048F&amp;dn=Braven.2018.HDRip.XviD.AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/19916795</comments>
+			<pubDate>Fri, 02 Feb 2018 11:08:53 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19916795/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1497165702</contentLength>
+				<infoHash>22BDEA3F1DF0CCC51DA93503199AE019D40E048F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:22BDEA3F1DF0CCC51DA93503199AE019D40E048F&amp;dn=Braven.2018.HDRip.XviD.AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[The Mountain Between Us 2017 BRRip XviD AC3-EVO]]></title>
+			<link>magnet:?xt=urn:btih:2104558C3AE9C6F80BEF4039354EF06CFBDC1694&amp;dn=The+Mountain+Between+Us+2017+BRRip+XviD+AC3-EVO</link>
+			<comments>http://thepiratebay.org/torrent/19334330</comments>
+			<pubDate>Tue, 12 Dec 2017 23:57:20 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[hotpena]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19334330/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1500161378</contentLength>
+				<infoHash>2104558C3AE9C6F80BEF4039354EF06CFBDC1694</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2104558C3AE9C6F80BEF4039354EF06CFBDC1694&amp;dn=The+Mountain+Between+Us+2017+BRRip+XviD+AC3-EVO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[18+ Fifty Shades Freed 2018 UNCENSORED HD TS x264 Clean Audio]]></title>
+			<link>magnet:?xt=urn:btih:1EB07B32723DA9C17A1E24E568603ECD24E3E30D&amp;dn=18%2B+Fifty+Shades+Freed+2018+UNCENSORED+HD+TS+x264+Clean+Audio</link>
+			<comments>http://thepiratebay.org/torrent/20003169</comments>
+			<pubDate>Sat, 10 Feb 2018 02:46:43 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[basicssom]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20003169/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>744483881</contentLength>
+				<infoHash>1EB07B32723DA9C17A1E24E568603ECD24E3E30D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:1EB07B32723DA9C17A1E24E568603ECD24E3E30D&amp;dn=18%2B+Fifty+Shades+Freed+2018+UNCENSORED+HD+TS+x264+Clean+Audio]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Rampage 2018 720p NEW HDCAM X264 HQMic-CPG]]></title>
+			<link>magnet:?xt=urn:btih:DAA57DF6BD8256E9D96ED59FFC4A062DE714C5BE&amp;dn=Rampage+2018+720p+NEW+HDCAM+X264+HQMic-CPG</link>
+			<comments>http://thepiratebay.org/torrent/21089140</comments>
+			<pubDate>Sun, 15 Apr 2018 20:47:38 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21089140/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2267641938</contentLength>
+				<infoHash>DAA57DF6BD8256E9D96ED59FFC4A062DE714C5BE</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:DAA57DF6BD8256E9D96ED59FFC4A062DE714C5BE&amp;dn=Rampage+2018+720p+NEW+HDCAM+X264+HQMic-CPG]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Forever My Girl 2018 720p BluRay HEVC x265-RMTeam ]]></title>
+			<link>magnet:?xt=urn:btih:1A8D1A927DE85B73FFDA785E1D6418AF7DBEAFA3&amp;dn=Forever+My+Girl+2018+720p+BluRay+HEVC+x265-RMTeam+</link>
+			<comments>http://thepiratebay.org/torrent/21122547</comments>
+			<pubDate>Wed, 18 Apr 2018 00:26:52 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[.BONE.]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/21122547/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>567755311</contentLength>
+				<infoHash>1A8D1A927DE85B73FFDA785E1D6418AF7DBEAFA3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:1A8D1A927DE85B73FFDA785E1D6418AF7DBEAFA3&amp;dn=Forever+My+Girl+2018+720p+BluRay+HEVC+x265-RMTeam+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[El capitan trueno y el santo grial (2011) [HDrip][Castellano]]]></title>
+			<link>magnet:?xt=urn:btih:48F62225DD235C7C2133303C497A164CF13F3D9B&amp;dn=El+capitan+trueno+y+el+santo+grial+%282011%29+%5BHDrip%5D%5BCastellano%5D</link>
+			<comments>http://thepiratebay.org/torrent/10538943</comments>
+			<pubDate>Sat, 12 Jul 2014 19:52:56 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[traperoyo]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/10538943/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1819195392</contentLength>
+				<infoHash>48F62225DD235C7C2133303C497A164CF13F3D9B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:48F62225DD235C7C2133303C497A164CF13F3D9B&amp;dn=El+capitan+trueno+y+el+santo+grial+%282011%29+%5BHDrip%5D%5BCastellano%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Jumanji Welcome To The Jungle 2017 NEW 720p HD-TS X264 HQ-CPG]]></title>
+			<link>magnet:?xt=urn:btih:31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG</link>
+			<comments>http://thepiratebay.org/torrent/19529663</comments>
+			<pubDate>Sun, 31 Dec 2017 13:30:30 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/201"><![CDATA[Video / Movies]]></category>
+			<dc:creator><![CDATA[xxxlavalxxx]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19529663/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3082613942</contentLength>
+				<infoHash>31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:31C62DE92DCF9FF8CE4CC0D77E073C3C1FD9091E&amp;dn=Jumanji+Welcome+To+The+Jungle+2017+NEW+720p+HD-TS+X264+HQ-CPG]]></magnetURI>
 			</torrent>
 		</item>
 	</channel>

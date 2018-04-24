@@ -62,6 +62,7 @@ class DhtCrawler(AbstractCrawler):
         self.actualFile = ()      
         self.peerPool = {}
         self.peerReplied = []
+        self.noNoPeersFound = 0
         
         self.noENETUNREACH = 0
         self.noFiltered = 0
@@ -319,7 +320,7 @@ class DhtCrawler(AbstractCrawler):
         return noReportedPeers
     
     def getPingedPeers(self):
-        noNoPeersFound = self.ping_peers()
+        self.noNoPeersFound = self.ping_peers()
         self.logger.info("\n\nAfter Ping")
         noPingedPeers = 0
         for info in self.peerPool:
@@ -333,7 +334,8 @@ class DhtCrawler(AbstractCrawler):
     def printEvaluation(self, noReportedPeers, noPingedPeers):
         #self.logger.info("\n\nNumber of error noENETUNREACH: %i" % self.noENETUNREACH  )
         self.info()
-        self.logger.info("Number of Seeking torrents -----------: %i" % len(self.filesPool)  )
+        self.logger.info("Number of Seeking torrents -----------: %i" % self.noSearchingFiles  )
+        self.logger.info("Number Torrents with no peers---------: %i" % self.noNoPeersFound  ) 
         self.logger.info("Number of Reported peers -------------: %i" % self.noAllPeers  )
         self.logger.info("Number of Reported peers after merge -: %i" % noReportedPeers  )
         self.logger.info("Number of Filtered peers -------------: %i" % self.noFiltered  )
@@ -349,7 +351,8 @@ class DhtCrawler(AbstractCrawler):
               (len(self.nodePool),
                self.respondent*100.0/max(1,len(self.nodePool)),
                self.nodeQueue.qsize(), self.duplicates*100.0/self.total)  )
-        f.write("Number of Seeking torrents -----------: %i\n" % len(self.filesPool)  )
+        f.write("Number of Seeking torrents -----------: %i\n" % self.noSearchingFiles  )
+        f.write("Number Torrents with no peers---------: %i\n" % self.noNoPeersFound  )
         f.write("Number of Reported peers -------------: %i\n" % self.noAllPeers  )
         f.write("Number of Reported peers after merge -: %i\n" % noReportedPeers  )
         f.write("Number of Filtered peers -------------: %i\n" % self.noFiltered  )
@@ -379,6 +382,8 @@ if __name__ == '__main__':
     crawler.filesPool = torrent.filesPool
     if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
         crawler.noSearchingFiles = 10
+    else:
+        crawler.noSearchingFiles = len(crawler.filesPool)
 
     # bootstrap around 100 000 nodes to start
     crawler.start_crawl() 

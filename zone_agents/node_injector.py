@@ -286,7 +286,8 @@ class Injector(object):
                 #self.addrPool[addr] = {"timestamp":time.time()}
                 self.respondent += 1
             except Exception, err:
-                print "Exception:Injector.listener():", err
+                #print "Exception:Injector.listener():", err
+                pass
         pass
 
     def start_sender(self):
