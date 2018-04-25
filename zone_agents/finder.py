@@ -116,7 +116,10 @@ if __name__ == '__main__':
     noFound = 0
     print "\nfile ID: %s\n" % finder.fileID
     print "Finding"
-    pomID = long(finder.fileID)
+    try:
+        pomID = long(finder.fileID)
+    except:
+        pass
     noNbitNodes2 = 0
     for node in finder.nodePool:
         #print node

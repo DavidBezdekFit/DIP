@@ -156,11 +156,12 @@ class AbstractCrawler(object):
                 self.addrPool[addrPom] = {"timestamp":time.time()}
                 self.respondent += 1
             except Exception, err:
-                if not "v" in decMsg: 
-                    #if err.code != 126: 
-                    # [Errno 126] Network dropped connection on reset
-                    self.logger.info("Exception:Crawler.listener(): %s" % err)
-                    
+                
+                #if not "v" in decMsg: 
+                #   if err.code != 126: 
+                # [Errno 126] Network dropped connection on reset
+                #   self.logger.info("Exception:Crawler.listener(): %s" % err)
+                pass    
         pass
 
 

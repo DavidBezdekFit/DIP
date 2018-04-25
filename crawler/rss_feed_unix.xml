@@ -1,0 +1,1415 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE torrent PUBLIC "-//bitTorrent//DTD torrent 0.1//EN" "http://xmlns.ezrss.it/0.1/dtd/">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>The Pirate Bay - UNIX</title>
+		<link>http://thepiratebay.org</link>
+		<description>The top100 torrents from The Pirate Bay</description>
+		<language>en</language>
+		<pubDate>Wed, 25 Apr 2018 07:00:40 +0200</pubDate>
+		<lastBuildDate>Wed, 25 Apr 2018 07:00:40 +0200</lastBuildDate>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<generator>TPB RSS Generator 1.2</generator>
+
+		<item>
+			<title><![CDATA[Tails v3.6 the amnesic incognito live system]]></title>
+			<link>magnet:?xt=urn:btih:17CAD44F3C43C98F46813A28859C78BEB2D37D0F&amp;dn=Tails+v3.6+the+amnesic+incognito+live+system</link>
+			<comments>http://thepiratebay.org/torrent/20569567</comments>
+			<pubDate>Wed, 14 Mar 2018 07:25:38 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[CCnOSnBT]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/20569567/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1225569089</contentLength>
+				<infoHash>17CAD44F3C43C98F46813A28859C78BEB2D37D0F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:17CAD44F3C43C98F46813A28859C78BEB2D37D0F&amp;dn=Tails+v3.6+the+amnesic+incognito+live+system]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Red Hat Enterprise Linux (RHEL) Server 7.0 x86-64 Multilingual]]></title>
+			<link>magnet:?xt=urn:btih:6F01D290BD6955A16E9EE36E6F651208302A01A6&amp;dn=Red+Hat+Enterprise+Linux+%28RHEL%29+Server+7.0+x86-64+Multilingual</link>
+			<comments>http://thepiratebay.org/torrent/11586396</comments>
+			<pubDate>Fri, 28 Nov 2014 11:44:21 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Tyr3ll]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11586396/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>10487887275</contentLength>
+				<infoHash>6F01D290BD6955A16E9EE36E6F651208302A01A6</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6F01D290BD6955A16E9EE36E6F651208302A01A6&amp;dn=Red+Hat+Enterprise+Linux+%28RHEL%29+Server+7.0+x86-64+Multilingual]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Kali Linux Amd64, [Iso - MultiLang] [TNTVillage] ]]></title>
+			<link>magnet:?xt=urn:btih:5AEC5EE9F2D044316FE1DE29D221452103CEB958&amp;dn=Kali+Linux+Amd64%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+</link>
+			<comments>http://thepiratebay.org/torrent/13352714</comments>
+			<pubDate>Fri, 29 Jan 2016 19:30:31 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/13352714/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2945482822</contentLength>
+				<infoHash>5AEC5EE9F2D044316FE1DE29D221452103CEB958</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:5AEC5EE9F2D044316FE1DE29D221452103CEB958&amp;dn=Kali+Linux+Amd64%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Tails i386 - 2.0, [Iso - MultiLang]  [TNTVillage] ]]></title>
+			<link>magnet:?xt=urn:btih:38D5AC7BA57E41187BC9C6A068EAE92389B099D5&amp;dn=Tails+i386+-+2.0%2C+%5BIso+-+MultiLang%5D++%5BTNTVillage%5D+</link>
+			<comments>http://thepiratebay.org/torrent/13352705</comments>
+			<pubDate>Fri, 29 Jan 2016 19:29:12 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/13352705/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1135090465</contentLength>
+				<infoHash>38D5AC7BA57E41187BC9C6A068EAE92389B099D5</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:38D5AC7BA57E41187BC9C6A068EAE92389B099D5&amp;dn=Tails+i386+-+2.0%2C+%5BIso+-+MultiLang%5D++%5BTNTVillage%5D+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Tails i386 - 1.6, [Iso - MultiLang]  [TNTVillage] ]]></title>
+			<link>magnet:?xt=urn:btih:A15A3443E043302C1DF99752988429E7781DFBE0&amp;dn=Tails+i386+-+1.6%2C+%5BIso+-+MultiLang%5D++%5BTNTVillage%5D+</link>
+			<comments>http://thepiratebay.org/torrent/12477970</comments>
+			<pubDate>Wed, 23 Sep 2015 10:01:53 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12477970/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>987034401</contentLength>
+				<infoHash>A15A3443E043302C1DF99752988429E7781DFBE0</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A15A3443E043302C1DF99752988429E7781DFBE0&amp;dn=Tails+i386+-+1.6%2C+%5BIso+-+MultiLang%5D++%5BTNTVillage%5D+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[VMware Workstation v12.0.0 Linux x64 Incl Keymaker-EMBRACE]]></title>
+			<link>magnet:?xt=urn:btih:CA5BB78B0CBBABE9C5C155C301CF6A75A5AED6E8&amp;dn=VMware+Workstation+v12.0.0+Linux+x64+Incl+Keymaker-EMBRACE</link>
+			<comments>http://thepiratebay.org/torrent/12292291</comments>
+			<pubDate>Wed, 26 Aug 2015 05:08:37 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[RandalPaul]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12292291/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>372119532</contentLength>
+				<infoHash>CA5BB78B0CBBABE9C5C155C301CF6A75A5AED6E8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:CA5BB78B0CBBABE9C5C155C301CF6A75A5AED6E8&amp;dn=VMware+Workstation+v12.0.0+Linux+x64+Incl+Keymaker-EMBRACE]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[VMware Workstation 12.5.6 build 5528349 for Linux]]></title>
+			<link>magnet:?xt=urn:btih:F728377CC3BAF35ED5E98F4757049CD446C46B69&amp;dn=VMware+Workstation+12.5.6+build+5528349+for+Linux</link>
+			<comments>http://thepiratebay.org/torrent/19060185</comments>
+			<pubDate>Thu, 16 Nov 2017 10:51:21 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[metheguy]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19060185/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>477390593</contentLength>
+				<infoHash>F728377CC3BAF35ED5E98F4757049CD446C46B69</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:F728377CC3BAF35ED5E98F4757049CD446C46B69&amp;dn=VMware+Workstation+12.5.6+build+5528349+for+Linux]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[CentOS 7.0 x64 Everything 1611]]></title>
+			<link>magnet:?xt=urn:btih:DB5A3C83E8AD61E658F450D512142B7E5FFDC566&amp;dn=CentOS+7.0+x64+Everything+1611</link>
+			<comments>http://thepiratebay.org/torrent/16884956</comments>
+			<pubDate>Sun, 22 Jan 2017 06:14:12 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[surferbroadband]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16884956/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>8280610994</contentLength>
+				<infoHash>DB5A3C83E8AD61E658F450D512142B7E5FFDC566</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:DB5A3C83E8AD61E658F450D512142B7E5FFDC566&amp;dn=CentOS+7.0+x64+Everything+1611]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[CBT NUGGETS LINUX SERIES (VIDEO TUTORIAL)]]></title>
+			<link>magnet:?xt=urn:btih:0A0FF5422B76BEB54E0C870E110493506790FB3E&amp;dn=CBT+NUGGETS+LINUX+SERIES+%28VIDEO+TUTORIAL%29</link>
+			<comments>http://thepiratebay.org/torrent/4028348</comments>
+			<pubDate>Thu, 14 Feb 2008 22:24:12 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4028348/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1523968732</contentLength>
+				<infoHash>0A0FF5422B76BEB54E0C870E110493506790FB3E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0A0FF5422B76BEB54E0C870E110493506790FB3E&amp;dn=CBT+NUGGETS+LINUX+SERIES+%28VIDEO+TUTORIAL%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Linux Mint 18.1 (Cinnamon) (64-bit)]]></title>
+			<link>magnet:?xt=urn:btih:21A66E1449EE640491D84C8C8A025466F4B2D301&amp;dn=Linux+Mint+18.1+%28Cinnamon%29+%2864-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/16884466</comments>
+			<pubDate>Sun, 22 Jan 2017 03:58:54 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[surferbroadband]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16884466/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1810169856</contentLength>
+				<infoHash>21A66E1449EE640491D84C8C8A025466F4B2D301</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:21A66E1449EE640491D84C8C8A025466F4B2D301&amp;dn=Linux+Mint+18.1+%28Cinnamon%29+%2864-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[BackTrack 5 R3  KDE 64bit]]></title>
+			<link>magnet:?xt=urn:btih:35F5A50FE20D5B719103C2EB9CDEE8AD92130E53&amp;dn=BackTrack+5+R3++KDE+64bit</link>
+			<comments>http://thepiratebay.org/torrent/7529559</comments>
+			<pubDate>Mon, 13 Aug 2012 19:18:28 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[L3G3ND]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7529559/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3349407777</contentLength>
+				<infoHash>35F5A50FE20D5B719103C2EB9CDEE8AD92130E53</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:35F5A50FE20D5B719103C2EB9CDEE8AD92130E53&amp;dn=BackTrack+5+R3++KDE+64bit]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Kali Linux 32 bit ISO v1.0.7]]></title>
+			<link>magnet:?xt=urn:btih:C179F2885583CEA6F83A9F95A461BB1C484CB2DE&amp;dn=Kali+Linux+32+bit+ISO+v1.0.7</link>
+			<comments>http://thepiratebay.org/torrent/10357831</comments>
+			<pubDate>Sat, 14 Jun 2014 16:50:19 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Devastat0r36]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/10357831/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3141795909</contentLength>
+				<infoHash>C179F2885583CEA6F83A9F95A461BB1C484CB2DE</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:C179F2885583CEA6F83A9F95A461BB1C484CB2DE&amp;dn=Kali+Linux+32+bit+ISO+v1.0.7]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Redhat.Enterprise.Linux.v6.UPDATE.2.X86_64.DVD-HOTiSO]]></title>
+			<link>magnet:?xt=urn:btih:EF60A0864A0DD784128C201DC7E15BADD6DEAFEE&amp;dn=Redhat.Enterprise.Linux.v6.UPDATE.2.X86_64.DVD-HOTiSO</link>
+			<comments>http://thepiratebay.org/torrent/6913306</comments>
+			<pubDate>Mon, 26 Dec 2011 19:10:06 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Tyr3ll]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/6913306/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3465029263</contentLength>
+				<infoHash>EF60A0864A0DD784128C201DC7E15BADD6DEAFEE</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:EF60A0864A0DD784128C201DC7E15BADD6DEAFEE&amp;dn=Redhat.Enterprise.Linux.v6.UPDATE.2.X86_64.DVD-HOTiSO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Redhat.Enterprise.Linux.v5.UPDATE.7.X86_64.DVD-07242011.iso]]></title>
+			<link>magnet:?xt=urn:btih:569C691D1ABA030C7E393B7DCD01452FAC64B71F&amp;dn=Redhat.Enterprise.Linux.v5.UPDATE.7.X86_64.DVD-07242011.iso</link>
+			<comments>http://thepiratebay.org/torrent/6577835</comments>
+			<pubDate>Tue, 02 Aug 2011 09:58:53 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Tyr3ll]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/6577835/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3834736640</contentLength>
+				<infoHash>569C691D1ABA030C7E393B7DCD01452FAC64B71F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:569C691D1ABA030C7E393B7DCD01452FAC64B71F&amp;dn=Redhat.Enterprise.Linux.v5.UPDATE.7.X86_64.DVD-07242011.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[BackTrack 5 R3 Gnome 64bit]]></title>
+			<link>magnet:?xt=urn:btih:C31AF9BA621AD0BCA6E654C834979B0F93D6E8FD&amp;dn=BackTrack+5+R3+Gnome+64bit</link>
+			<comments>http://thepiratebay.org/torrent/7529601</comments>
+			<pubDate>Mon, 13 Aug 2012 19:39:25 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[L3G3ND]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7529601/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3306489889</contentLength>
+				<infoHash>C31AF9BA621AD0BCA6E654C834979B0F93D6E8FD</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:C31AF9BA621AD0BCA6E654C834979B0F93D6E8FD&amp;dn=BackTrack+5+R3+Gnome+64bit]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[SHELL SCRIPTING IN LINUX]]></title>
+			<link>magnet:?xt=urn:btih:649CEF01A70B9B217DDC06D0F338CC945E949A4A&amp;dn=SHELL+SCRIPTING+IN+LINUX</link>
+			<comments>http://thepiratebay.org/torrent/4021531</comments>
+			<pubDate>Sun, 10 Feb 2008 21:53:59 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4021531/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>157906914</contentLength>
+				<infoHash>649CEF01A70B9B217DDC06D0F338CC945E949A4A</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:649CEF01A70B9B217DDC06D0F338CC945E949A4A&amp;dn=SHELL+SCRIPTING+IN+LINUX]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[BackTrack 5 R3 Gnome 32bit]]></title>
+			<link>magnet:?xt=urn:btih:804CFD9A77CBC88108D387B18748D4D46AF85B6E&amp;dn=BackTrack+5+R3+Gnome+32bit</link>
+			<comments>http://thepiratebay.org/torrent/7529596</comments>
+			<pubDate>Mon, 13 Aug 2012 19:37:03 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[L3G3ND]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7529596/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3295094817</contentLength>
+				<infoHash>804CFD9A77CBC88108D387B18748D4D46AF85B6E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:804CFD9A77CBC88108D387B18748D4D46AF85B6E&amp;dn=BackTrack+5+R3+Gnome+32bit]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[OpenMandriva Lx 3.03 (64-bit)]]></title>
+			<link>magnet:?xt=urn:btih:4CB08D50D5615F97B5DD848A929F9C74DDB062AA&amp;dn=OpenMandriva+Lx+3.03+%2864-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/19136787</comments>
+			<pubDate>Wed, 22 Nov 2017 18:36:34 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[JRepin]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19136787/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2260008960</contentLength>
+				<infoHash>4CB08D50D5615F97B5DD848A929F9C74DDB062AA</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4CB08D50D5615F97B5DD848A929F9C74DDB062AA&amp;dn=OpenMandriva+Lx+3.03+%2864-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[EVERYTHING ABOUT THE LINUX KERNEL]]></title>
+			<link>magnet:?xt=urn:btih:48856D165D59D7E2B60A4B2FD120A76A3AC43684&amp;dn=EVERYTHING+ABOUT+THE+LINUX+KERNEL</link>
+			<comments>http://thepiratebay.org/torrent/4024963</comments>
+			<pubDate>Tue, 12 Feb 2008 23:35:24 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4024963/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>16803061</contentLength>
+				<infoHash>48856D165D59D7E2B60A4B2FD120A76A3AC43684</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:48856D165D59D7E2B60A4B2FD120A76A3AC43684&amp;dn=EVERYTHING+ABOUT+THE+LINUX+KERNEL]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ubuntu 15.04 Desktop i386, [Iso - MultiLang] [TNTVillage]]]></title>
+			<link>magnet:?xt=urn:btih:4896FDE14EFBC0F66A274D2A69104FBB57FBD2CB&amp;dn=Ubuntu+15.04+Desktop+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D</link>
+			<comments>http://thepiratebay.org/torrent/11887232</comments>
+			<pubDate>Tue, 05 May 2015 21:40:19 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11887232/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1188855808</contentLength>
+				<infoHash>4896FDE14EFBC0F66A274D2A69104FBB57FBD2CB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4896FDE14EFBC0F66A274D2A69104FBB57FBD2CB&amp;dn=Ubuntu+15.04+Desktop+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[LINUX CBT SCRIPTING EDITION BASH (VIDEO TUTORIAL)]]></title>
+			<link>magnet:?xt=urn:btih:56F928C3C119DFA95CC66336CE6D9BA95D768E79&amp;dn=LINUX+CBT+SCRIPTING+EDITION+BASH+%28VIDEO+TUTORIAL%29</link>
+			<comments>http://thepiratebay.org/torrent/4157936</comments>
+			<pubDate>Sat, 26 Apr 2008 18:18:11 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4157936/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>264155087</contentLength>
+				<infoHash>56F928C3C119DFA95CC66336CE6D9BA95D768E79</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:56F928C3C119DFA95CC66336CE6D9BA95D768E79&amp;dn=LINUX+CBT+SCRIPTING+EDITION+BASH+%28VIDEO+TUTORIAL%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Kali Linux i386, [Iso - MultiLang] [TNTVillage] ]]></title>
+			<link>magnet:?xt=urn:btih:3F57CE434EDCE3F093B32A8E5D8A20367F4DB630&amp;dn=Kali+Linux+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+</link>
+			<comments>http://thepiratebay.org/torrent/13352716</comments>
+			<pubDate>Fri, 29 Jan 2016 19:31:56 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/13352716/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2999844933</contentLength>
+				<infoHash>3F57CE434EDCE3F093B32A8E5D8A20367F4DB630</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:3F57CE434EDCE3F093B32A8E5D8A20367F4DB630&amp;dn=Kali+Linux+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Linux Mint 18.1 (Cinnamon) (32-bit)]]></title>
+			<link>magnet:?xt=urn:btih:34858BE0F6C9090F0ADF1D4C9488A5712C38243F&amp;dn=Linux+Mint+18.1+%28Cinnamon%29+%2832-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/16884693</comments>
+			<pubDate>Sun, 22 Jan 2017 04:38:29 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[surferbroadband]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16884693/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1684013056</contentLength>
+				<infoHash>34858BE0F6C9090F0ADF1D4C9488A5712C38243F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:34858BE0F6C9090F0ADF1D4C9488A5712C38243F&amp;dn=Linux+Mint+18.1+%28Cinnamon%29+%2832-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Fedora Linux 27 - KDE Plasma Desktop Edition]]></title>
+			<link>magnet:?xt=urn:btih:EB7E9B679DBBEF58B25A6BC3B0B2E3A862833610&amp;dn=Fedora+Linux+27+-+KDE+Plasma+Desktop+Edition</link>
+			<comments>http://thepiratebay.org/torrent/19039143</comments>
+			<pubDate>Tue, 14 Nov 2017 20:31:33 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[JRepin]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19039143/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1656752111</contentLength>
+				<infoHash>EB7E9B679DBBEF58B25A6BC3B0B2E3A862833610</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:EB7E9B679DBBEF58B25A6BC3B0B2E3A862833610&amp;dn=Fedora+Linux+27+-+KDE+Plasma+Desktop+Edition]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Kali Linux 1.1.0 i386, [Iso - MultiLang] [TNTVillage]]]></title>
+			<link>magnet:?xt=urn:btih:1CA8FF45562823EA4D5ADD77091E49E6FF0D1C97&amp;dn=Kali+Linux+1.1.0+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D</link>
+			<comments>http://thepiratebay.org/torrent/11887234</comments>
+			<pubDate>Tue, 05 May 2015 21:41:29 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11887234/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3176333381</contentLength>
+				<infoHash>1CA8FF45562823EA4D5ADD77091E49E6FF0D1C97</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:1CA8FF45562823EA4D5ADD77091E49E6FF0D1C97&amp;dn=Kali+Linux+1.1.0+i386%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[CentOS-6.5-x86_64-LiveCD.iso]]></title>
+			<link>magnet:?xt=urn:btih:E708EB79540B70152498B8D10E9002FC8B5FD003&amp;dn=CentOS-6.5-x86_64-LiveCD.iso</link>
+			<comments>http://thepiratebay.org/torrent/9291211</comments>
+			<pubDate>Tue, 03 Dec 2013 17:32:38 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Zen_Bud]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/9291211/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>680525824</contentLength>
+				<infoHash>E708EB79540B70152498B8D10E9002FC8B5FD003</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:E708EB79540B70152498B8D10E9002FC8B5FD003&amp;dn=CentOS-6.5-x86_64-LiveCD.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[ManageEngine NetFlow Analyzer v8600 Linux 32bits and KeyGen.rar]]></title>
+			<link>magnet:?xt=urn:btih:9EECDAC3CFA9120491A6A235A68DC4B06D8094EC&amp;dn=ManageEngine+NetFlow+Analyzer+v8600+Linux+32bits+and+KeyGen.rar</link>
+			<comments>http://thepiratebay.org/torrent/6078968</comments>
+			<pubDate>Mon, 03 Jan 2011 00:39:39 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[armadillo1984]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/6078968/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>46315699</contentLength>
+				<infoHash>9EECDAC3CFA9120491A6A235A68DC4B06D8094EC</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:9EECDAC3CFA9120491A6A235A68DC4B06D8094EC&amp;dn=ManageEngine+NetFlow+Analyzer+v8600+Linux+32bits+and+KeyGen.rar]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[XiaoPan 0.4.2.2 (English) WiFi Crack (WPA-PSK)]]></title>
+			<link>magnet:?xt=urn:btih:6202B8EEE14F114FB8756184294056A66525D4FC&amp;dn=XiaoPan+0.4.2.2+%28English%29+WiFi+Crack+%28WPA-PSK%29</link>
+			<comments>http://thepiratebay.org/torrent/7753327</comments>
+			<pubDate>Tue, 23 Oct 2012 18:25:15 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[nosnavis]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7753327/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>78647296</contentLength>
+				<infoHash>6202B8EEE14F114FB8756184294056A66525D4FC</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:6202B8EEE14F114FB8756184294056A66525D4FC&amp;dn=XiaoPan+0.4.2.2+%28English%29+WiFi+Crack+%28WPA-PSK%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Linux Mint 18.3 &amp;ldquo;Sylvia&amp;rdquo; KDE (64-bit)]]></title>
+			<link>magnet:?xt=urn:btih:898905ABF340974B3FD33942D5B736B80875F62D&amp;dn=Linux+Mint+18.3+%26ldquo%3BSylvia%26rdquo%3B+KDE+%2864-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/19360141</comments>
+			<pubDate>Fri, 15 Dec 2017 18:44:22 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[JRepin]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/19360141/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2178908160</contentLength>
+				<infoHash>898905ABF340974B3FD33942D5B736B80875F62D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:898905ABF340974B3FD33942D5B736B80875F62D&amp;dn=Linux+Mint+18.3+%26ldquo%3BSylvia%26rdquo%3B+KDE+%2864-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Red Hat Enterprise Linux (RHEL) Server 7.0 x86_64 Multilingual]]></title>
+			<link>magnet:?xt=urn:btih:D8F4A0EA64D92B5C64329518594D36EEFB34E2B3&amp;dn=Red+Hat+Enterprise+Linux+%28RHEL%29+Server+7.0+x86_64+Multilingual</link>
+			<comments>http://thepiratebay.org/torrent/11537947</comments>
+			<pubDate>Sat, 22 Nov 2014 05:53:53 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[NepsterJay]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11537947/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>10487887275</contentLength>
+				<infoHash>D8F4A0EA64D92B5C64329518594D36EEFB34E2B3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:D8F4A0EA64D92B5C64329518594D36EEFB34E2B3&amp;dn=Red+Hat+Enterprise+Linux+%28RHEL%29+Server+7.0+x86_64+Multilingual]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Parted Magic 2013-08-01 - Partition Manager Live CD]]></title>
+			<link>magnet:?xt=urn:btih:696A1C2D07C86E6CE0334B13D77AEAED41106B61&amp;dn=Parted+Magic+2013-08-01+-+Partition+Manager+Live+CD</link>
+			<comments>http://thepiratebay.org/torrent/8956942</comments>
+			<pubDate>Tue, 24 Sep 2013 10:04:37 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[CCnOSnBT]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/8956942/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>352321536</contentLength>
+				<infoHash>696A1C2D07C86E6CE0334B13D77AEAED41106B61</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:696A1C2D07C86E6CE0334B13D77AEAED41106B61&amp;dn=Parted+Magic+2013-08-01+-+Partition+Manager+Live+CD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Photo.Theater.Slideshow.Movie.Maker.v3.1.1.Multilingual.MacOSX.C]]></title>
+			<link>magnet:?xt=urn:btih:586458F9723EC709B32D9569AFE88D2BA94EBC87&amp;dn=Photo.Theater.Slideshow.Movie.Maker.v3.1.1.Multilingual.MacOSX.C</link>
+			<comments>http://thepiratebay.org/torrent/9721014</comments>
+			<pubDate>Fri, 07 Mar 2014 22:54:47 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[zerodayz]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/9721014/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>36421526</contentLength>
+				<infoHash>586458F9723EC709B32D9569AFE88D2BA94EBC87</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:586458F9723EC709B32D9569AFE88D2BA94EBC87&amp;dn=Photo.Theater.Slideshow.Movie.Maker.v3.1.1.Multilingual.MacOSX.C]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[ubuntu 12.04.1 (32 bit)]]></title>
+			<link>magnet:?xt=urn:btih:14FFE5DD23188FD5CB53A1D47F1289DB70ABF31E&amp;dn=ubuntu+12.04.1+%2832+bit%29</link>
+			<comments>http://thepiratebay.org/torrent/7568322</comments>
+			<pubDate>Sat, 25 Aug 2012 18:42:46 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[NepsterJay]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7568322/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>729067520</contentLength>
+				<infoHash>14FFE5DD23188FD5CB53A1D47F1289DB70ABF31E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:14FFE5DD23188FD5CB53A1D47F1289DB70ABF31E&amp;dn=ubuntu+12.04.1+%2832+bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[LiveLessons - Introduction to the FreeBSD OS]]></title>
+			<link>magnet:?xt=urn:btih:C91DA43D63D6A04B817457B9051989F2899686AE&amp;dn=LiveLessons+-+Introduction+to+the+FreeBSD+OS</link>
+			<comments>http://thepiratebay.org/torrent/12372005</comments>
+			<pubDate>Mon, 07 Sep 2015 21:39:20 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[bey0nd]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12372005/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>5451380709</contentLength>
+				<infoHash>C91DA43D63D6A04B817457B9051989F2899686AE</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:C91DA43D63D6A04B817457B9051989F2899686AE&amp;dn=LiveLessons+-+Introduction+to+the+FreeBSD+OS]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Caine 1.5 - computer forensic tools Linux distro &amp; Windows tools]]></title>
+			<link>magnet:?xt=urn:btih:B2C94CFA43C7BD31ABBF39D3C25D8F1A78C6B968&amp;dn=Caine+1.5+-+computer+forensic+tools+Linux+distro+%26+Windows+tools</link>
+			<comments>http://thepiratebay.org/torrent/5661793</comments>
+			<pubDate>Thu, 01 Jul 2010 15:11:26 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[phatwarez]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5661793/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>727474176</contentLength>
+				<infoHash>B2C94CFA43C7BD31ABBF39D3C25D8F1A78C6B968</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:B2C94CFA43C7BD31ABBF39D3C25D8F1A78C6B968&amp;dn=Caine+1.5+-+computer+forensic+tools+Linux+distro+%26+Windows+tools]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[VMware Workstation v12.0.0 Linux x64 Incl.Keymaker-EMBRACE]]></title>
+			<link>magnet:?xt=urn:btih:47852C46C9CD7930CCD52E9DF77AFA16A7E3E6DD&amp;dn=VMware+Workstation+v12.0.0+Linux+x64+Incl.Keymaker-EMBRACE</link>
+			<comments>http://thepiratebay.org/torrent/12291092</comments>
+			<pubDate>Wed, 26 Aug 2015 00:11:43 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[deepstatus]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12291092/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>368520841</contentLength>
+				<infoHash>47852C46C9CD7930CCD52E9DF77AFA16A7E3E6DD</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:47852C46C9CD7930CCD52E9DF77AFA16A7E3E6DD&amp;dn=VMware+Workstation+v12.0.0+Linux+x64+Incl.Keymaker-EMBRACE]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ubuntu 15.04 Desktop Amd64, [Iso - MultiLang] [TNTVillage]]]></title>
+			<link>magnet:?xt=urn:btih:FC8A15A2FAF2734DBB1DC5F7AFDC5C9BEAEB1F59&amp;dn=Ubuntu+15.04+Desktop+Amd64%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D</link>
+			<comments>http://thepiratebay.org/torrent/11887231</comments>
+			<pubDate>Tue, 05 May 2015 21:39:49 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11887231/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1150844928</contentLength>
+				<infoHash>FC8A15A2FAF2734DBB1DC5F7AFDC5C9BEAEB1F59</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:FC8A15A2FAF2734DBB1DC5F7AFDC5C9BEAEB1F59&amp;dn=Ubuntu+15.04+Desktop+Amd64%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[ubuntu-12.04-desktop-i386.iso]]></title>
+			<link>magnet:?xt=urn:btih:49FBD26322960D982DA855C54E36DF19AD3113B8&amp;dn=ubuntu-12.04-desktop-i386.iso</link>
+			<comments>http://thepiratebay.org/torrent/7218279</comments>
+			<pubDate>Thu, 26 Apr 2012 12:19:05 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Zen_Bud]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7218279/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>735358976</contentLength>
+				<infoHash>49FBD26322960D982DA855C54E36DF19AD3113B8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:49FBD26322960D982DA855C54E36DF19AD3113B8&amp;dn=ubuntu-12.04-desktop-i386.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Linux Mint 7(gloria)Universal Edition-Free Operating System]]></title>
+			<link>magnet:?xt=urn:btih:0B24521B8E1E9277DB56A09355F5BF58F82FEBA3&amp;dn=Linux+Mint+7%28gloria%29Universal+Edition-Free+Operating+System</link>
+			<comments>http://thepiratebay.org/torrent/5116970</comments>
+			<pubDate>Fri, 09 Oct 2009 17:06:24 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[jmb2012]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5116970/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1441964304</contentLength>
+				<infoHash>0B24521B8E1E9277DB56A09355F5BF58F82FEBA3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0B24521B8E1E9277DB56A09355F5BF58F82FEBA3&amp;dn=Linux+Mint+7%28gloria%29Universal+Edition-Free+Operating+System]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Renoise.2.8.Linux-DOA]]></title>
+			<link>magnet:?xt=urn:btih:50ACE90F83D2BC3C64E182538B799EF35BC47BE2&amp;dn=Renoise.2.8.Linux-DOA</link>
+			<comments>http://thepiratebay.org/torrent/8354828</comments>
+			<pubDate>Mon, 08 Apr 2013 21:11:51 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[moebanzor]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/8354828/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>70093909</contentLength>
+				<infoHash>50ACE90F83D2BC3C64E182538B799EF35BC47BE2</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:50ACE90F83D2BC3C64E182538B799EF35BC47BE2&amp;dn=Renoise.2.8.Linux-DOA]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Pluralsight.com Installing+Configuring Apache Web Server-iNKiSO]]></title>
+			<link>magnet:?xt=urn:btih:A53A77BF170219BE9F7ED2C26E2870B6EE42E319&amp;dn=Pluralsight.com+Installing%2BConfiguring+Apache+Web+Server-iNKiSO</link>
+			<comments>http://thepiratebay.org/torrent/8959320</comments>
+			<pubDate>Tue, 24 Sep 2013 22:24:32 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[AN0NYMOUS142857]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/8959320/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>446267526</contentLength>
+				<infoHash>A53A77BF170219BE9F7ED2C26E2870B6EE42E319</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A53A77BF170219BE9F7ED2C26E2870B6EE42E319&amp;dn=Pluralsight.com+Installing%2BConfiguring+Apache+Web+Server-iNKiSO]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[openSUSE-Leap-42.2-DVD-x86_64.iso]]></title>
+			<link>magnet:?xt=urn:btih:521EF3AC4E7E62DB15F73E8C0E3DB68C7FF5A216&amp;dn=openSUSE-Leap-42.2-DVD-x86_64.iso</link>
+			<comments>http://thepiratebay.org/torrent/16347242</comments>
+			<pubDate>Thu, 24 Nov 2016 13:12:45 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[metheguy]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/16347242/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4384096256</contentLength>
+				<infoHash>521EF3AC4E7E62DB15F73E8C0E3DB68C7FF5A216</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:521EF3AC4E7E62DB15F73E8C0E3DB68C7FF5A216&amp;dn=openSUSE-Leap-42.2-DVD-x86_64.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Qimo 4 Kids 2.0]]></title>
+			<link>magnet:?xt=urn:btih:8B7098313FA3AC3CE64F536A06279470D8CA8AA8&amp;dn=Qimo+4+Kids+2.0</link>
+			<comments>http://thepiratebay.org/torrent/5598117</comments>
+			<pubDate>Sat, 29 May 2010 10:19:22 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[MAFIAA.]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5598117/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>733347840</contentLength>
+				<infoHash>8B7098313FA3AC3CE64F536A06279470D8CA8AA8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8B7098313FA3AC3CE64F536A06279470D8CA8AA8&amp;dn=Qimo+4+Kids+2.0]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[LinuxCBT Security Edition]]></title>
+			<link>magnet:?xt=urn:btih:A10A3CE2B39AF93758DF12DFEF609A07FBC1C01B&amp;dn=LinuxCBT+Security+Edition</link>
+			<comments>http://thepiratebay.org/torrent/4712635</comments>
+			<pubDate>Sun, 08 Feb 2009 18:33:25 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4712635/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>5062918873</contentLength>
+				<infoHash>A10A3CE2B39AF93758DF12DFEF609A07FBC1C01B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A10A3CE2B39AF93758DF12DFEF609A07FBC1C01B&amp;dn=LinuxCBT+Security+Edition]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Tails i386 - 1.7, [Iso - MultiLang] [TNTVillage] ]]></title>
+			<link>magnet:?xt=urn:btih:B34AC4851A9E5CB0402DB73C313D646E0C30DBF1&amp;dn=Tails+i386+-+1.7%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+</link>
+			<comments>http://thepiratebay.org/torrent/12684456</comments>
+			<pubDate>Tue, 03 Nov 2015 19:27:22 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[mykons]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12684456/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1052836641</contentLength>
+				<infoHash>B34AC4851A9E5CB0402DB73C313D646E0C30DBF1</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:B34AC4851A9E5CB0402DB73C313D646E0C30DBF1&amp;dn=Tails+i386+-+1.7%2C+%5BIso+-+MultiLang%5D+%5BTNTVillage%5D+]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[DEFT Linux - Computer Forensics Live CD [TNTVillage]]]></title>
+			<link>magnet:?xt=urn:btih:9F394C0D3E213C4D5791935D99CF159A2EC56776&amp;dn=DEFT+Linux+-+Computer+Forensics+Live+CD+%5BTNTVillage%5D</link>
+			<comments>http://thepiratebay.org/torrent/5186708</comments>
+			<pubDate>Sun, 29 Nov 2009 13:08:45 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[marainos]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5186708/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>699668480</contentLength>
+				<infoHash>9F394C0D3E213C4D5791935D99CF159A2EC56776</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:9F394C0D3E213C4D5791935D99CF159A2EC56776&amp;dn=DEFT+Linux+-+Computer+Forensics+Live+CD+%5BTNTVillage%5D]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Microsoft Office 97 PV3 - PC-BSD]]></title>
+			<link>magnet:?xt=urn:btih:EF26D46DD3101C3DAC3A2EC23209782D2CE73FBB&amp;dn=Microsoft+Office+97+PV3+-+PC-BSD</link>
+			<comments>http://thepiratebay.org/torrent/3795516</comments>
+			<pubDate>Tue, 04 Sep 2007 18:25:15 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[pcbsd]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/3795516/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>171100919</contentLength>
+				<infoHash>EF26D46DD3101C3DAC3A2EC23209782D2CE73FBB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:EF26D46DD3101C3DAC3A2EC23209782D2CE73FBB&amp;dn=Microsoft+Office+97+PV3+-+PC-BSD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[ActiveState.Komodo.IDE.v5.2.3.36774.for.Linux.libcpp6.x64-BEAN]]></title>
+			<link>magnet:?xt=urn:btih:7476EC528097521E6483F3D99D9B817B6F8B2F6B&amp;dn=ActiveState.Komodo.IDE.v5.2.3.36774.for.Linux.libcpp6.x64-BEAN</link>
+			<comments>http://thepiratebay.org/torrent/5180804</comments>
+			<pubDate>Thu, 26 Nov 2009 11:31:35 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[TvTeam]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5180804/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>50941642</contentLength>
+				<infoHash>7476EC528097521E6483F3D99D9B817B6F8B2F6B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7476EC528097521E6483F3D99D9B817B6F8B2F6B&amp;dn=ActiveState.Komodo.IDE.v5.2.3.36774.for.Linux.libcpp6.x64-BEAN]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Tails v1.2 the amnesic incognito live system]]></title>
+			<link>magnet:?xt=urn:btih:148F2BC1D7B179C06E404A05FB48C20EDFAA08DB&amp;dn=Tails+v1.2+the+amnesic+incognito+live+system</link>
+			<comments>http://thepiratebay.org/torrent/11245116</comments>
+			<pubDate>Sun, 19 Oct 2014 13:49:11 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[CCnOSnBT]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/11245116/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>948714273</contentLength>
+				<infoHash>148F2BC1D7B179C06E404A05FB48C20EDFAA08DB</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:148F2BC1D7B179C06E404A05FB48C20EDFAA08DB&amp;dn=Tails+v1.2+the+amnesic+incognito+live+system]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Jindent.v4.1.0.for.Unix-BEAN]]></title>
+			<link>magnet:?xt=urn:btih:9531A38B2C779AC78939DEBEC9FCFFF57044553C&amp;dn=Jindent.v4.1.0.for.Unix-BEAN</link>
+			<comments>http://thepiratebay.org/torrent/5880141</comments>
+			<pubDate>Mon, 11 Oct 2010 10:36:30 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[MAFIAA.]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5880141/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>63178355</contentLength>
+				<infoHash>9531A38B2C779AC78939DEBEC9FCFFF57044553C</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:9531A38B2C779AC78939DEBEC9FCFFF57044553C&amp;dn=Jindent.v4.1.0.for.Unix-BEAN]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Codeweavers.CrossOver.Office.Professional.v6.0.LINUX-SHOCK]]></title>
+			<link>magnet:?xt=urn:btih:10B3E67F5638F9BE8BBF97B58ECE4B502173F533&amp;dn=Codeweavers.CrossOver.Office.Professional.v6.0.LINUX-SHOCK</link>
+			<comments>http://thepiratebay.org/torrent/3702528</comments>
+			<pubDate>Fri, 01 Jun 2007 12:31:00 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[catchuppp]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/3702528/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>76588751</contentLength>
+				<infoHash>10B3E67F5638F9BE8BBF97B58ECE4B502173F533</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:10B3E67F5638F9BE8BBF97B58ECE4B502173F533&amp;dn=Codeweavers.CrossOver.Office.Professional.v6.0.LINUX-SHOCK]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[BackTrack 5 R3 KDE 32bit]]></title>
+			<link>magnet:?xt=urn:btih:CB7C6AC84A0AA10E588D4DB5A11B32551C78E94F&amp;dn=BackTrack+5+R3+KDE+32bit</link>
+			<comments>http://thepiratebay.org/torrent/7529542</comments>
+			<pubDate>Mon, 13 Aug 2012 19:14:55 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[L3G3ND]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/7529542/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3325616161</contentLength>
+				<infoHash>CB7C6AC84A0AA10E588D4DB5A11B32551C78E94F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:CB7C6AC84A0AA10E588D4DB5A11B32551C78E94F&amp;dn=BackTrack+5+R3+KDE+32bit]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[LinuxCBT - Debian 7.x Edition]]></title>
+			<link>magnet:?xt=urn:btih:85C304711C7EBB3DA588A94CD6348525ACAA137E&amp;dn=LinuxCBT+-+Debian+7.x+Edition</link>
+			<comments>http://thepiratebay.org/torrent/12334838</comments>
+			<pubDate>Wed, 02 Sep 2015 19:46:15 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[bey0nd]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/12334838/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>7448180529</contentLength>
+				<infoHash>85C304711C7EBB3DA588A94CD6348525ACAA137E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:85C304711C7EBB3DA588A94CD6348525ACAA137E&amp;dn=LinuxCBT+-+Debian+7.x+Edition]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Amaya 11.1  -  Redhat - Mandrake - Suse (64-bit)]]></title>
+			<link>magnet:?xt=urn:btih:DD8E0DAAEDA1658C238523BC8AE53B84D41BC934&amp;dn=Amaya+11.1++-++Redhat+-+Mandrake+-+Suse+%2864-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/4689659</comments>
+			<pubDate>Fri, 30 Jan 2009 19:42:05 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[olofolleola4]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4689659/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>30049593</contentLength>
+				<infoHash>DD8E0DAAEDA1658C238523BC8AE53B84D41BC934</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:DD8E0DAAEDA1658C238523BC8AE53B84D41BC934&amp;dn=Amaya+11.1++-++Redhat+-+Mandrake+-+Suse+%2864-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[LibreOffice 3.4.5 (DEB) English (United States) (64-bit)]]></title>
+			<link>magnet:?xt=urn:btih:07D21F6F6EFF17C6120F81C9626CAE832054AD2F&amp;dn=LibreOffice+3.4.5+%28DEB%29+English+%28United+States%29+%2864-bit%29</link>
+			<comments>http://thepiratebay.org/torrent/6985078</comments>
+			<pubDate>Wed, 25 Jan 2012 23:20:20 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[olofolleola4]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/6985078/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>167063975</contentLength>
+				<infoHash>07D21F6F6EFF17C6120F81C9626CAE832054AD2F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:07D21F6F6EFF17C6120F81C9626CAE832054AD2F&amp;dn=LibreOffice+3.4.5+%28DEB%29+English+%28United+States%29+%2864-bit%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Deskzilla.Pro.v2.0.2.Linux-iNViSiBLE]]></title>
+			<link>magnet:?xt=urn:btih:F5B8F5FC452ADB7419E8A2290A2FA89AA68EDA49&amp;dn=Deskzilla.Pro.v2.0.2.Linux-iNViSiBLE</link>
+			<comments>http://thepiratebay.org/torrent/5197194</comments>
+			<pubDate>Sat, 05 Dec 2009 00:36:26 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[TvTeam]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5197194/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>32179298</contentLength>
+				<infoHash>F5B8F5FC452ADB7419E8A2290A2FA89AA68EDA49</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:F5B8F5FC452ADB7419E8A2290A2FA89AA68EDA49&amp;dn=Deskzilla.Pro.v2.0.2.Linux-iNViSiBLE]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Linux Mint 12 GNOME (ISO) 32-bit (Live DVD)]]></title>
+			<link>magnet:?xt=urn:btih:825A57D138E92F9211642CA5FFC3375E141267CA&amp;dn=Linux+Mint+12+GNOME+%28ISO%29+32-bit+%28Live+DVD%29</link>
+			<comments>http://thepiratebay.org/torrent/6844152</comments>
+			<pubDate>Sat, 26 Nov 2011 07:26:26 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[anoXmous]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/6844152/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1077026816</contentLength>
+				<infoHash>825A57D138E92F9211642CA5FFC3375E141267CA</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:825A57D138E92F9211642CA5FFC3375E141267CA&amp;dn=Linux+Mint+12+GNOME+%28ISO%29+32-bit+%28Live+DVD%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[ClokBox v7 3 Linux-NiTROUS]]></title>
+			<link>magnet:?xt=urn:btih:42EEA50BD6086C7E877FCD56181F9353D00DCFA8&amp;dn=ClokBox+v7+3+Linux-NiTROUS</link>
+			<comments>http://thepiratebay.org/torrent/3307345</comments>
+			<pubDate>Sun, 27 Mar 2005 12:54:30 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[TheTeaher]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/3307345/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2370181</contentLength>
+				<infoHash>42EEA50BD6086C7E877FCD56181F9353D00DCFA8</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:42EEA50BD6086C7E877FCD56181F9353D00DCFA8&amp;dn=ClokBox+v7+3+Linux-NiTROUS]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.1-x86-CD3.iso]]></title>
+			<link>magnet:?xt=urn:btih:84F0F67AE9E44D1E78A02920C565B5F44DB2B33D&amp;dn=PCBSD7.0.1-x86-CD3.iso</link>
+			<comments>http://thepiratebay.org/torrent/4459656</comments>
+			<pubDate>Wed, 22 Oct 2008 00:23:39 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4459656/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>507484160</contentLength>
+				<infoHash>84F0F67AE9E44D1E78A02920C565B5F44DB2B33D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:84F0F67AE9E44D1E78A02920C565B5F44DB2B33D&amp;dn=PCBSD7.0.1-x86-CD3.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.2-x86-CD1.iso]]></title>
+			<link>magnet:?xt=urn:btih:8062F8E462B2B351BDF2B893ECD33F2C568EA9C0&amp;dn=PCBSD7.0.2-x86-CD1.iso</link>
+			<comments>http://thepiratebay.org/torrent/4572506</comments>
+			<pubDate>Fri, 12 Dec 2008 17:23:12 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4572506/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>681900032</contentLength>
+				<infoHash>8062F8E462B2B351BDF2B893ECD33F2C568EA9C0</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8062F8E462B2B351BDF2B893ECD33F2C568EA9C0&amp;dn=PCBSD7.0.2-x86-CD1.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.1-amd64-CD1.iso]]></title>
+			<link>magnet:?xt=urn:btih:A9713D586CFEF31C173CC8D56DFD2A87FFD49464&amp;dn=PCBSD7.0.1-amd64-CD1.iso</link>
+			<comments>http://thepiratebay.org/torrent/4459664</comments>
+			<pubDate>Wed, 22 Oct 2008 00:26:18 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4459664/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>694669312</contentLength>
+				<infoHash>A9713D586CFEF31C173CC8D56DFD2A87FFD49464</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A9713D586CFEF31C173CC8D56DFD2A87FFD49464&amp;dn=PCBSD7.0.1-amd64-CD1.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Debian 5.0.3 I386 DVD 5]]></title>
+			<link>magnet:?xt=urn:btih:389CD513F47E7FFB9E5D4F283E6E2631331B1D3D&amp;dn=Debian+5.0.3+I386+DVD+5</link>
+			<comments>http://thepiratebay.org/torrent/5140247</comments>
+			<pubDate>Thu, 29 Oct 2009 20:12:47 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140247/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1335451648</contentLength>
+				<infoHash>389CD513F47E7FFB9E5D4F283E6E2631331B1D3D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:389CD513F47E7FFB9E5D4F283E6E2631331B1D3D&amp;dn=Debian+5.0.3+I386+DVD+5]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[openSUSE-Addon-Lang-Build0349-i586-iso]]></title>
+			<link>magnet:?xt=urn:btih:821252924248BE925FB736CAC8F3FE479728C239&amp;dn=openSUSE-Addon-Lang-Build0349-i586-iso</link>
+			<comments>http://thepiratebay.org/torrent/5154502</comments>
+			<pubDate>Mon, 09 Nov 2009 11:47:37 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[torrentshredder]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5154502/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>683808768</contentLength>
+				<infoHash>821252924248BE925FB736CAC8F3FE479728C239</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:821252924248BE925FB736CAC8F3FE479728C239&amp;dn=openSUSE-Addon-Lang-Build0349-i586-iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Fedora 11 Source DVD]]></title>
+			<link>magnet:?xt=urn:btih:99A8E1FA23E488728C1631515FB2A1EEF9F9C640&amp;dn=Fedora+11+Source+DVD</link>
+			<comments>http://thepiratebay.org/torrent/5140306</comments>
+			<pubDate>Thu, 29 Oct 2009 21:39:24 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140306/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4163020277</contentLength>
+				<infoHash>99A8E1FA23E488728C1631515FB2A1EEF9F9C640</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:99A8E1FA23E488728C1631515FB2A1EEF9F9C640&amp;dn=Fedora+11+Source+DVD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Deltaiso for Fedora 9 -&gt; Fedora 10 ppc DVD]]></title>
+			<link>magnet:?xt=urn:btih:362CA47D7B507C4D1E8DC6F12C2336A56AFEA236&amp;dn=Deltaiso+for+Fedora+9+-%3E+Fedora+10+ppc+DVD</link>
+			<comments>http://thepiratebay.org/torrent/4954057</comments>
+			<pubDate>Sun, 14 Jun 2009 22:11:51 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[andre14965]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4954057/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2049815647</contentLength>
+				<infoHash>362CA47D7B507C4D1E8DC6F12C2336A56AFEA236</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:362CA47D7B507C4D1E8DC6F12C2336A56AFEA236&amp;dn=Deltaiso+for+Fedora+9+-%3E+Fedora+10+ppc+DVD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[CrossFTP.Pro.v1.35c.Unix.Linux.Windows.Incl.Keymaker-AGAiN]]></title>
+			<link>magnet:?xt=urn:btih:8954162DDEBE77FB68272113652BB2BFB63B510D&amp;dn=CrossFTP.Pro.v1.35c.Unix.Linux.Windows.Incl.Keymaker-AGAiN</link>
+			<comments>http://thepiratebay.org/torrent/3705348</comments>
+			<pubDate>Mon, 04 Jun 2007 09:44:12 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[catchuppp]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/3705348/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1116401</contentLength>
+				<infoHash>8954162DDEBE77FB68272113652BB2BFB63B510D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8954162DDEBE77FB68272113652BB2BFB63B510D&amp;dn=CrossFTP.Pro.v1.35c.Unix.Linux.Windows.Incl.Keymaker-AGAiN]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[FreeBSD 7.2 PowerPc All Media]]></title>
+			<link>magnet:?xt=urn:btih:8F0FA8C0529AD313048AA693A18B8227D5B8D155&amp;dn=FreeBSD+7.2+PowerPc+All+Media</link>
+			<comments>http://thepiratebay.org/torrent/5140205</comments>
+			<pubDate>Thu, 29 Oct 2009 19:31:26 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140205/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>805709824</contentLength>
+				<infoHash>8F0FA8C0529AD313048AA693A18B8227D5B8D155</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:8F0FA8C0529AD313048AA693A18B8227D5B8D155&amp;dn=FreeBSD+7.2+PowerPc+All+Media]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[MANDRIVA ONE 2009 XFCE (i586-int)]]></title>
+			<link>magnet:?xt=urn:btih:D02780474A0901B274A6964B79312B4FFD949AC9&amp;dn=MANDRIVA+ONE+2009+XFCE+%28i586-int%29</link>
+			<comments>http://thepiratebay.org/torrent/4524281</comments>
+			<pubDate>Fri, 21 Nov 2008 17:23:46 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4524281/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>663040078</contentLength>
+				<infoHash>D02780474A0901B274A6964B79312B4FFD949AC9</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:D02780474A0901B274A6964B79312B4FFD949AC9&amp;dn=MANDRIVA+ONE+2009+XFCE+%28i586-int%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Debian 5.0.3 AMD64 DVD 1]]></title>
+			<link>magnet:?xt=urn:btih:B2CCAC39F810F46718CA3A8F1B0AF5D8AD30D931&amp;dn=Debian+5.0.3+AMD64+DVD+1</link>
+			<comments>http://thepiratebay.org/torrent/5140291</comments>
+			<pubDate>Thu, 29 Oct 2009 21:25:32 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140291/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4697243648</contentLength>
+				<infoHash>B2CCAC39F810F46718CA3A8F1B0AF5D8AD30D931</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:B2CCAC39F810F46718CA3A8F1B0AF5D8AD30D931&amp;dn=Debian+5.0.3+AMD64+DVD+1]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Mandriva 2010.0 Powerpack (i586)]]></title>
+			<link>magnet:?xt=urn:btih:1636433B7539D68A46DCD96A34AE385847DE2083&amp;dn=Mandriva+2010.0+Powerpack+%28i586%29</link>
+			<comments>http://thepiratebay.org/torrent/5151343</comments>
+			<pubDate>Sat, 07 Nov 2009 06:06:54 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5151343/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4673814537</contentLength>
+				<infoHash>1636433B7539D68A46DCD96A34AE385847DE2083</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:1636433B7539D68A46DCD96A34AE385847DE2083&amp;dn=Mandriva+2010.0+Powerpack+%28i586%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.2-x86-CD3.iso]]></title>
+			<link>magnet:?xt=urn:btih:2B01F88DC27B5CCE408C3E6B7EF650F2B90E1211&amp;dn=PCBSD7.0.2-x86-CD3.iso</link>
+			<comments>http://thepiratebay.org/torrent/4572523</comments>
+			<pubDate>Fri, 12 Dec 2008 17:30:53 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4572523/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>509536256</contentLength>
+				<infoHash>2B01F88DC27B5CCE408C3E6B7EF650F2B90E1211</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2B01F88DC27B5CCE408C3E6B7EF650F2B90E1211&amp;dn=PCBSD7.0.2-x86-CD3.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[opensuse 11.1 i386 x85 i586 iso image only torrent]]></title>
+			<link>magnet:?xt=urn:btih:25D88B26417582AC3A4CE35CD2054AA4BFF8E881&amp;dn=opensuse+11.1+i386+x85+i586+iso+image+only+torrent</link>
+			<comments>http://thepiratebay.org/torrent/4585301</comments>
+			<pubDate>Thu, 18 Dec 2008 09:56:35 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[torrentshredder]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4585301/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4557883711</contentLength>
+				<infoHash>25D88B26417582AC3A4CE35CD2054AA4BFF8E881</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:25D88B26417582AC3A4CE35CD2054AA4BFF8E881&amp;dn=opensuse+11.1+i386+x85+i586+iso+image+only+torrent]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Deltaiso for Fedora 10 -&gt; Fedora 11 i386 DVD]]></title>
+			<link>magnet:?xt=urn:btih:7775BD25A468A243C695544DF74D78B8DDF1FED2&amp;dn=Deltaiso+for+Fedora+10+-%3E+Fedora+11+i386+DVD</link>
+			<comments>http://thepiratebay.org/torrent/4955665</comments>
+			<pubDate>Mon, 15 Jun 2009 18:47:42 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[andre14965]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4955665/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3009734924</contentLength>
+				<infoHash>7775BD25A468A243C695544DF74D78B8DDF1FED2</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7775BD25A468A243C695544DF74D78B8DDF1FED2&amp;dn=Deltaiso+for+Fedora+10+-%3E+Fedora+11+i386+DVD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ubuntu 9.10 AMD64 Alternate]]></title>
+			<link>magnet:?xt=urn:btih:2683F82C24C7615C7293260FB1606970E26B1C44&amp;dn=Ubuntu+9.10+AMD64+Alternate</link>
+			<comments>http://thepiratebay.org/torrent/5140004</comments>
+			<pubDate>Thu, 29 Oct 2009 15:38:59 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140004/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>730136576</contentLength>
+				<infoHash>2683F82C24C7615C7293260FB1606970E26B1C44</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2683F82C24C7615C7293260FB1606970E26B1C44&amp;dn=Ubuntu+9.10+AMD64+Alternate]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ubuntu 9.10 I386 Alternate]]></title>
+			<link>magnet:?xt=urn:btih:269F12E888CE6A62B82086980558EF4C3008AD74&amp;dn=Ubuntu+9.10+I386+Alternate</link>
+			<comments>http://thepiratebay.org/torrent/5140006</comments>
+			<pubDate>Thu, 29 Oct 2009 15:39:55 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140006/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>723068928</contentLength>
+				<infoHash>269F12E888CE6A62B82086980558EF4C3008AD74</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:269F12E888CE6A62B82086980558EF4C3008AD74&amp;dn=Ubuntu+9.10+I386+Alternate]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[gOS 3.0 \&quot;Gadgets\&quot;]]></title>
+			<link>magnet:?xt=urn:btih:774248DDFC30333E74B232A34E066D377C30BD26&amp;dn=gOS+3.0+%5C%22Gadgets%5C%22</link>
+			<comments>http://thepiratebay.org/torrent/4412826</comments>
+			<pubDate>Thu, 25 Sep 2008 13:23:18 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4412826/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>720467968</contentLength>
+				<infoHash>774248DDFC30333E74B232A34E066D377C30BD26</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:774248DDFC30333E74B232A34E066D377C30BD26&amp;dn=gOS+3.0+%5C%22Gadgets%5C%22]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.1-amd64-USB.img]]></title>
+			<link>magnet:?xt=urn:btih:0CA116248B0CE5E899E4E463925D7BF94AA3ADBC&amp;dn=PCBSD7.0.1-amd64-USB.img</link>
+			<comments>http://thepiratebay.org/torrent/4459675</comments>
+			<pubDate>Wed, 22 Oct 2008 00:29:30 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4459675/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1992294400</contentLength>
+				<infoHash>0CA116248B0CE5E899E4E463925D7BF94AA3ADBC</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:0CA116248B0CE5E899E4E463925D7BF94AA3ADBC&amp;dn=PCBSD7.0.1-amd64-USB.img]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[RealVNC.Enterprise.v4.4.3.Incl.Keymaker.Linux-ZWT]]></title>
+			<link>magnet:?xt=urn:btih:2064F88517471A18DD01C03D8DD8A282FC207754&amp;dn=RealVNC.Enterprise.v4.4.3.Incl.Keymaker.Linux-ZWT</link>
+			<comments>http://thepiratebay.org/torrent/4463377</comments>
+			<pubDate>Thu, 23 Oct 2008 21:44:11 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[catchuppp]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4463377/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>5504947</contentLength>
+				<infoHash>2064F88517471A18DD01C03D8DD8A282FC207754</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:2064F88517471A18DD01C03D8DD8A282FC207754&amp;dn=RealVNC.Enterprise.v4.4.3.Incl.Keymaker.Linux-ZWT]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[KUBUNTU 8.10 DESKTOP LIVE CD (i386)]]></title>
+			<link>magnet:?xt=urn:btih:375BCDE7384AABF7EAE18D3E5273E1F80B83CF1B&amp;dn=KUBUNTU+8.10+DESKTOP+LIVE+CD+%28i386%29</link>
+			<comments>http://thepiratebay.org/torrent/4477126</comments>
+			<pubDate>Thu, 30 Oct 2008 18:37:40 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4477126/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>733265920</contentLength>
+				<infoHash>375BCDE7384AABF7EAE18D3E5273E1F80B83CF1B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:375BCDE7384AABF7EAE18D3E5273E1F80B83CF1B&amp;dn=KUBUNTU+8.10+DESKTOP+LIVE+CD+%28i386%29]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Debian 5.0.3 I386 DVD 4]]></title>
+			<link>magnet:?xt=urn:btih:9AE7346B0A05F062A121F70B438B2C22B0EDDD80&amp;dn=Debian+5.0.3+I386+DVD+4</link>
+			<comments>http://thepiratebay.org/torrent/5140245</comments>
+			<pubDate>Thu, 29 Oct 2009 20:11:34 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140245/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4696522752</contentLength>
+				<infoHash>9AE7346B0A05F062A121F70B438B2C22B0EDDD80</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:9AE7346B0A05F062A121F70B438B2C22B0EDDD80&amp;dn=Debian+5.0.3+I386+DVD+4]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[6.4-RELEASE-i386-dvd1.iso]]></title>
+			<link>magnet:?xt=urn:btih:70EFC75A7F152AC38E7F19CAD02453D779C31730&amp;dn=6.4-RELEASE-i386-dvd1.iso</link>
+			<comments>http://thepiratebay.org/torrent/4545700</comments>
+			<pubDate>Mon, 01 Dec 2008 06:43:58 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4545700/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2144350208</contentLength>
+				<infoHash>70EFC75A7F152AC38E7F19CAD02453D779C31730</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:70EFC75A7F152AC38E7F19CAD02453D779C31730&amp;dn=6.4-RELEASE-i386-dvd1.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[6.4-RELEASE-amd64-dvd1.iso]]></title>
+			<link>magnet:?xt=urn:btih:7D3C6ED9635F29DB12D1ED30CAD2DD738193F40D&amp;dn=6.4-RELEASE-amd64-dvd1.iso</link>
+			<comments>http://thepiratebay.org/torrent/4545711</comments>
+			<pubDate>Mon, 01 Dec 2008 06:51:35 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4545711/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2175408128</contentLength>
+				<infoHash>7D3C6ED9635F29DB12D1ED30CAD2DD738193F40D</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7D3C6ED9635F29DB12D1ED30CAD2DD738193F40D&amp;dn=6.4-RELEASE-amd64-dvd1.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Debian 5.0.3 AMD64 DVD 3]]></title>
+			<link>magnet:?xt=urn:btih:BC60FB535C7EC625A9AA1B0E785ADBCE230C314B&amp;dn=Debian+5.0.3+AMD64+DVD+3</link>
+			<comments>http://thepiratebay.org/torrent/5140294</comments>
+			<pubDate>Thu, 29 Oct 2009 21:26:41 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140294/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4697935872</contentLength>
+				<infoHash>BC60FB535C7EC625A9AA1B0E785ADBCE230C314B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:BC60FB535C7EC625A9AA1B0E785ADBCE230C314B&amp;dn=Debian+5.0.3+AMD64+DVD+3]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Debian 5.0.3 AMD64 DVD 5]]></title>
+			<link>magnet:?xt=urn:btih:A94354D726F5FBDB96D06EE080FEBA2911144BDD&amp;dn=Debian+5.0.3+AMD64+DVD+5</link>
+			<comments>http://thepiratebay.org/torrent/5140299</comments>
+			<pubDate>Thu, 29 Oct 2009 21:28:14 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140299/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1457287168</contentLength>
+				<infoHash>A94354D726F5FBDB96D06EE080FEBA2911144BDD</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A94354D726F5FBDB96D06EE080FEBA2911144BDD&amp;dn=Debian+5.0.3+AMD64+DVD+5]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.2-x64-CD2.iso]]></title>
+			<link>magnet:?xt=urn:btih:357096F9DC9555E309279AE068BB7B4FF37083B6&amp;dn=PCBSD7.0.2-x64-CD2.iso</link>
+			<comments>http://thepiratebay.org/torrent/4572528</comments>
+			<pubDate>Fri, 12 Dec 2008 17:33:13 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4572528/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>519262208</contentLength>
+				<infoHash>357096F9DC9555E309279AE068BB7B4FF37083B6</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:357096F9DC9555E309279AE068BB7B4FF37083B6&amp;dn=PCBSD7.0.2-x64-CD2.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[openSUSE-DVD-Build0350-i586-iso]]></title>
+			<link>magnet:?xt=urn:btih:7BD216590192CBF99306CCDAE3E2E57EA8523B50&amp;dn=openSUSE-DVD-Build0350-i586-iso</link>
+			<comments>http://thepiratebay.org/torrent/5154499</comments>
+			<pubDate>Mon, 09 Nov 2009 11:46:15 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[torrentshredder]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5154499/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4497694720</contentLength>
+				<infoHash>7BD216590192CBF99306CCDAE3E2E57EA8523B50</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:7BD216590192CBF99306CCDAE3E2E57EA8523B50&amp;dn=openSUSE-DVD-Build0350-i586-iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.2-x64-DVD.iso]]></title>
+			<link>magnet:?xt=urn:btih:4F10C9551442FA7CDD1C0B0B94E32B683709B412&amp;dn=PCBSD7.0.2-x64-DVD.iso</link>
+			<comments>http://thepiratebay.org/torrent/4572530</comments>
+			<pubDate>Fri, 12 Dec 2008 17:34:16 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4572530/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1727395840</contentLength>
+				<infoHash>4F10C9551442FA7CDD1C0B0B94E32B683709B412</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4F10C9551442FA7CDD1C0B0B94E32B683709B412&amp;dn=PCBSD7.0.2-x64-DVD.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[VTC - INTRODUCTION TO APACHE WEB SERVER]]></title>
+			<link>magnet:?xt=urn:btih:4F928011782E17CC8D7FE7821B89C21F8252A121&amp;dn=VTC+-+INTRODUCTION+TO+APACHE+WEB+SERVER</link>
+			<comments>http://thepiratebay.org/torrent/4034385</comments>
+			<pubDate>Mon, 18 Feb 2008 16:37:40 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4034385/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>83792950</contentLength>
+				<infoHash>4F928011782E17CC8D7FE7821B89C21F8252A121</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:4F928011782E17CC8D7FE7821B89C21F8252A121&amp;dn=VTC+-+INTRODUCTION+TO+APACHE+WEB+SERVER]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[[MonkeyVision] PCLinuxOS 2007 Live CD]]></title>
+			<link>magnet:?xt=urn:btih:02BD6D42F913FC18668C95129471C24C0DAF96AC&amp;dn=%5BMonkeyVision%5D+PCLinuxOS+2007+Live+CD</link>
+			<comments>http://thepiratebay.org/torrent/4344360</comments>
+			<pubDate>Fri, 15 Aug 2008 07:25:50 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[psiborg999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4344360/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>731670004</contentLength>
+				<infoHash>02BD6D42F913FC18668C95129471C24C0DAF96AC</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:02BD6D42F913FC18668C95129471C24C0DAF96AC&amp;dn=%5BMonkeyVision%5D+PCLinuxOS+2007+Live+CD]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[acer aspire one recovery image]]></title>
+			<link>magnet:?xt=urn:btih:14C83D1D28440F440464E3F88C5844CEEE319CE3&amp;dn=acer+aspire+one+recovery+image</link>
+			<comments>http://thepiratebay.org/torrent/4373562</comments>
+			<pubDate>Mon, 01 Sep 2008 17:02:13 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[Strafrechtler]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4373562/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1004406983</contentLength>
+				<infoHash>14C83D1D28440F440464E3F88C5844CEEE319CE3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:14C83D1D28440F440464E3F88C5844CEEE319CE3&amp;dn=acer+aspire+one+recovery+image]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7-x86-CD3.iso]]></title>
+			<link>magnet:?xt=urn:btih:138B60F4E22C2D14816E5628B0B4EA914FA2867F&amp;dn=PCBSD7-x86-CD3.iso</link>
+			<comments>http://thepiratebay.org/torrent/4398329</comments>
+			<pubDate>Tue, 16 Sep 2008 05:31:47 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4398329/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>718333952</contentLength>
+				<infoHash>138B60F4E22C2D14816E5628B0B4EA914FA2867F</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:138B60F4E22C2D14816E5628B0B4EA914FA2867F&amp;dn=PCBSD7-x86-CD3.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7-x86-USB.img]]></title>
+			<link>magnet:?xt=urn:btih:A33AA7A974F8B1BB77BF24E9BFA34EE68679447E&amp;dn=PCBSD7-x86-USB.img</link>
+			<comments>http://thepiratebay.org/torrent/4398338</comments>
+			<pubDate>Tue, 16 Sep 2008 05:35:20 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4398338/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>2049966080</contentLength>
+				<infoHash>A33AA7A974F8B1BB77BF24E9BFA34EE68679447E</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A33AA7A974F8B1BB77BF24E9BFA34EE68679447E&amp;dn=PCBSD7-x86-USB.img]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ubuntu 9.10 AMD64 Standard Install]]></title>
+			<link>magnet:?xt=urn:btih:D5DE047DCCA45306305A03A8801430DFF26017C6&amp;dn=Ubuntu+9.10+AMD64+Standard+Install</link>
+			<comments>http://thepiratebay.org/torrent/5140007</comments>
+			<pubDate>Thu, 29 Oct 2009 15:41:15 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140007/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>724353024</contentLength>
+				<infoHash>D5DE047DCCA45306305A03A8801430DFF26017C6</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:D5DE047DCCA45306305A03A8801430DFF26017C6&amp;dn=Ubuntu+9.10+AMD64+Standard+Install]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[PCBSD7.0.1-x86-CD2.iso]]></title>
+			<link>magnet:?xt=urn:btih:A55F185562B4CE0C0404125959F76CED3B5CC6A2&amp;dn=PCBSD7.0.1-x86-CD2.iso</link>
+			<comments>http://thepiratebay.org/torrent/4459654</comments>
+			<pubDate>Wed, 22 Oct 2008 00:22:19 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[kace7]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4459654/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>506662912</contentLength>
+				<infoHash>A55F185562B4CE0C0404125959F76CED3B5CC6A2</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A55F185562B4CE0C0404125959F76CED3B5CC6A2&amp;dn=PCBSD7.0.1-x86-CD2.iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[FreeBSD 7.2 I386 All Media]]></title>
+			<link>magnet:?xt=urn:btih:AEAFB6FC8F6C27B4E04F0B7B91FF0E725B8299B5&amp;dn=FreeBSD+7.2+I386+All+Media</link>
+			<comments>http://thepiratebay.org/torrent/5140199</comments>
+			<pubDate>Thu, 29 Oct 2009 19:26:09 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140199/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4861163520</contentLength>
+				<infoHash>AEAFB6FC8F6C27B4E04F0B7B91FF0E725B8299B5</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:AEAFB6FC8F6C27B4E04F0B7B91FF0E725B8299B5&amp;dn=FreeBSD+7.2+I386+All+Media]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Ahead NeroLinux v3.5.1.0   ]]></title>
+			<link>magnet:?xt=urn:btih:A3A8BF42A9FE99AA1CCA899785D1856296B89AE5&amp;dn=Ahead+NeroLinux+v3.5.1.0+++</link>
+			<comments>http://thepiratebay.org/torrent/4207691</comments>
+			<pubDate>Tue, 27 May 2008 13:13:53 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[captainelliotspencer]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4207691/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>17954274</contentLength>
+				<infoHash>A3A8BF42A9FE99AA1CCA899785D1856296B89AE5</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:A3A8BF42A9FE99AA1CCA899785D1856296B89AE5&amp;dn=Ahead+NeroLinux+v3.5.1.0+++]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[openSUSE-11.0-RC1-DVD-i386-iso]]></title>
+			<link>magnet:?xt=urn:btih:663C022B0BD07ADB7387F3A9DF0C6DFBC1DA46F3&amp;dn=openSUSE-11.0-RC1-DVD-i386-iso</link>
+			<comments>http://thepiratebay.org/torrent/4210828</comments>
+			<pubDate>Thu, 29 May 2008 10:51:18 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[torrentshredder]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4210828/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>4626032640</contentLength>
+				<infoHash>663C022B0BD07ADB7387F3A9DF0C6DFBC1DA46F3</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:663C022B0BD07ADB7387F3A9DF0C6DFBC1DA46F3&amp;dn=openSUSE-11.0-RC1-DVD-i386-iso]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[NERO LINUX 3.5.1.0 (32 + 64 BIT) EASY INSTALL]]></title>
+			<link>magnet:?xt=urn:btih:F3EA291C30E73E0EA3A217D5AC715E2BE5C83E59&amp;dn=NERO+LINUX+3.5.1.0+%2832+%2B+64+BIT%29+EASY+INSTALL</link>
+			<comments>http://thepiratebay.org/torrent/4223706</comments>
+			<pubDate>Fri, 06 Jun 2008 00:19:25 +0200</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[madman9999]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4223706/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>33673690</contentLength>
+				<infoHash>F3EA291C30E73E0EA3A217D5AC715E2BE5C83E59</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:F3EA291C30E73E0EA3A217D5AC715E2BE5C83E59&amp;dn=NERO+LINUX+3.5.1.0+%2832+%2B+64+BIT%29+EASY+INSTALL]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[FreeBSD 7.2 IA64 All Media]]></title>
+			<link>magnet:?xt=urn:btih:11ADC18E17DCC310916E5D2A5FB10BEEC1848C86&amp;dn=FreeBSD+7.2+IA64+All+Media</link>
+			<comments>http://thepiratebay.org/torrent/5140204</comments>
+			<pubDate>Thu, 29 Oct 2009 19:29:52 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[lan3y]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/5140204/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>1294305280</contentLength>
+				<infoHash>11ADC18E17DCC310916E5D2A5FB10BEEC1848C86</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:11ADC18E17DCC310916E5D2A5FB10BEEC1848C86&amp;dn=FreeBSD+7.2+IA64+All+Media]]></magnetURI>
+			</torrent>
+		</item>
+		<item>
+			<title><![CDATA[Mathworks.Matlab.R2008b.UNIX.DVD.ISO-TBE]]></title>
+			<link>magnet:?xt=urn:btih:E40D8E34AF4C922B960FF67EA54228D55ADBAC0B&amp;dn=Mathworks.Matlab.R2008b.UNIX.DVD.ISO-TBE</link>
+			<comments>http://thepiratebay.org/torrent/4510366</comments>
+			<pubDate>Sat, 15 Nov 2008 12:20:54 +0100</pubDate>
+			<category domain="http://thepiratebay.org/browse/303"><![CDATA[Applications / UNIX]]></category>
+			<dc:creator><![CDATA[bey0nd]]></dc:creator>
+			<guid>http://thepiratebay.org/torrent/4510366/</guid>
+			<torrent xmlns="http://xmlns.ezrss.it/0.1/">
+				<contentLength>3991713007</contentLength>
+				<infoHash>E40D8E34AF4C922B960FF67EA54228D55ADBAC0B</infoHash>
+				<magnetURI><![CDATA[magnet:?xt=urn:btih:E40D8E34AF4C922B960FF67EA54228D55ADBAC0B&amp;dn=Mathworks.Matlab.R2008b.UNIX.DVD.ISO-TBE]]></magnetURI>
+			</torrent>
+		</item>
+	</channel>
+</rss>

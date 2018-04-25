@@ -224,9 +224,10 @@ class DhtCrawler(AbstractCrawler):
             self.sendGetPeers(infohash)
             time.sleep(1)
             
+            count = count +1
             if count >= self.noSearchingFiles:
                 break
-            count = count +1
+            
         pass
     
     def getClosestNodes(self, infohash, K):
@@ -334,7 +335,7 @@ class DhtCrawler(AbstractCrawler):
     def printEvaluation(self, noReportedPeers, noPingedPeers):
         #self.logger.info("\n\nNumber of error noENETUNREACH: %i" % self.noENETUNREACH  )
         self.info()
-        self.logger.info("Number of Seeking torrents -----------: %i" % self.noSearchingFiles  )
+        self.logger.info("Number of Seeking torrents -----------: %i" % (self.noSearchingFiles)  )
         self.logger.info("Number Torrents with no peers---------: %i" % self.noNoPeersFound  ) 
         self.logger.info("Number of Reported peers -------------: %i" % self.noAllPeers  )
         self.logger.info("Number of Reported peers after merge -: %i" % noReportedPeers  )
@@ -351,7 +352,7 @@ class DhtCrawler(AbstractCrawler):
               (len(self.nodePool),
                self.respondent*100.0/max(1,len(self.nodePool)),
                self.nodeQueue.qsize(), self.duplicates*100.0/self.total)  )
-        f.write("Number of Seeking torrents -----------: %i\n" % self.noSearchingFiles  )
+        f.write("Number of Seeking torrents -----------: %i\n" % (self.noSearchingFiles)  )
         f.write("Number Torrents with no peers---------: %i\n" % self.noNoPeersFound  )
         f.write("Number of Reported peers -------------: %i\n" % self.noAllPeers  )
         f.write("Number of Reported peers after merge -: %i\n" % noReportedPeers  )

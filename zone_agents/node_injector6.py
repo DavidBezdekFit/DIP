@@ -20,6 +20,7 @@ import time
 import threading
 import resource
 import fnmatch
+import random
 
 imports_path = os.getcwd() + "/../imports/"
 sys.path.append(imports_path) 
@@ -45,7 +46,7 @@ class Injector(object):
         self.id = id if id else newID()                         # Injector's ID
         self.injID = counter
         self.ip = "2001:67c:1220:c1b1:4582:871a:2b8c:8088"      # my ip
-        self.port = get_port(30000,31000)                       # my listening port
+        self.port = get_port(31000,32000)                       # my listening port
         self.buckets = []                                       # Bucket structure holding the known nodes
         self.nodePool = {}                                      # Dict of the nodes collected
         self.addrPool = {}                                      # Dict uses <ip,port> as its key
@@ -163,17 +164,26 @@ class Injector(object):
 
     def bootstrap(self):
         """Bootstrap myself"""
-        self.add_to_bucket({"id":self.id, "host":self.ip, "port":self.port})
-        try:
-            self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
-        except:
-            print "Can not connect to central dht.transmissionbt.com"
-            pass
-        try:
-            self.findNode("router.silotis.us", 6881, self.id) 
-        except:
-            print "Can not connect to central router router.silotis.us"
-            pass
+        if len(self.nodePool) < 100:
+            self.add_to_bucket({"id":self.id, "host":self.ip, "port":self.port})
+            try:
+                self.findNode("dht.transmissionbt.com", 6881, self.id) # reply on want n6 -- combination n4 and n6 no reply, 
+            except:
+                print "Can not connect to central dht.transmissionbt.com"
+                pass
+            try:
+                self.findNode("router.silotis.us", 6881, self.id) 
+            except:
+                print "Can not connect to central router router.silotis.us"
+                pass
+        else: #helping bootstrapping for IPv6
+            try:
+                tmp = self.nodePool.values()
+                tmp = random.sample(tmp, min(100,len(tmp)))
+                for v in tmp:
+                    self.findNode(node["host"], node["port"], node["id"])
+            except Exception, err:
+                pass
         pass
 
     def nearest(self, target, nl, limit=None):
@@ -202,7 +212,7 @@ class Injector(object):
 
     def processNodes(self, nodes):
         timestamp = time.time()
-        nodes = self.nearest(self.id, nodes, 10) #3
+        #nodes = self.nearest(self.id, nodes, 10) #3
         for node in nodes:
             id = node["id"]
             node["timestamp"] = timestamp
@@ -236,7 +246,8 @@ class Injector(object):
         try:
             self.isock.sendto(msg, addr)
         except Exception, err:
-            print "Exception:Injector.sendMsg():", err
+            #print "Exception:Injector.sendMsg():", err
+            pass
         self.isock_lock.release()
         pass
 
@@ -326,12 +337,13 @@ class Injector(object):
             try:
                 self.info()
                 time.sleep(5)
-                if len(self.nodePool) < 10000:
+                if len(self.nodePool) < 10000: #limit of nodes
                     self.bootstrap()
             except KeyboardInterrupt:
                 break
             except Exception, err:
-                print "Exception:Injector.start_crawl()", err
+                #print "Exception:Injector.start_crawl()", err
+                pass
         pass
 
     def info(self):
@@ -412,7 +424,7 @@ def getIDs(id):
         for line in f.readlines():
             ids.append(stringify(long(line)))
     """else:
-        print "vytvarim nove"
+        print "creating new"
         ids = generate_injector_ids(intify(id), 12, 50)
         f = open("injector_ids_%s.txt" % str(intify(id)), "w")
         for tid in ids:

@@ -256,7 +256,7 @@ class Maintainer(AbstractCrawler):
                 # Cache the nodes to file
                 if int(now)%10==0 and len(self.nodePool) > 1000:
                     self.serialize()
-                    if self.noCaches >= 5: #reduce number of made nodescaches
+                    if self.noCaches >= 10: #reduce number of made nodescaches
                         self.counter = 0
                 self.info()
                 
