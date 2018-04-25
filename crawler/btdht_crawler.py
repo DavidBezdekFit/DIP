@@ -35,24 +35,6 @@ def savePeers(peerPool):
     with open(filename, "w") as f:
         f.write(json.dumps(peerPool, ensure_ascii=False))
     f.close()               
-    
-    #check of json consistency
-    """f = open(filename, 'r')
-    text = f.read()
-    #print text, "\n\n\n\n"
-    
-    bla = json.loads(text)
-    
-    count = 0
-    for key in bla:
-        logger.info(key)
-        #print stringify(int(key))
-        #print obj[stringify(int(key))]
-        if count > 5:
-            break
-        count += 1
-    logger.info(len(bla))
-    logger.info("peers file ok")"""
     pass    
 
 def setLimit(poolLen):
@@ -80,7 +62,7 @@ def start_crawl(filesPool):
     logger.info("port: %i" % crawler.bind_port)
     
     noSearchingFiles = setLimit(len(filesPool))
-    my_wait(10)
+    my_wait(15)
         
     logger.info("Start Finding")
     indexID = 1
@@ -93,8 +75,8 @@ def start_crawl(filesPool):
     for item in filesPool:
         reportedPeers = crawler.get_peers(item[indexID])
         logger.info("\n%s" % item[0] )
-        logger.info("reported peers:")
-        logger.info(reportedPeers)
+        
+        
         
         infohash = item[1].encode('hex').upper()
         #print infohash
@@ -104,6 +86,8 @@ def start_crawl(filesPool):
             noNoPeersFound += 1
         else:
             noReportedPeers += len(reportedPeers)
+            logger.info("reported peers: %i" % noReportedPeers)
+            #logger.info(reportedPeers)
             #part for ping peers
             """ping_peers(reportedPeers)
             logger.info("peers that replied:")
@@ -140,13 +124,14 @@ if __name__=="__main__":
     torrent = TorrentCrawler()
 
     params = getParam(sys.argv[1:])
-    print params
+    
     torrent.param = params
     torrent.start_crawl()
     #torrent.start_crawl(sys.argv[1:])
     if params['v'] != None:
         logger.disabled = True
     
+    logger.info(params)
     start_crawl(torrent.filesPool)
     pass
     

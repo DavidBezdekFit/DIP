@@ -67,7 +67,7 @@ class DhtCrawler(AbstractCrawler):
         self.noENETUNREACH = 0
         self.noFiltered = 0
         self.noAllPeers = 0
-        
+        self.noPeers = True
         logging.basicConfig(level=logging.INFO, format='%(message)s')
         self.logger = logging.getLogger()
         pass
@@ -208,6 +208,7 @@ class DhtCrawler(AbstractCrawler):
         self.logger.info( "\n\nStart finder")
 
         count = 0
+        self.noPeers = True
         for torrent in self.filesPool:
             self.logger.info( torrent[0])
             self.actualFile = torrent
@@ -219,9 +220,14 @@ class DhtCrawler(AbstractCrawler):
                 self.sendGetPeers(infohash)
                 time.sleep(0.1)        
 
-            #time.sleep(2.5)
-            time.sleep(0.5)
-            self.sendGetPeers(infohash)
+            # If noPeers, try again
+            if self.noPeers:
+                time.sleep(0.5)
+                for i in range(5):
+                    self.sendGetPeers(infohash)
+                    time.sleep(0.1)  
+                time.sleep(0.5)
+                self.sendGetPeers(infohash)
             time.sleep(1)
             
             count = count +1

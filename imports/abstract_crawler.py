@@ -144,12 +144,15 @@ class AbstractCrawler(object):
                     torrentID = torrentID.encode('hex').upper()
                     self.logger.info("Number of peers in values: %i" % len(msgContent["values"]))
                     self.noAllPeers += len(msgContent["values"])
-                    if self.type == IPv4:
-                        peers = unpackValues(msgContent["values"])
-                    elif self.type == IPv6:
-                        peers = unpackValues6(msgContent["values"])
-                    else:
-                        self.logger.info("Non valid type of IP protocol!")
+                    if len(msgContent["values"]) != 0:
+                        if self.type == IPv4:
+                            self.noPeers = False
+                            peers = unpackValues(msgContent["values"])
+                        elif self.type == IPv6:
+                            self.noPeers = False
+                            peers = unpackValues6(msgContent["values"])
+                        else:
+                            self.logger.info("Non valid type of IP protocol!")
                     self.peerPool[torrentID].append( { "name" : torrentName, "nodeID" : nodeID, "peers" : peers, "nodeAddr" : addr } )
                 #necessary to set because IPv6 addr = (host, port, flowinfo, scopeid)
                 addrPom = ( addr[0], addr[1] )
