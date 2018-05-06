@@ -123,7 +123,6 @@ class NodeCrawler(AbstractCrawler):
                         self.findNode(node["host"], node["port"], tid)
                 
                 # This threshold can be tuned
-                #elif self.tn < 2000:
                 elif len(self.nodePool) < 100000: 
                     if self.type == IPv6:
                         self.findNode(node["host"], node["port"], node["id"]) #added for IPv6 crawling

@@ -216,7 +216,8 @@ def rawdata(f):
         dataJson = json.loads( f.read() )
         f.close()
         #maybe delete file for better overview of analyzed files
-    except:
+    except Exception, err:
+        print err
         pass
     return dataJson
     

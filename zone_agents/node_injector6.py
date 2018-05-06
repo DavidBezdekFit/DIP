@@ -46,7 +46,7 @@ class Injector(object):
         self.id = id if id else newID()                         # Injector's ID
         self.injID = counter
         self.ip = "2001:67c:1220:c1b1:4582:871a:2b8c:8088"      # my ip
-        self.port = get_port(31000,32000)                       # my listening port
+        self.port = get_port(31300,32000)                       # my listening port
         self.buckets = []                                       # Bucket structure holding the known nodes
         self.nodePool = {}                                      # Dict of the nodes collected
         self.addrPool = {}                                      # Dict uses <ip,port> as its key

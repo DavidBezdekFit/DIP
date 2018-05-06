@@ -54,7 +54,8 @@ class DhtCrawler(AbstractCrawler):
             self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         else:
             self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
-        self.isock.bind( ("",self.port) )
+        #self.isock.bind( ("",self.port) )
+        self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
         
         self.filesPool = {}
@@ -114,7 +115,10 @@ class DhtCrawler(AbstractCrawler):
     def getPeers(self, host, port, target):
         mtid = 7
         msg = bencode({"t":chr(mtid), "y":"q", "q":"get_peers", "a":  {"id":self.id, "info_hash":target}}) 
-        self.isock.sendto(msg, (host,port))
+        try:
+            self.isock.sendto(msg, (host,port))
+        except:
+            pass
         pass
     
     def start_sender(self, crawl):
@@ -338,7 +342,7 @@ class DhtCrawler(AbstractCrawler):
             noPingedPeers += len(self.peerPool[info]["peers"])
         return noPingedPeers
     
-    def printEvaluation(self, noReportedPeers, noPingedPeers):
+    def printEvaluation(self, noReportedPeers, noPingedPeers, timeWithCrawl, timeJustSearch):
         #self.logger.info("\n\nNumber of error noENETUNREACH: %i" % self.noENETUNREACH  )
         self.info()
         self.logger.info("Number of Seeking torrents -----------: %i" % (self.noSearchingFiles)  )
@@ -348,9 +352,13 @@ class DhtCrawler(AbstractCrawler):
         self.logger.info("Number of Filtered peers -------------: %i" % self.noFiltered  )
         self.logger.info("Number of peers after filter----------: %i" % (noReportedPeers - self.noFiltered ) )
         self.logger.info("Number of peers after ping -----------: %i" % noPingedPeers  ) 
+        self.logger.info("\nTime of crawling and searching--------: %i sec" % timeWithCrawl  ) 
+        self.logger.info("Avrg for 1 torrent -------------------: %.2f sec" % (float(timeWithCrawl)/self.noSearchingFiles)) 
+        self.logger.info("Time just searching ------------------: %i sec" % timeJustSearch  )
+        self.logger.info("Avrg searching time for 1 torrent ----: %.2f sec" % (float(timeJustSearch) / self.noSearchingFiles) )        
         pass
         
-    def printEvaluationToFile(self, noReportedPeers, noPingedPeers, timestamp):
+    def printEvaluationToFile(self, noReportedPeers, noPingedPeers, timestamp, timeWithCrawl, timeJustSearch):
         f = open('output---%s.txt' % (timestamp), 'w')
        
         #f.write("Number of error noENETUNREACH: %i\n" % self.noENETUNREACH  )
@@ -365,12 +373,16 @@ class DhtCrawler(AbstractCrawler):
         f.write("Number of Filtered peers -------------: %i\n" % self.noFiltered  )
         f.write("Number of peers after filter----------: %i\n" % (noReportedPeers - self.noFiltered ) )
         f.write("Number of peers after ping -----------: %i\n" % noPingedPeers  ) 
+        f.write("\nTime of crawling and searching--------: %i sec\n" % timeWithCrawl  ) 
+        f.write("Avrg for 1 torrent -------------------: %.2f sec\n" % (float(timeWithCrawl)/self.noSearchingFiles)) 
+        f.write("Time just searching ------------------: %i sec\n" % timeJustSearch  )
+        f.write("Avrg searching time for 1 torrent ----: %.2f sec\n" % (float(timeJustSearch) / self.noSearchingFiles) )
         f.close() 
         pass
     
 if __name__ == '__main__':
     
-    now = time.time()
+    
 
     params = getParam(sys.argv[1:])
     
@@ -393,27 +405,32 @@ if __name__ == '__main__':
         crawler.noSearchingFiles = len(crawler.filesPool)
 
     # bootstrap around 100 000 nodes to start
+    now = time.time()
     crawler.start_crawl() 
     if not crawler.nodePool:
         crawler.logger.info("No response from central routers")
         sys.exit(0)
-    
+    now2 = time.time()
     crawler.start_searching() 
     
     noReportedPeers = crawler.getReportedPeers()
     #filter these with port 1
     crawler.filter_peers()
     
+    endtime =  time.time()
     timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
     try:
         crawler.savePeers(timestamp)
     except:
         sys.stderr.write('\nCant write peers into JSON, probably name of some torrent file is unsupported!\n\n')
-
+    timeWithCrawl = endtime - now
+    timeJustSearch = endtime - now2
+    
     noPingedPeers = crawler.getPingedPeers()
-    crawler.info()
+    
+    crawler.info() 
     crawler.saveNodes(timestamp)
-    crawler.printEvaluation( noReportedPeers, noPingedPeers )
-    crawler.printEvaluationToFile( noReportedPeers, noPingedPeers, timestamp )
+    crawler.printEvaluation( noReportedPeers, noPingedPeers, timeWithCrawl, timeJustSearch )
+    crawler.printEvaluationToFile( noReportedPeers, noPingedPeers, timestamp, timeWithCrawl, timeJustSearch )
 
     pass
