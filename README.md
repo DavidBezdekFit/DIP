@@ -69,12 +69,12 @@ Příklady spuštění: <br>
    <br>
 dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv6) <br>
 - python dht_crawler.py -t 6 <br> (přepne crawler pro protokol IPv6) <br>
-- python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br>
+- python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br> <br>
 
 Pomocné skripty: <br>
-- python summanizer.py
+- python summanizer.py <br> (spouští se ve složce DIP-data)
 - python rss_age_finder.py -i rss_feed.xml -c 10
-- python evaluator.py
+- python evaluator.py  <br> (spouští se ve složce obsahující výstupy DHT crawlerů)
 
 ### Spuštění skriptu evaluating
 Pro tento skript je důležité, aby ve stejné složce byly umístěny databáze ip.db a ip6.db obsahující potřebné lokalizační informace. Testovaný soubor nemusí být ve stejné složce.
@@ -84,16 +84,16 @@ Pro tento skript je důležité, aby ve stejné složce byly umístěny databáz
 Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. setter, 2. xnode_maintainer, 3. node_injector, 4. xnode_crawler, 5. finder, 6. p_count
 - python setter.py <br> (příprava ID pro experiment + výpis příkazů pro spuštění zbylých zdrojových souborů) 
 - python xnode_maintainer.py --id 605790311400116453953805559992836567457494275251 -t 4 
-- python xnode_maintainer.py --id 605790311400116453953805559992836567457494275251 -t 6 <br>
+- python xnode_maintainer.py --id 605790311400116453953805559992836567457494275251 -t 6 <br><br>
 
 - python node_injector.py 605790311400116453953805559992836567457494275251 
-- python node_injector6.py 605790311400116453953805559992836567457494275251 <br>
+- python node_injector6.py 605790311400116453953805559992836567457494275251 <br><br>
 
 - python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 4
-- python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6
+- python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6 <br><br>
 
 - python finder.py <br> (finder se spouští ve složce se soubory [ipv4/ipv6]nodes)
-- python p_count.py <br> (p_count se spouští ve složce odpovídající 
+- python p_count.py <br> (p_count se spouští ve složce DIP-data)
 
 ### Spuštění souborů aplikačního rozhraní
 
@@ -103,5 +103,5 @@ Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. sett
 2. Klient:
    - python3 client-socket.py -r
    - python3 client-socket.py -r ipv4nodes.json
-   - python3 client-socket.py -s ipv6
-   - python3 client-socket.py -s ipv6
+   - python3 client-socket.py -s ipv6 <br> (prefix souborů, které bude klient posílat)
+   - python3 client-socket.py -s ipv6nodes.id.datum.json
