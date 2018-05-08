@@ -45,6 +45,63 @@ Tento adresář obsahuje zdrojové soubory k práci Monitorování peerů sdíle
 6. client-socket.py - zdrojový soubor implementující klientskou část aplikačního rozhraní.
 
 ## Manuál
+Pro zdrojový soubor btdht_crawler.py je zapotřebí nainstalovat knihovnu příkazem:
+sudo pip install btdht
 
+### Spuštění modulů DHT crawleru
+Výpis nápovědy se seznamem možných parametrů, které lze libovolně kompinovat: <br>
+    -r [--rss] URL -- URL of RSS feed <br>
+    -i [--input-announcement] filename -- already downloaded RSS feed <br>
+    -c [--set-limit] -- choose number of files ( negative number means files from the end ) <br>
+    -s [--substr] -- substring for choosing files - case sensitive! <br>
+    -v [--verbose] -- choose between version with or without outputs <br>
+    -t [--type] number -- (4 or 6) choose type of crawler (IPv4 or IPv6). Implicit IPv4 <br>
 
+Příklady spuštění: <br>
+- python btdht_crawler.py <br>(automaticky hledá soubor rss_feed.xml, pokud neexistuje, tak jej stáhne a vytvoří a následné vyhledává peery pro všechny torrenty) <br>
+- python btdht_crawler.py -i rss_file_name.xml <br> (vyhledávání peerů pro všechny torrenty z daného souboru) <br>
+- python btdht_crawler.py -r url <br>(stáhne RSS soubor z daného url) <br>
+- python btdht_crawler.py -c 10  <br>(vyhledávání peerů pro prvních 10 torrentů z daného souboru) <br>
+- python btdht_crawler.py -c -10 <br>(vyhledávání peerů pro posledních 10 torrentů z daného souboru) <br>
+- python btdht_crawler.py -i rss_file_name.xml -c -10 <br>
+- python btdht_crawler.py -v (vypnutí výpisů na stdout) <br>
+- python btdht_crawler.py -s substring <br>(vyhledávání peerů pro torrenty, které v názvu obsahují zadaný podřetězec) <br>
+   <br>
+dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv6) <br>
+- python dht_crawler.py -t 6 <br> (přepne crawler pro protokol IPv6) <br>
+- python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br>
 
+Pomocné skripty: <br>
+- python summanizer.py
+- python rss_age_finder.py -i rss_feed.xml -c 10
+- python evaluator.py
+
+### Spuštění skriptů evaluating
+Pro tento skript je důležité, aby ve stejné složce byly umístěny databáze ip.db a ip6.db obsahující potřebné lokalizační informace. Testovaný soubor nemusí být ve stejné složce.
+- python geo_analyzer.py logfile
+
+### Spuštění modulů Zónových agentů
+Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. setter, 2. xnode_maintainer, 3. node_injector, 4. xnode_crawler, 5. finder, 6. p_count
+- python setter.py <br> (příprava ID pro experiment + výpis příkazů pro spuštění zbylých zdrojových souborů) 
+- python xnode_maintainer.py --id 605790311400116453953805559992836567457494275251 -t 4 
+- python xnode_maintainer.py --id 605790311400116453953805559992836567457494275251 -t 6 <br>
+
+- python node_injector.py 605790311400116453953805559992836567457494275251 
+- python node_injector6.py 605790311400116453953805559992836567457494275251 <br>
+
+- python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 4
+- python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6
+
+- python finder.py
+- python p_count.py
+
+### Spuštění souborů aplikačního rozhraní
+
+1. Server se spustí na pozadí:
+   - python3 dht_server_obj.py &
+  
+2. Klient:
+   - python3 client-socket.py -r
+   - python3 client-socket.py -r ipv4nodes.json
+   - python3 client-socket.py -s ipv6
+   - python3 client-socket.py -s ipv6
