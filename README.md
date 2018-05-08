@@ -64,7 +64,7 @@ Příklady spuštění: <br>
 - python btdht_crawler.py -c 10  <br>(vyhledávání peerů pro prvních 10 torrentů z daného souboru) <br>
 - python btdht_crawler.py -c -10 <br>(vyhledávání peerů pro posledních 10 torrentů z daného souboru) <br>
 - python btdht_crawler.py -i rss_file_name.xml -c -10 <br>
-- python btdht_crawler.py -v (vypnutí výpisů na stdout) <br>
+- python btdht_crawler.py -v <br> (vypnutí výpisů na stdout) <br>
 - python btdht_crawler.py -s substring <br>(vyhledávání peerů pro torrenty, které v názvu obsahují zadaný podřetězec) <br>
    <br>
 dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv6) <br>
