@@ -101,7 +101,8 @@ class NodeCrawler(AbstractCrawler):
                 self.nodePool[id] = [node]
                 self.convergeSpeed(node)
                 # for IPv4 is better 20000, for IPv6 100000
-                if id != self.id and ((self.type == IPv4 and len(self.nodePool) < 20000) or (self.type == IPv6 and len(self.nodePool) < 100000)):
+                # if id != self.id: !!! and ((self.type == IPv4 and len(self.nodePool) < 20000) or (self.type == IPv6 and len(self.nodePool) < 100000)):
+                if id != self.id and len(self.nodePool) < 20000000: 
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -123,7 +124,8 @@ class NodeCrawler(AbstractCrawler):
                         self.findNode(node["host"], node["port"], tid)
                 
                 # This threshold can be tuned
-                elif len(self.nodePool) < 100000:  # this line is for normal (limited) crawling
+                #elif len(self.nodePool) < 100000:  # this line is for normal (limited) crawling
+                else: # !!! this line is for loooong crawling
                     if self.type == IPv6:
                         self.findNode(node["host"], node["port"], node["id"]) #added for IPv6 crawling
                     self.findNode(node["host"], node["port"], self.id)

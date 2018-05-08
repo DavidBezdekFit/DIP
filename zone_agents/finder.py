@@ -100,18 +100,14 @@ if __name__ == '__main__':
     ids = finder.getIDs()
 
     
-    #for id in ids:
-    #    print id
-    noExperiments = 5
+    #noExperiments = 1
     #for i in range (1, noExperiments):
     #    files = finder.getFiles(i)       
     #    finder.readFiles(i, files)
     #    print "\n"
-    
-    
+
     files = finder.getFiles()       
     finder.readFiles(files)
-    
     
     noFound = 0
     print "\nfile ID: %s\n" % finder.fileID

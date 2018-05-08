@@ -179,7 +179,8 @@ class AbstractCrawler(object):
         # collect some nodes for start
         self.find_routers()
         self.logger.info( "\nStart bootstrapping" )       
-        while self.counter:
+        while self.counter: 
+        #while 1: # for looong crawling just 1 ..!!!
             try:
                 self.counter = CTTIME if self.nodeQueue.qsize() else self.counter-1
                 self.info()

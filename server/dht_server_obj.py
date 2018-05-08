@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 # 
-# 
-#
+# This script was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
+
+# With help of the: 
+#   Martin Vasko, xvasko12@stud.fit.vutbr.cz
+
+# Application Interface for storage of data from monitoring systems
 #
 
 import socket
 import time
+import re
 import sys
 import os
 import threading
@@ -39,10 +48,10 @@ class Server(object):
         self.filename = 'input'
         self.fileName = 'data'  #'dht_server_obj.py' #'dtb/fill_db_class.py' #'dht_crawler.py'  #'data'
         self.conn = None
-        self.fileNames = ['ipv4nodes.json', 'ipv6nodes.json', 'torrentsAndPeers.json' ]
+        self.fileNames = ['ipv4nodes.json', 'ipv6nodes.json', 'torrentsAndPeers.json' , 'dht_server_obj.py' ]
         self.dtb_lock = threading.Lock()
         
-        logging.basicConfig(level=logging.INFO, format='%(message)s')
+        logging.basicConfig(filename='connections.log',level=logging.INFO, format='%(message)s')
         self.logger = logging.getLogger()
         pass   
         
@@ -81,10 +90,13 @@ class Server(object):
      
     def receive(self, data):
         self.logger.info( "Receiving data" )
+        match = re.search(r"/.*", data)
+        if match:
+            data = match.group(0)[1:]
         filename = data
         with open(filename, 'wb') as f:
             #f.write(data)
-            #self.conn.settimeout(15)
+            self.conn.settimeout(20)
             while 1:
                 try:
                     data = self.conn.recv(PACKET_SIZE)
@@ -121,7 +133,8 @@ class Server(object):
             try:
                 self.sock.listen(1)
                 self.conn, addr = self.sock.accept()
-                self.logger.info('Connected by: %s, port: %i' % ( addr[0], addr[1]) )
+                self.logger.info( "%s" % time.strftime("%Y-%m-%d--%H:%M:%S") )
+                self.logger.info( 'Connected by: %s, port: %i' % ( addr[0], addr[1]) )
                 data = self.conn.recv(PACKET_SIZE)
                 self.logger.info(data.decode())
 
@@ -153,11 +166,11 @@ if __name__ == '__main__':
         self.logger.info("Creating database")
         createDtb()
     server = Server(HOST, PORT)
-    
-    if '-v' in sys.argv:
+    if '-v'in sys.argv:
         server.logger.disabled = True
     server.startListen()
     pass
+
 
 
 
