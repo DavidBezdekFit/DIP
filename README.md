@@ -1,7 +1,7 @@
 # DIP - Manual
-Master Thesis: Torrent Peer Monitoring
-Author: David Bezdek, xbezde11@stud.fit.vutbr.cz
-Faculty of Information Technology, Brno University of Technology
+Master Thesis: Torrent Peer Monitoring<br>
+Author: David Bezdek, xbezde11@stud.fit.vutbr.cz<br>
+Faculty of Information Technology, Brno University of Technology<br>
 23. 5. 2018
 
 Tento adresář obsahuje zdrojové soubory k práci Monitorování peerů sdílejících Torrenty.
