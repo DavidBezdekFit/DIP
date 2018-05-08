@@ -76,7 +76,7 @@ Pomocné skripty: <br>
 - python rss_age_finder.py -i rss_feed.xml -c 10
 - python evaluator.py
 
-### Spuštění skriptů evaluating
+### Spuštění skriptu evaluating
 Pro tento skript je důležité, aby ve stejné složce byly umístěny databáze ip.db a ip6.db obsahující potřebné lokalizační informace. Testovaný soubor nemusí být ve stejné složce.
 - python geo_analyzer.py logfile
 
@@ -92,8 +92,8 @@ Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. sett
 - python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 4
 - python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6
 
-- python finder.py
-- python p_count.py
+- python finder.py <br> (finder se spouští ve složce se soubory [ipv4/ipv6]nodes)
+- python p_count.py <br> (p_count se spouští ve složce odpovídající 
 
 ### Spuštění souborů aplikačního rozhraní
 
