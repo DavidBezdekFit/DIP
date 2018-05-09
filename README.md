@@ -15,8 +15,8 @@ Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování pe
   
 2. evaluating:
    - geo_analyzer.py - zdrojový soubor pro geografickou lokalizaci
-   - summarizer.py - skript, který prohledává soubory output od DHT crawlerů v dostupných složkách. Tento soubor je nutné umístit do adresáře DIP-data.
-   - p_count - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky. Je nutné jej umístit do adresáře DIP-data.
+   - summarizer.py - skript, který prohledává soubory output od DHT crawlerů v dostupných složkách. Tento soubor je nutné umístit do adresáře Data.
+   - p_count - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky. Je nutné jej umístit do adresáře Data.
 3. imports - adresář obsahující pomocné zdrojové soubory:
    - python moduly bencode a common
    - abstract_crawler.py - abstraktní třída pro monitorovací moduly
@@ -71,7 +71,7 @@ dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv
 - python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br> <br>
 
 Pomocné skripty: <br>
-- python summanizer.py <br> (spouští se ve složce DIP-data)
+- python summanizer.py <br> (spouští se ve složce Data)
 - python rss_age_finder.py -i rss_feed.xml -c 10
 - python evaluator.py  <br> (spouští se ve složce obsahující výstupy DHT crawlerů)
 
@@ -92,12 +92,13 @@ Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. sett
 - python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6 <br><br>
 
 - python finder.py <br> (finder se spouští ve složce se soubory [ipv4/ipv6]nodes)
-- python p_count.py <br> (p_count se spouští ve složce DIP-data)
+- python p_count.py <br> (p_count se spouští ve složce Data)
 
 ### Spuštění souborů aplikačního rozhraní
 
 1. Server se spustí na pozadí:
    - python3 dht_server_obj.py &
+   - python3 dht_server_obj.py <br> (při spuštění na popředí lze pozorovat statistiky ohledně ukládání do databáze typu: kolik uzlů/peerů bylo přidáno, kolik bylo duplicitních, čas atd.)
   
 2. Klient:
    - python3 client-socket.py -r
