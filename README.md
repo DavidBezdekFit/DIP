@@ -11,12 +11,12 @@ Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování pe
    - btdht_crawler.py - crawler využívající knihovnu btdht.
    - dht_crawler.py - crawler implementující moduly IPv4 a IPv6 DHT crawler.
    - evaluator.py - pomocný skript, který prohledá všechny soubory s prefixem output ve složce, ve které je umístěný.
-   - summarizer.py - skript, který prohledává soubory output v dostupných složkách. Tento soubor je nutné umístit do adresáře obsahujícího složky s prefixem "peers".
    - rss_age_finder.py - jednoduchý skript, který načte vybraný RSS soubor a zjišťuje stáří jednotlivých torrentů.
   
 2. evaluating:
    - geo_analyzer.py - zdrojový soubor pro geografickou lokalizaci
-  
+   - summarizer.py - skript, který prohledává soubory output od DHT crawlerů v dostupných složkách. Tento soubor je nutné umístit do adresáře DIP-data.
+   - p_count - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky. Je nutné jej umístit do adresáře DIP-data.
 3. imports - adresář obsahující pomocné zdrojové soubory:
    - python moduly bencode a common
    - abstract_crawler.py - abstraktní třída pro monitorovací moduly
@@ -36,7 +36,6 @@ Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování pe
    - fidner.py - soubor, který se spouští po vícero spuštění crawlerů. Prochází soubory s uzly a snaží se v nich najít uzly ze souboru obsahující ID injektovaných uzlů.
    - node_injector.py - injektované uzly
    - node_injector6.py - injektované uzly pro IPv6
-   - p_count - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky.
    - setter.py - tento skritp vytvoří soubor s 50ti ID uzlů pro injektované uzly. Také vygeneruje 5 ID pro crawlery a příkazy ke spuštění crawlerů vypisuje na stdout.
    - xnode_crawler.py - IPv4 i IPv6 crawler
    - xnode_crawler_no_limits.py - IPv4 i IPv6 crawler bez omezení pro kompletní crawling sítě. !!! to-do
