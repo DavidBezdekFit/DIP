@@ -9,7 +9,7 @@
 # With help of the: 
 #   Martin Vasko, xvasko12@stud.fit.vutbr.cz
 
-# Application Interface for storage of data from BitTorrent monitoring systems
+# Application Interface for storage of data from monitoring systems
 #
 
 import socket
@@ -46,7 +46,7 @@ class Server(object):
         
         self.noFile = 0
         self.filename = 'input'
-        self.fileName = 'data'
+        self.fileName = 'data'  #'dht_server_obj.py' #'dtb/fill_db_class.py' #'dht_crawler.py'  #'data'
         self.conn = None
         self.fileNames = ['ipv4nodes.json', 'ipv6nodes.json', 'torrentsAndPeers.json' , 'dht_server_obj.py' ]
         self.dtb_lock = threading.Lock()
@@ -90,10 +90,12 @@ class Server(object):
      
     def receive(self, data):
         self.logger.info( "Receiving data" )
-        match = re.search(r"/.*", data)
-        if match:
-            data = match.group(0)[1:]
-        filename = data
+        matchIndex = data.rfind('/')
+        #print ("matchindex: %i" % matchIndex)
+        if matchIndex != -1:
+            filename = data[(matchIndex+1):]
+        else:
+            filename = data 
         with open(filename, 'wb') as f:
             #f.write(data)
             self.conn.settimeout(20)
@@ -156,6 +158,9 @@ class Server(object):
                break
             except Exception as err:
                self.logger.info("Error during the action: %s" % err )
+               response = str(err)
+               self.conn.sendall(response.encode())
+               self.conn.close()
                pass
             
         pass

@@ -99,7 +99,7 @@ class Client(object):
                             first = False
                             if len(data.decode()) < 50:
                                 if 'Unexpected name of file' in data.decode() or 'Unknown request' in data.decode():
-                                    print ( "Error server response:", data.decode() )
+                                    sys.stderr.write( "Error server response: %s\n" % data.decode() )
                                     break
                         f.write(data)
                 except KeyboardInterrupt:
@@ -151,20 +151,38 @@ if __name__=="__main__":
             print (usage)
             sys.exit(0)
         
-        # regex for files starting with prefix
+        # regex for files starting with prefix     
         if len(files) == 1:
-            pomFile = files[0] + "*"
+            actDir = '.'
+            pomDir = ''
+            pomPath = files[0]
+            if pomPath.find('/') != -1:
+                pomDir = pomPath[:(pomPath.rfind('/')+1)]
+                pomPath = pomPath[(pomPath.rfind('/')+1):] 
+                actDir = pomDir
+                
+            pomFile = pomPath + "*"
             files = []
-            for file in os.listdir('.'):
-                if fnmatch.fnmatch(file, pomFile):
-                    #print ("Loading File:", file)
-                    files.append(file)
 
+            if os.path.isdir(actDir):
+                for file in os.listdir(actDir):
+                    if fnmatch.fnmatch(file, pomFile):
+                        #print ("Loading File:", file)
+                        files.append(pomDir+file)
+            else:
+                sys.stderr.write("Directory \'%s\' does not exists.\n" % actDir)
             
         for fileName in files:
-            client.sendSync(SENDSOC+"-"+fileName)
-            client.sendFile(fileName)
-            #client.sendFileNC(fileName) - not ready
+            if os.path.isfile(fileName):
+                try:
+                    client.sendSync(SENDSOC+"-"+fileName)
+                    client.sendFile(fileName)
+                except:
+                    sys.stderr.write("Error in sending file %s\n" % fileName)
+                    pass
+            else:
+                sys.stderr.write("File \'%s\' does not exists.\n" % fileName)
+                #client.sendFileNC(fileName) - not ready
             
     elif sys.argv[1] == READ:
         
@@ -173,7 +191,7 @@ if __name__=="__main__":
             if not fileNames:
                 fileNames = ['ipv4nodes.json', 'ipv6nodes.json', 'torrentsAndPeers.json'] 
         except:
-            print ("You didnt choose any output file")
+            sys.stderr.write("You didnt choose any output file\n")
             print (usage)
             sys.exit(0)
             
@@ -187,7 +205,7 @@ if __name__=="__main__":
                 print ("Can not connect to the server:", err)
             
     else:
-        print ("Unknown parameters")
+        sys.stderr.write("Unknown parameters")
         print (usage)
         sys.exit(0)
     pass
