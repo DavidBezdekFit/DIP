@@ -400,10 +400,6 @@ class Injector(object):
                         n["rtt"] = float('inf')
                         self.nodeQueue.put(n)
                     f.close()
-                    """try:
-                        os.remove(fileName)
-                    except:
-                        pass"""
         except:
             pass
         pass    
@@ -423,14 +419,9 @@ def getIDs(id):
         f = open("injector_ids_%s.txt" % intify(id), "r")
         for line in f.readlines():
             ids.append(stringify(long(line)))
-    """else:
-        print "creating new"
-        ids = generate_injector_ids(intify(id), 12, 50)
-        f = open("injector_ids_%s.txt" % str(intify(id)), "w")
-        for tid in ids:
-            i = intify(tid)
-            f.write("%s\n" % str(i))
-        f.close()"""
+    else:
+        sys.stderr.write('There is no injector_ids file!\n')
+        sys.exit(-1)
     return ids
 
 if __name__=="__main__":    
@@ -451,24 +442,4 @@ if __name__=="__main__":
         except:
             pass
         counter += 1
-
-    # injector = Injector(id)
-    #  Try to load local node cache
-    # try:
-    #     if os.path.exists("nodecache"):
-    #         nl = pickle.load(open("nodecache","r"))
-    #         for n in nl:
-    #             n["timestamp"] = time.time()
-    #             n["rtt"] = float('inf')
-    #             injector.nodeQueue.put(n)
-    # except:
-    #     pass
-    # injector.test_bucket()
-    #  Try to get bootstrap nodes from official router
-    # injector.findNode("router.bittorrent.com", 6881, injector.id)
-    # injector.bootstrap()
-    # injector.start()
-
-    #print "%.2f minutes" % ((time.time() - now)/60.0)
-    #injector.serialize()
     pass

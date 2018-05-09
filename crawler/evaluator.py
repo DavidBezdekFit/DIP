@@ -6,6 +6,8 @@
 # Faculty of Information Technology, Brno University of Technology
 # 2018.05.23
 
+# Support script for summarizing outputs from dht crawlers
+# For running place the script to the same folder as outputs files 
 
 import time
 import os, sys

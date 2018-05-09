@@ -6,6 +6,8 @@
 # Faculty of Information Technology, Brno University of Technology
 # 2018.05.23
 
+# Monitoring module using the btdht library. 
+
 import sys, os
 import requests
 import xml.etree.ElementTree as ET

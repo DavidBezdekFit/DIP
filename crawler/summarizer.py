@@ -7,7 +7,7 @@
 # 2018.05.23
 
 # Support script for summarizing outputs from dht crawlers
-# 
+# For running place the script to DIP-data folder
 
 import os, sys
 import fnmatch

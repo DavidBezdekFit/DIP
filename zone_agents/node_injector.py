@@ -176,17 +176,14 @@ class Injector(object):
         return m
 
     def ping(self, host, port):
-        #msg = self.krpc.encodeReq("ping", {"id":self.id})
         mtid = 3
         msg = bencode({"t":chr(mtid), "y":"q", "q":"ping", "a":  {"id":self.id}})
         self.sendMsg(msg, (host, port))
         pass
 
     def findNode(self, host, port, target):
-        #msg = self.krpc.encodeReq("find_node", {"id":self.id, "target":target})
         mtid = 5
         msg = bencode({"t":chr(mtid), "y":"q", "q":"find_node", "a":  {"id":self.id, "target":target}})
-        
         self.sendMsg(msg, (host,port))
         pass
 
@@ -271,10 +268,8 @@ class Injector(object):
                             self.processNodes(unpackNodes(d[MSG]["nodes"]))
                             #print tdist, "+"*100
                         elif self.respondent < 10000:
-                            #else:
                             self.processNodes(unpackNodes(d[MSG]["nodes"]))
                 elif d[TYP] == REQ:
-                    #print addr, d[TID], d[TYP], d[MSG], d[ARG]
                     if "ping" == d[MSG].lower():
                         rsp = {TID:d[TID], TYP:RSP, RSP:{"id":self.id}}
                         #rsp = self.krpc.encodeMsg(rsp)
@@ -370,14 +365,9 @@ def getIDs(id):
         f = open("injector_ids_%s.txt" % intify(id), "r")
         for line in f.readlines():
             ids.append(stringify(long(line)))
-    """else:
-        print "vytvarim nove"
-        ids = generate_injector_ids(intify(id), 12, 50)
-        f = open("injector_ids_%s.txt" % str(intify(id)), "w")
-        for tid in ids:
-            i = intify(tid)
-            f.write("%s\n" % str(i))
-        f.close()"""
+    else:
+        sys.stderr.write('There is no injector_ids file!\n')
+        sys.exit(-1)
     return ids
     
 if __name__=="__main__":    
@@ -398,23 +388,5 @@ if __name__=="__main__":
         except:
             pass
         counter += 1
-    # injector = Injector(id)
-    #  Try to load local node cache
-    # try:
-    #     if os.path.exists("nodecache"):
-    #         nl = pickle.load(open("nodecache","r"))
-    #         for n in nl:
-    #             n["timestamp"] = time.time()
-    #             n["rtt"] = float('inf')
-    #             injector.nodeQueue.put(n)
-    # except:
-    #     pass
-    # injector.test_bucket()
-    #  Try to get bootstrap nodes from official router
-    # injector.findNode("router.bittorrent.com", 6881, injector.id)
-    # injector.bootstrap()
-    # injector.start()
 
-    #print "%.2f minutes" % ((time.time() - now)/60.0)
-    #injector.serialize()
     pass

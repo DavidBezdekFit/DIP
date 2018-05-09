@@ -1,5 +1,14 @@
 #!/usr/bin/python
 
+# This script was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
+
+# Checking of existing RSS file, downloading and parsing RSS file in xml format
+# Result is dictionarz filesPool contains selected torrents. 
+
 import sys
 import requests
 import xml.etree.ElementTree as ET

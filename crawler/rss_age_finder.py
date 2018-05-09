@@ -11,8 +11,8 @@
 
 # how to run:
 # python rss_age_finder.py -i rss_feed_unix.xml
-# python rss_age_finder.py -i rss_feed_unix.xml -c 10
-# python rss_age_finder.py -i rss_feed_unix.xml -c -10
+# python rss_age_finder.py -i rss_file_name.xml -c 10
+# python rss_age_finder.py -i rss_file_name.xml -c -10
 
 
 import time

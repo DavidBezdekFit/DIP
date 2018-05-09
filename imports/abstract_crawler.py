@@ -6,6 +6,9 @@
 # Faculty of Information Technology, Brno University of Technology
 # 2018.05.23
 
+# methods start_crawl, start_listener and hasNode
+# are taken from script of Liang Wang @ Dept. Computer Science, University of Helsinki
+
 import socket
 import Queue
 import time
@@ -13,7 +16,6 @@ import threading
 import json
 import abc
 
-#from struct import pack, unpack
 from khash import *
 from bencode import bencode, bdecode
 from common import *
@@ -159,7 +161,6 @@ class AbstractCrawler(object):
                 self.addrPool[addrPom] = {"timestamp":time.time()}
                 self.respondent += 1
             except Exception, err:
-                
                 #if not "v" in decMsg: 
                 #   if err.code != 126: 
                 # [Errno 126] Network dropped connection on reset

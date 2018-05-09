@@ -6,9 +6,11 @@
 # Liang Wang @ Dept. Computer Science, University of Helsinki
 # 2011.09.21
 #
-# Rewriting the script by David Bezdek, 
-#   xbezde11@stud.fit.vutbr.cz
-#
+# This script was modified by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
 
 import os, sys
 import socket
@@ -32,7 +34,7 @@ from abstract_crawler import AbstractCrawler
 MYPORT = 6886             # The port used for communication
 ACTIVE_THRESHOLD = 10000   # The minimum number of nodes in nodePool
 REFRESH_LIMIT = 60        # The time interval to refresh a node
-
+NO_NODES = 1000
 TID = 't'
 REQ = 'q'
 RSP = 'r'
@@ -159,6 +161,7 @@ class Maintainer(AbstractCrawler):
         self.isock_lock.release()
         pass
 
+    '''Save to cache file sample of 1000 nodes from same 12bit zone'''
     def serialize(self):
         tmp = []
         obj = []
@@ -167,7 +170,7 @@ class Maintainer(AbstractCrawler):
             # Choose those stable nodes to cache
             tmp = self.nodePool.values()
             tmp.sort(key=lambda x: x["timestamp"])
-            tmp = tmp[:1000]
+            tmp = tmp[:NO_NODES]
             #tmp = random.sample(tmp, min(100,len(tmp)))
             # Cache the nodes
             obj = []
@@ -254,9 +257,9 @@ class Maintainer(AbstractCrawler):
                 if int(now)%15==0:
                     self.scan_nodePool()
                 # Cache the nodes to file
-                if int(now)%10==0 and len(self.nodePool) > 1000:
+                if int(now)%10==0 and len(self.nodePool) > NO_NODES:
                     self.serialize()
-                    if self.noCaches >= 10: #reduce number of made nodescaches
+                    if self.noCaches >= 5: #reduce number of made nodescaches
                         self.counter = 0
                 self.info()
                 
@@ -290,9 +293,6 @@ if __name__=="__main__":
     
     maintainer = Maintainer(params['t'], params['id'])
 
-    #print 'maintainer ID: ' + maintainer.id
-
     maintainer.start_service()
-    #maintainer.serialize()
     print "%.2f minutes" % ((time.time() - now)/60.0)
     pass

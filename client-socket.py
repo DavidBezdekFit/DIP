@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # 
-# 
-#
-#
+# This Client program was written by David Bezdek for purpose of a master
+# thesis: Torrent Peer Monitoring
+# David Bezdek, xbezde11@stud.fit.vutbr.cz
+# Faculty of Information Technology, Brno University of Technology
+# 2018.05.23
 
 import os, sys
 import subprocess
@@ -78,7 +80,7 @@ class Client(object):
             
         pass
         
-    """Sending file via IPv6 Socket"""
+    """Sending file FROM SERVER TO KLIENT via IPv6 Socket"""
     def recFile(self, fileName):
         print ( "Receiving data" )
         self.sock.settimeout(5)
@@ -160,7 +162,6 @@ if __name__=="__main__":
 
             
         for fileName in files:
-            #print ("Sending File:", file)
             client.sendSync(SENDSOC+"-"+fileName)
             client.sendFile(fileName)
             #client.sendFileNC(fileName) - not ready
@@ -180,9 +181,6 @@ if __name__=="__main__":
         for fileName in fileNames:
             print ("Asking for file: ", fileName)
             try:
-                #client.sendSync(READNC)
-                #client.recFileNC(fileName)
-                #sync = READSOC+"-"+"fileName
                 client.sendSync(READSOC+"-"+fileName)
                 client.recFile(fileName)
             except Exception as err:

@@ -6,6 +6,11 @@
 # Faculty of Information Technology, Brno University of Technology
 # 2018.05.23
 
+# The main module of peer monitoring 
+# for both IPv4 and IPv6 
+
+# methods: start_sender, processNodes, info 
+# are taken from script of Liang Wang @ Dept. Computer Science, University of Helsinki
 
 import socket
 import Queue
@@ -28,7 +33,6 @@ from db_utils import *
     
 from abstract_crawler import AbstractCrawler
 from torrent_crawler import TorrentCrawler
-#from param_parser import ParamParser
 
 CTTIME = 3
 PACKET_LEN = 1024
@@ -54,12 +58,11 @@ class DhtCrawler(AbstractCrawler):
             self.isock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         else:
             self.isock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
-        #self.isock.bind( ("",self.port) )
         self.my_bind("",self.port)
         self.isock_lock = threading.Lock()
         
         self.filesPool = {}
-        self.noSearchingFiles = 100                                #number of files from rss_feed.xml for that will be searched peers
+        self.noSearchingFiles = 100                             #number of files from rss_feed.xml for that will be searched peers
         self.actualFile = ()      
         self.peerPool = {}
         self.peerReplied = []
@@ -127,7 +130,8 @@ class DhtCrawler(AbstractCrawler):
                 node = self.nodeQueue.get(True)
                 self.findNode(node["host"], node["port"], node["id"])
                 
-                """if crawl and self.nodeQueue.qsize() < 10000:
+                """ this part is bootstrapping/crawling - but its better without it
+                if crawl and self.nodeQueue.qsize() < 10000:
                     #self.findNode(node["host"], node["port"], node["id"])
                     count = 0
                     for torrent in self.filesPool:
@@ -153,8 +157,6 @@ class DhtCrawler(AbstractCrawler):
                 else:
                     self.logger.info("Exception:Crawler.start_sender() %s" % err)
         pass
-    
-    
 
     def info(self):
         self.logger.info( "[NodeSet]:%i\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%" % \
@@ -170,7 +172,7 @@ class DhtCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 with self.nodePool_lock:
                     self.nodePool[id] = [node]
-                if id != self.id and len(self.nodePool) < 50000: #100000: pro ipv6 byl dobry 5000
+                if id != self.id: 
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -268,7 +270,6 @@ class DhtCrawler(AbstractCrawler):
     def filter_peers(self):
         self.logger.info( "Soft filtering" )
         for info in self.peerPool:
-            #print "Name:", self.peerPool[info]["name"] 
             for peer in self.peerPool[info]["peers"]:
                 if peer[1] == 1:
                     #print "==1 -> delete", peer
@@ -285,12 +286,10 @@ class DhtCrawler(AbstractCrawler):
         self.logger.info("Checking nodes via ping")
         for info in self.peerPool:
             self.logger.info("Name: %s" % self.peerPool[info]["name"] )
-            #print self.peerPool[info]
             if len(self.peerPool[info]["peers"]) == 0:		
                 noNoPeersFound += 1
             for peer in self.peerPool[info]["peers"]:
                 self.ping(peer[0], peer[1])
-                #time.sleep(0.05)
             if len(self.peerPool[info]["peers"]) > 0:
                 time.sleep(2.5)
 
@@ -307,7 +306,6 @@ class DhtCrawler(AbstractCrawler):
             try:
                 msg, addr = self.isock.recvfrom(PACKET_LEN)
                 decMsg = bdecode(msg)
-                #print addr
                 if decMsg['y'] == 'r':
                     addr2 = (addr[0], addr[1] )
                     self.peerReplied.append(addr2)
@@ -323,9 +321,7 @@ class DhtCrawler(AbstractCrawler):
         noReportedPeers = 0
         self.logger.info("\n\nAfter Merge")  
         for info in self.peerPool:
-            #print "Info Hash:", info
             self.logger.info("Name: %s" % self.peerPool[info]["name"])
-            #print self.peerPool[info]
             self.logger.info("Number of peers: %i" % len(self.peerPool[info]["peers"]))
             noReportedPeers += len(self.peerPool[info]["peers"])
         return noReportedPeers
@@ -335,15 +331,12 @@ class DhtCrawler(AbstractCrawler):
         self.logger.info("\n\nAfter Ping")
         noPingedPeers = 0
         for info in self.peerPool:
-            #print "\nInfo Hash:", info
             self.logger.info("Name: %s" % self.peerPool[info]["name"])
-            #print self.peerPool[info]
             self.logger.info("Number of peers: %i" % len(self.peerPool[info]["peers"]))
             noPingedPeers += len(self.peerPool[info]["peers"])
         return noPingedPeers
     
     def printEvaluation(self, noReportedPeers, noPingedPeers, timeWithCrawl, timeJustSearch):
-        #self.logger.info("\n\nNumber of error noENETUNREACH: %i" % self.noENETUNREACH  )
         self.info()
         self.logger.info("Number of Seeking torrents -----------: %i" % (self.noSearchingFiles)  )
         self.logger.info("Number Torrents with no peers---------: %i" % self.noNoPeersFound  ) 
@@ -360,8 +353,6 @@ class DhtCrawler(AbstractCrawler):
         
     def printEvaluationToFile(self, noReportedPeers, noPingedPeers, timestamp, timeWithCrawl, timeJustSearch):
         f = open('output---%s.txt' % (timestamp), 'w')
-       
-        #f.write("Number of error noENETUNREACH: %i\n" % self.noENETUNREACH  )
         f.write( "[NodeSet]:%i\t[Response]:%.2f%%\t[Queue]:%i\t[Dup]:%.2f%%\n" % \
               (len(self.nodePool),
                self.respondent*100.0/max(1,len(self.nodePool)),
@@ -387,7 +378,6 @@ if __name__ == '__main__':
     params = getParam(sys.argv[1:])
     
     torrent = TorrentCrawler()
-    #torrent.param = parser.param
     torrent.param = params
     torrent.start_crawl()
     
@@ -399,15 +389,14 @@ if __name__ == '__main__':
 
     crawler.logger.info("type: IPv%s" % crawler.type)
     crawler.filesPool = torrent.filesPool
-    if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
-        crawler.noSearchingFiles = 10
-    else:
-        crawler.noSearchingFiles = len(crawler.filesPool)
+    #if len(crawler.filesPool) == 100: #JUST FOR TESTING - reducing size of files
+    #    crawler.noSearchingFiles = 10
+    #else: crawler.noSearchingFiles = len(crawler.filesPool)
+    crawler.noSearchingFiles = len(crawler.filesPool)
 
-    # bootstrap around 100 000 nodes to start
     now = time.time()
     crawler.start_crawl() 
-    if not crawler.nodePool:
+    if not crawler.nodePool: # empty nodePool
         crawler.logger.info("No response from central routers")
         sys.exit(0)
     now2 = time.time()

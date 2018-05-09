@@ -35,19 +35,10 @@ from abstract_crawler import AbstractCrawler
 CTTIME = 10
 PACKET_LEN = 1024
 
-
-""" pro IPv6
-    crawler.findNode("router.bittorrent.com", 6881, crawler.id)
-    crawler.findNode("dht.transmissionbt.com", 6881, crawler.id)
-    crawler.findNode("router.silotis.us", 6881, crawler.id)
-    crawler.findNode("router.utorrent.com", 6881, crawler.id)
-"""
-
 class NodeCrawler(AbstractCrawler):
     def __init__(self, type, id = None):
         self.noisy = True                                       # Output extra info or not
         self.id = id if id else newID()                         # Injector's ID
-        #self.ip = '2001:67c:1220:c1b1:4582:871a:2b8c:8088'
         self.port = get_port(30500, 31000)                      # my listening port
         self.nodePool = {}                                      # Dict of the nodes collected
         self.addrPool = {}                                      # Dict uses <ip,port> as its key
@@ -123,11 +114,9 @@ class NodeCrawler(AbstractCrawler):
                         tid = stringify(intify(node["id"]) ^ (2**(i*3) - 1))
                         self.findNode(node["host"], node["port"], tid)
                 
-                # This threshold can be tuned
-                #elif len(self.nodePool) < 100000:  # this line is for normal (limited) crawling
-                else: # !!! this line is for loooong crawling
-                    if self.type == IPv6:
-                        self.findNode(node["host"], node["port"], node["id"]) #added for IPv6 crawling
+                else: # for unlimited crawling
+                    if self.type == IPv6: #additional querying for IPv6 crawling
+                        self.findNode(node["host"], node["port"], node["id"]) 
                     self.findNode(node["host"], node["port"], self.id)
             except Exception, err:
                 #self.logger.info( "Exception:Crawler.start_sender(): %s" % err )
@@ -158,7 +147,6 @@ class NodeCrawler(AbstractCrawler):
             for fileName in os.listdir('.'):
                 if fnmatch.fnmatch(fileName, pomFile):
                     self.logger.info("Loading File: %s" % fileName)
-                    #files.append(fileName)
                     f = open(fileName,"r")
                     nl = pickle.load(f)
                     for n in nl:
@@ -166,10 +154,6 @@ class NodeCrawler(AbstractCrawler):
                         n["rtt"] = float('inf')
                         self.nodeQueue.put(n)
                     f.close()
-                    """try:
-                        os.remove(fileName)
-                    except:
-                        pass"""
         except:
             pass
         pass
@@ -196,7 +180,6 @@ if __name__=="__main__":
     crawler.start_crawl()
     crawler.logger.info( "%.2f minutes" % ((time.time() - now)/60.0))
     timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
-    #crawler.serialize(timestamp)
     crawler.saveNodes(timestamp)
     pass 
 

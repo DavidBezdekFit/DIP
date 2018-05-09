@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 # This utilities was written by David Bezdek for purpose of a master
 # thesis: Torrent Peer Monitoring
