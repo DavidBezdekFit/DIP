@@ -48,7 +48,7 @@ Pro zdrojový soubor btdht_crawler.py je zapotřebí nainstalovat knihovnu pří
 sudo pip install btdht
 
 ### Spuštění modulů DHT crawleru
-Výpis nápovědy se seznamem možných parametrů, které lze libovolně kompinovat: <br>
+Výpis nápovědy se seznamem možných parametrů, které lze libovolně kombinovat: <br>
     -r [--rss] URL -- URL of RSS feed <br>
     -i [--input-announcement] filename -- already downloaded RSS feed <br>
     -c [--set-limit] -- choose number of files ( negative number means files from the end ) <br>
