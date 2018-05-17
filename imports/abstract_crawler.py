@@ -21,7 +21,7 @@ from bencode import bencode, bdecode
 from common import *
 from db_utils import *
 
-CTTIME = 2
+CTTIME = 20
 
 
 class AbstractCrawler(object):

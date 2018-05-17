@@ -64,7 +64,8 @@ def start_crawl(filesPool):
     logger.info("port: %i" % crawler.bind_port)
     
     noSearchingFiles = setLimit(len(filesPool))
-    my_wait(15)
+    waitingTime = 18
+    my_wait(waitingTime)
         
     logger.info("Start Finding")
     indexID = 1
@@ -129,7 +130,7 @@ if __name__=="__main__":
     
     torrent.param = params
     torrent.start_crawl()
-    #torrent.start_crawl(sys.argv[1:])
+
     if params['v'] != None:
         logger.disabled = True
     
