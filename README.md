@@ -43,9 +43,16 @@ Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování pe
   
 6. client-socket.py - zdrojový soubor implementující klientskou část aplikačního rozhraní.
 
+7. Makefile
+
 ## Manuál
-Pro zdrojový soubor btdht_crawler.py je zapotřebí nainstalovat knihovnu příkazem:
-sudo pip install btdht
+Pro zdrojový soubor btdht_crawler.py je zapotřebí nainstalovat knihovnu btdht.
+Pro tuto potřebu byl připraven soubor Makefile, který provede update + následné stažení knihovny btdht a aktualizaci knihovni requests.
+Spuštění:
+
+- sudo make install
+- sudo make install2
+
 
 ### Spuštění modulů DHT crawleru
 Výpis nápovědy se seznamem možných parametrů, které lze libovolně kombinovat: <br>
