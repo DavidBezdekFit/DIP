@@ -16,3 +16,7 @@ imports/khash.pyc
 imports/param_parser.pyc
 imports/torrent_crawler.pyc
 test-data/
+server/connections.log
+server/dtb/__pycache__/fill_db_class.cpython-34.pyc
+server/dtb/__pycache__/read_db_class.cpython-34.pyc
+server/dtb/__pycache__/set_dtb.cpython-34.pyc
