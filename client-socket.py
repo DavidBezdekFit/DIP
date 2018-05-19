@@ -135,15 +135,7 @@ class Client(object):
         pass
 
 
-if __name__=="__main__":
-    usage = ("Usage for sending data:   client.py -s inputFile/prefixOfFiles\n"\
-            + "Usage for receiving data: client.py -r [demanding_files]")
-    if len(sys.argv) < 2:
-        print ( usage )
-        sys.exit(0)
-
-    client = Client(PORT)
-    if sys.argv[1] == SEND:
+    def getFiles(self):
         try:
             files = sys.argv[2:]
         except:
@@ -171,21 +163,25 @@ if __name__=="__main__":
                         files.append(pomDir+file)
             else:
                 sys.stderr.write("Directory \'%s\' does not exists.\n" % actDir)
-            
+        return files    
+        
+    def startSending(self):
+        files = client.getFiles()
         for fileName in files:
             if os.path.isfile(fileName):
                 try:
                     client.sendSync(SENDSOC+"-"+fileName)
                     client.sendFile(fileName)
-                except:
+                except Exception as err:
                     sys.stderr.write("Error in sending file %s\n" % fileName)
+                    print (err)
                     pass
             else:
                 sys.stderr.write("File \'%s\' does not exists.\n" % fileName)
                 #client.sendFileNC(fileName) - not ready
-            
-    elif sys.argv[1] == READ:
-        
+        pass
+    
+    def startRecv(self):
         try:
             fileNames = sys.argv[2:]
             if not fileNames:
@@ -203,7 +199,21 @@ if __name__=="__main__":
                 client.recFile(fileName)
             except Exception as err:
                 print ("Can not connect to the server:", err)
-            
+        pass
+        
+if __name__=="__main__":
+    usage = ("Usage for sending data:   client.py -s inputFile/prefixOfFiles\n"\
+            + "Usage for receiving data: client.py -r [demanding_files]")
+    if len(sys.argv) < 2:
+        print ( usage )
+        sys.exit(0)
+
+    client = Client(PORT)
+    
+    if sys.argv[1] == SEND:
+        client.startSending()      
+    elif sys.argv[1] == READ:
+        client.startRecv() 
     else:
         sys.stderr.write("Unknown parameters")
         print (usage)

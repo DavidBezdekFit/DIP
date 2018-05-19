@@ -91,8 +91,8 @@ class NodeCrawler(AbstractCrawler):
             if id not in self.nodePool:
                 self.nodePool[id] = [node]
                 self.convergeSpeed(node)
-                # for IPv4 is better 20000, for IPv6 100000
-                if id != self.id and len(self.nodePool) < 20000: #((self.type == IPv4 and len(self.nodePool) < 20000) or (self.type == IPv6 and len(self.nodePool) < 100000)):
+                # When finging p - for IPv4 is better 20000, for IPv6 100000
+                if id != self.id and ((self.type == IPv4 and len(self.nodePool) < 20000) or (self.type == IPv6 and len(self.nodePool) < 100000)):
                     self.nodeQueue.put(node)
             else:
                 if not self.hasNode(node["id"], node["host"], node["port"])\
@@ -115,8 +115,8 @@ class NodeCrawler(AbstractCrawler):
                 
                 # This threshold can be tuned
                 elif len(self.nodePool) < 100000:  # this line is for normal (limited) crawling
-                    #if self.type == IPv6: #additional querying for IPv6 crawling
-                    #    self.findNode(node["host"], node["port"], node["id"]) 
+                    if self.type == IPv6: #additional querying for IPv6 crawling
+                        self.findNode(node["host"], node["port"], node["id"]) 
                     self.findNode(node["host"], node["port"], self.id)
             except Exception, err:
                 #self.logger.info( "Exception:Crawler.start_sender(): %s" % err )
@@ -147,7 +147,6 @@ class NodeCrawler(AbstractCrawler):
             for fileName in os.listdir('.'):
                 if fnmatch.fnmatch(fileName, pomFile):
                     self.logger.info("Loading File: %s" % fileName)
-                    #files.append(fileName)
                     f = open(fileName,"r")
                     nl = pickle.load(f)
                     for n in nl:

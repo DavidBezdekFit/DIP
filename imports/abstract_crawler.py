@@ -162,9 +162,8 @@ class AbstractCrawler(object):
                 self.respondent += 1
             except Exception, err:
                 #if not "v" in decMsg: 
-                #   if err.code != 126: 
-                # [Errno 126] Network dropped connection on reset
-                #   self.logger.info("Exception:Crawler.listener(): %s" % err)
+                #   if err.code != 126: # [Errno 126] Network dropped connection on reset
+                #       self.logger.info("Exception:Crawler.listener(): %s" % err)
                 pass    
         pass
 
@@ -181,7 +180,6 @@ class AbstractCrawler(object):
         self.find_routers()
         self.logger.info( "\nStart bootstrapping" )       
         while self.counter: 
-        #while 1: # for looong crawling just 1 ..!!!
             try:
                 self.counter = CTTIME if self.nodeQueue.qsize() else self.counter-1
                 self.info()

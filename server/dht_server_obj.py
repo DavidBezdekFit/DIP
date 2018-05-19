@@ -95,7 +95,7 @@ class Server(object):
         if matchIndex != -1:
             filename = data[(matchIndex+1):]
         else:
-            filename = data 
+            filename = data
         with open(filename, 'wb') as f:
             #f.write(data)
             self.conn.settimeout(20)
@@ -117,11 +117,13 @@ class Server(object):
                 except socket.timeout:
                     self.logger.info("Timeout - No more data\n")
                     response = "Timeout - saving data as a file\n"
-                    self.conn.sendall(response.encode())
-                    break
-            self.conn.close()
-             
+                    try:
+                        self.conn.sendall(response.encode())
+                    except:
+                        pass
+                    break 
             try:
+                self.conn.close()
                 f.close()
             except:
                 pass
@@ -168,7 +170,7 @@ class Server(object):
 if __name__ == '__main__':
     
     if not os.path.exists('dtb/dht_crawling.db'):
-        self.logger.info("Creating database")
+        #self.logger.info("Creating database")
         createDtb()
     server = Server(HOST, PORT)
     if '-v'in sys.argv:
