@@ -5,6 +5,8 @@ Faculty of Information Technology, Brno University of Technology<br>
 23. 5. 2018
 
 Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování peerů sdílejících Torrenty.
+Odkaz na README.md na serveru github:<br>
+https://github.com/DavidBezdekFit/DIP/blob/master/README.md
 
 ## Obsah adresáře:
 1. crawler - obsahující zdrojové soubory k modulu DHT Crawler:
