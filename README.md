@@ -38,12 +38,11 @@ Tento adresář obsahuje zdrojové soubory k diplomové práci Monitorování pe
    - node_injector6.py - injektované uzly pro IPv6
    - setter.py - tento skritp vytvoří soubor s 50ti ID uzlů pro injektované uzly. Také vygeneruje 5 ID pro crawlery a příkazy ke spuštění crawlerů vypisuje na stdout.
    - xnode_crawler.py - IPv4 i IPv6 crawler
-   - xnode_crawler_no_limits.py - IPv4 i IPv6 crawler bez omezení pro kompletní crawling sítě. !!! to-do
    - xnode_maintainer.py - soubor, který poskytuje uzly ze stejné 12 bitové zóny.
   
 6. client-socket.py - zdrojový soubor implementující klientskou část aplikačního rozhraní.
 
-7. Makefile
+7. Makefile 
 
 ## Manuál
 Pro zdrojový soubor btdht_crawler.py je zapotřebí nainstalovat knihovnu btdht.
@@ -51,7 +50,7 @@ Pro tuto potřebu byl připraven soubor Makefile, který provede update + násle
 Spuštění:
 
 - sudo make install
-- sudo make install2
+- sudo make install2 <br>(pro použití v případě, že na zařízení nebyla nainstalována knihovna requests)
 
 
 ### Spuštění modulů DHT crawleru
@@ -78,11 +77,11 @@ dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv
 - python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br> <br>
 
 Pomocné skripty: <br>
-- python summanizer.py <br> (spouští se ve složce Data)
+- python summanizer.py <br> (je třeba jej umístit do šložky Data)
 - python rss_age_finder.py -i rss_feed.xml -c 10
 - python evaluator.py  <br> (spouští se ve složce obsahující výstupy DHT crawlerů)
 
-### Spuštění skriptu evaluating
+### Spuštění skriptu geo_analyzer
 Pro tento skript je důležité, aby ve stejné složce byly umístěny databáze ip.db a ip6.db obsahující potřebné lokalizační informace. Testovaný soubor nemusí být ve stejné složce.
 - python geo_analyzer.py logfile
 
@@ -99,7 +98,7 @@ Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. sett
 - python xnode_crawler.py --id 605851242537948466844038222167079975228757870220 -t 6 <br><br>
 
 - python finder.py <br> (finder se spouští ve složce se soubory [ipv4/ipv6]nodes)
-- python p_count.py <br> (p_count se spouští ve složce Data)
+- python p_count.py <br> (je třeba jej umístit do šložky Data)
 
 ### Spuštění souborů aplikačního rozhraní
 
@@ -109,6 +108,7 @@ Tyto skripty se spouštějí v pořadí, ve kterém jsou uvedené, tzn.: 1. sett
   
 2. Klient:
    - python3 client-socket.py -r
-   - python3 client-socket.py -r ipv4nodes.json
+   - python3 client-socket.py -r ipv4nodes.id.datum.json
    - python3 client-socket.py -s ipv6 <br> (prefix souborů, které bude klient posílat)
    - python3 client-socket.py -s ipv6nodes.id.datum.json
+   - python3 client-socket.py -s /path/ipv6

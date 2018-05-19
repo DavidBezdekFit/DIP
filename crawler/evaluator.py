@@ -71,9 +71,9 @@ class Evaluator(object):
                 if lineCount == 0:
                     self.parseFirstLine(line)
                 elif lineCount == 1:
-                    self.noFoundPeers += self.getValue(line)
-                elif lineCount == 2:
                     self.noTorrents += self.getValue(line)
+                elif lineCount == 2:
+                    self.noFoundPeers += self.getValue(line)
                 elif lineCount == 3:
                     self.noAllPeers += self.getValue(line)
                 elif lineCount == 4:

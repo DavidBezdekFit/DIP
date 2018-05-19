@@ -15,3 +15,4 @@ imports/db_utils.pyc
 imports/khash.pyc
 imports/param_parser.pyc
 imports/torrent_crawler.pyc
+test-data/

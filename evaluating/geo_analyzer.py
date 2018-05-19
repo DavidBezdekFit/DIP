@@ -134,9 +134,8 @@ class Parser(object):
                 err += 1
             except KeyboardInterrupt:
                 print ''
-                self.saveNotAnalyzedNodes(dataJson, count, True)
-                    
-                break;
+                self.saveNotAnalyzedNodes(dataJson, count, True)  
+                break
             if count == 200:
                 break
             count += 1
@@ -149,6 +148,7 @@ class Parser(object):
         city = {"unknown":0}
         err = 0
         count = 0
+        interruptBreak = False
         start_time = datetime.now()
         for infohash in dataJson:
             print count
@@ -181,7 +181,10 @@ class Parser(object):
                 except KeyboardInterrupt:
                     print ''
                     self.saveNotAnalyzedNodes(dataJson, count, False)
-                    break;
+                    interruptBreak = True
+                    break
+            if interruptBreak:
+                break
             count += 1
             
         end_time = datetime.now()
