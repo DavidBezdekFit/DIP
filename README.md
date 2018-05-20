@@ -18,7 +18,7 @@ https://github.com/DavidBezdekFit/DIP/blob/master/README.md
 2. evaluating:
    - geo_analyzer.py - zdrojový soubor pro geografickou lokalizaci
    - summarizer.py - skript, který prohledává soubory output od DHT crawlerů v dostupných složkách. Tento soubor je nutné umístit do adresáře Data.
-   - p_count - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky. Je nutné jej umístit do adresáře Data.
+   - p_count.py - Prochází složky s prefixem "exp" a sumarizuje výsledky všech jednotlivých měření. Počítá pravděpodobnost nalezení uzlu p včetně odchylky. Je nutné jej umístit do adresáře Data.
 3. imports - adresář obsahující pomocné zdrojové soubory:
    - python moduly bencode a common
    - abstract_crawler.py - abstraktní třída pro monitorovací moduly
