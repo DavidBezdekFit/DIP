@@ -79,7 +79,7 @@ dht_crawler je obohacen o parametr -t, který určí typ crawleru (IPv4 nebo IPv
 - python dht_crawler.py -i rss_file_name.xml -c -10 -t 6 <br> <br>
 
 Pomocné skripty: <br>
-- python summanizer.py <br> (je třeba jej umístit do šložky Data)
+- python summanizer.py <br> (je třeba jej umístit do šložky Data + je zapotrebi prejmenovat/odstranit slozku results-peers-crawl)
 - python rss_age_finder.py -i rss_feed.xml -c 10
 - python evaluator.py  <br> (spouští se ve složce obsahující výstupy DHT crawlerů)
 
